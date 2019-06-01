@@ -1,35 +1,106 @@
-import { Link } from "gatsby"
+import React, { Component } from "react"
 import PropTypes from "prop-types"
-import React from "react"
+import logo from "../images/logoLarge.png"
+import { Link } from "gatsby"
+import colors from "../styles/colors"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+const styles = {
+  hiddenLogo: {
+    opacity: 0,
+  },
+  displayLogo: {
+    opacity: 1,
+    transition: "opacity 2s",
+  },
+  hideHeader: {
+    WebkitTransition: "background-color 500ms linear",
+    msTransition: "background-color 500ms linear",
+    transition: "background-color 500ms linear",
+  },
+  displayHeader: {
+    backgroundColor: colors.black,
+    WebkitTransition: "background-color 500ms linear",
+    msTransition: "background-color 500ms linear",
+    transition: "background-color 500ms linear",
+  },
+  hideNavIcons: {
+    opacity: 0,
+  },
+  showNavIcons: {
+    opacity: 1,
+    transition: "opacity 2s",
+  }
+}
+
+class Header extends Component {
+  state = {
+    logoHide: true,
+  }
+
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll)
+  }
+
+  handleScroll = () => {
+    if (window.scrollY < 125) {
+      this.setState({
+        logoHide: true,
+      })
+    }
+    if (window.scrollY > 125) {
+      this.setState({
+        logoHide: false,
+      })
+    }
+  }
+
+  render() {
+    return (
+      <header className="header" style={this.state.logoHide ? styles.hideHeader : styles.displayHeader}>
+        <div className="logo-div">
+          {this.state.logoHide ? (
+            <img src={logo} id="logo" alt="Isabella" style={ this.state.logoHide ? styles.hiddenLogo : styles.displayLogo }/>
+          ) : (
+            <Link className="logo-a" to="/">
+              <img src={logo} id="logo" alt="Isabella" style={ this.state.logoHide ? styles.hiddenLogo : styles.displayLogo }/>
+            </Link>
+          )}
+        </div>
+        <div className="icon-div" style={this.state.logoHide ? styles.hideNavIcons : styles.showNavIcons}>
+          <a
+            className="nav-link"
+            href="https://www.facebook.com/IsabellaFitness/"
+            target="_blank"
+            rel="noopener noreferrer">
+            <span title="Facebook">
+              <i className="fab fa-facebook-square" alt="facebook" />
+            </span>
+          </a>
+          <a
+            className="nav-link"
+            href="https://twitter.com/IsabellaFitness"
+            target="_blank"
+            rel="noopener noreferrer">
+            <span title="Twitter">
+              <i className="fab fa-twitter" alt="twitter" />
+            </span>
+          </a>
+          <a
+            className="nav-link"
+            href="https://www.instagram.com/isabella_fitness_/"
+            target="_blank"
+            rel="noopener noreferrer">
+            <span title="Instagram">
+              <i className="fab fa-instagram" alt="instagram" />
+            </span>
+          </a>
+        </div>
+      </header>
+    )
+  }
+}
+
+export default Header
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
@@ -38,5 +109,3 @@ Header.propTypes = {
 Header.defaultProps = {
   siteTitle: ``,
 }
-
-export default Header
