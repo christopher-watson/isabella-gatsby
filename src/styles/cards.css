@@ -1,0 +1,110 @@
+/* --------------- cardLeft --------------- */
+.cardLeft-container {
+  display: grid;
+  grid-template-columns: minmax(100px, 300px) 1fr;
+  height: 250px;
+  grid-template-areas:
+    'cardLeft-L cardLeft-R';
+  align-items: center;
+  color: var(--white);
+}
+
+.cardLeft-leftPanel {
+  grid-area: cardLeft-L;
+}
+
+.cardLeft-rightPanel {
+  grid-area: cardLeft-R;
+  display: grid;
+  grid-auto-rows: min-content;
+  background: var(--GREENdient);
+  height: 100%;
+  align-content: center;
+  border-left: 1px solid var(--white);
+  padding: 0 20px;
+}
+
+.cardLeft-innerPanel {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.cardLeft-innerPanel i {
+  font-size: 2em;
+  margin: 10px;
+}
+
+.cardLeft-innerPanel p {
+  margin: 10px;
+  align-self: center;
+}
+
+.cardLeft-rightPanel-heading {
+  font-family: 'Alfa Slab One', sans-serif;
+  font-size: 2em;
+}
+
+.cardLeft-rightPanel-green-text {
+  font-family: 'Great Vibes', sans-serif;
+  font-size: 1.5em;
+  color: var(--green);
+  letter-spacing: 1.5px;
+  text-shadow: 0 0 20px var(--white);
+}
+
+/* --------------- cardRight --------------- */
+.cardRight-container {
+  display: grid;
+  grid-template-columns: 1fr minmax(100px, 300px);
+  height: 250px;
+  grid-template-areas:
+    'cardRight-L cardRight-R';
+  align-items: center;
+  color: var(--white);
+}
+
+.cardRight-rightPanel {
+  grid-area: cardRight-R;
+}
+
+.cardRight-leftPanel {
+  grid-area: cardRight-L;
+  display: grid;
+  grid-auto-rows: min-content;
+  background: var(--GREENdientALT);
+  height: 100%;
+  align-content: center;
+  border-right: 1px solid var(--white);
+  padding: 0 20px;
+  text-align: right;
+}
+
+.cardRight-innerPanel {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.cardRight-innerPanel i {
+  font-size: 2em;
+  margin: 10px;
+}
+
+.cardRight-innerPanel p {
+  margin: 10px;
+  align-self: center;
+}
+
+.cardRight-leftPanel-heading {
+  font-family: 'Alfa Slab One', sans-serif;
+  font-size: 2em;
+}
+
+.cardRight-leftPanel-green-text {
+  font-family: 'Great Vibes', sans-serif;
+  font-size: 1.5em;
+  color: var(--green);
+  letter-spacing: 1.5px;
+  text-shadow: 0 0 20px var(--white);
+}
