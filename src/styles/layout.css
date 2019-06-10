@@ -8,14 +8,15 @@
   --grey: #6C757C;
   --red: #FC0D1C;
   --black: #323232;
-  --opaque: #323232;
+  --opaque: #323232aa;
   --dark: #1A1A1A;
   --opaque2: rgba(22, 23, 24, .85);
   --white: #F5F5F5;
   --green: #81C341;
   --greenHover: #81C341aa;
-  --GREENdient: linear-gradient(100deg, rgba(22, 23, 24, .1), rgba(129, 195, 65, .1), rgba(129, 195, 65, .4), rgba(129, 195, 65, .8));
-  --GREENdientALT: linear-gradient(100deg, rgba(129, 195, 65, .8), rgba(129, 195, 65, .4), rgba(129, 195, 65, .1), rgba(22, 23, 24, .1));
+  --greenALT: #81C341aa;
+  --GREENdient: linear-gradient(50deg, rgba(22, 23, 24, 1), rgba(129, 195, 65, .1), rgba(129, 195, 65, .5), rgba(129, 195, 65, 1));
+  --GREENdientALT: linear-gradient(50deg, rgba(129, 195, 65, 1), rgba(129, 195, 65, .5), rgba(129, 195, 65, .1), rgba(22, 23, 24, 1));
 }
 
 /* --------------- main wrapper --------------- */
@@ -33,6 +34,24 @@
   'footer';
 }
 
+.green-text{
+  margin-bottom: 0;
+  font-family: 'Great Vibes', Arial, Helvetica, serif;
+  font-size: 1.8em;
+  letter-spacing: 1.5px;
+  text-shadow: 0 0 20px var(--white);
+  color: var(--green);
+}
+
+.heading-text {
+  font-size: 2.5em;
+}
+
+.background-text {
+  background: var(--greenALT);
+  padding: 5px 0;
+  font-size: 1.8em;
+}
 
 /* --------------- header --------------- */
 .header {
@@ -44,6 +63,7 @@
   position: fixed;
   width: 100%;
   align-items: center;
+  z-index: 5;
 }
 
 .logo-div{ 
@@ -73,15 +93,15 @@
 /* --------------- landing --------------- */
 .landing-div {
   grid-area: landing;
-  background-color: #323232;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='54' height='54' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%232b2b2b' fill-opacity='0.31'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.31'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+  background-color: #252525;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%23323232' fill-opacity='0.86' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 
 .button{
-  background-color: var(--white);
+  background-color: var(--green);
   margin: 0 5px;
   padding: 5px 25px;
-  border: 3px solid var(--white);
+  border: 1px solid var(--white);
   border-radius: 25px;
   color: var(--black);
   text-decoration: none;
@@ -102,4 +122,38 @@
   font-family: 'Great Vibes', sans-serif;
 }
 
-/* --------------- info --------------- */
+/* --------------- thankYou --------------- */
+.thank-you-div {
+  display: flex;
+  height: 82vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background-color: #252525;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%23323232' fill-opacity='0.86' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.thank-you-div h1{
+  font-size: 4.5rem;
+  text-shadow: 0 0 40px var(--green);
+  font-family: 'Alfa Slab One', Arial, sans-serif;
+  color: var(--dark);
+  letter-spacing: 2px;
+}
+
+.thank-you-div p{
+  margin-bottom: 0;
+  font-family: 'Great Vibes', Arial, Helvetica, serif;
+  font-size: 1.8em;
+  letter-spacing: 1.5px;
+  text-shadow: 0 0 20px var(--white);
+  color: var(--green);
+}
+
+.thank-you-div a i{
+  color: var(--white);
+  font-size: 3rem;
+  padding-top: 10px;
+}
+

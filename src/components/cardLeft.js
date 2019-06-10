@@ -21,12 +21,14 @@ const CardLeft = (props) => {
       </div>
 
       <div className="cardLeft-rightPanel">
-        <div className="cardLeft-rightPanel-heading">
-          {props.heading}
-        </div>
-        <p className="cardLeft-rightPanel-green-text">{props.greenScript}</p>
-        <div className="cardLeft-rightPanel-innerText">
-          {props.paragraph}
+        <div className="cardLeft-rightPanel-imageContainer">
+          <div className="cardLeft-rightPanel-heading">
+            {props.heading}
+          </div>
+          <p className="cardLeft-rightPanel-green-text">{props.greenScript}</p>
+          <div className="cardLeft-rightPanel-innerText">
+            {props.paragraph}
+          </div>
         </div>
       </div>
 

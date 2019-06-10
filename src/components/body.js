@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import Landing from "./landing"
+import Info from "../components/info"
+import Slide from "../components/slide"
+import Bio from "../components/bio"
+import GoogleMap from "../components/GoogleMap"
 
 
 class Body extends Component {
@@ -25,6 +29,10 @@ class Body extends Component {
     return (
       <div>
         <Landing/>
+        <Info/>
+        <Slide/>
+        <Bio/>
+        <GoogleMap/>
       </div>
     );
   }

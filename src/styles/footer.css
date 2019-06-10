@@ -1,0 +1,46 @@
+.footer {
+  display: grid;
+  height: 15vh;
+  background-color: var(--black);
+  grid-template-rows: repeat(2, min-content);
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "footer-top"
+    "footer-bottom";
+  padding: 20px;
+  color: var(--white);
+  width: 100%;
+  justify-content: center;
+}
+
+.footer-top {
+  grid-area: footer-top;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.footer-top ul {
+  display: inline-flex;
+  list-style: none;
+}
+
+.footer-top ul li {
+  margin: 0 20px;
+}
+
+.footer-bottom {
+  grid-area: footer-bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 0;
+  font-family: 'Alfa Slab One', sans-serif;
+  font-size: 1.5rem;
+}
+
+.footer-logo {
+  width: 250px;
+}
+
