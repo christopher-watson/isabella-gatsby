@@ -1,4 +1,4 @@
-#Isabella Fitness
+# 🏋🏽‍ Isabella Fitness
 
 [link](https://isabella-gatsby.netlify.com/)
 
