@@ -15,14 +15,14 @@ const styles = {
     margin: 10
   },
   isa: {
-    color: colors.dark,
+    color: colors.white,
     fontSize: '4.5rem',
     textShadow: `0 0 40px ${colors.green}`
   },
   fitness: {
-    color: colors.dark,
+    color: colors.green,
     fontSize: '4.5rem',
-    textShadow: `0 0 20px ${colors.green}`
+    textShadow: `0 0 20px ${colors.white}`
   },
   jumboButtons: {
     margin: 10

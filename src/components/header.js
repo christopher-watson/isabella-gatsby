@@ -57,12 +57,12 @@ class Header extends Component {
   render() {
     return (
       <header className="header" style={this.state.logoHide ? styles.hideHeader : styles.displayHeader}>
-        <div className="logo-div">
+        <div className="logo-div" style={ this.state.logoHide ? styles.hiddenLogo : styles.displayLogo }>
           {this.state.logoHide ? (
-            <img src={logo} id="logo" alt="Isabella" style={ this.state.logoHide ? styles.hiddenLogo : styles.displayLogo }/>
+            <img src={logo} id="logo" alt="Isabella"/>
           ) : (
             <Link className="logo-a" to="/">
-              <img src={logo} id="logo" alt="Isabella" style={ this.state.logoHide ? styles.hiddenLogo : styles.displayLogo }/>
+              <img src={logo} id="logo" alt="Isabella"/>
             </Link>
           )}
         </div>

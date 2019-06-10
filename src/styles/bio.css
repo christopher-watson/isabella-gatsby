@@ -1,0 +1,114 @@
+/* global stuff */
+.bio {
+  grid-area: bio;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "bio1"
+    "bio2"
+    "bio3";
+}
+
+.inner-bio {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "bio-pic bio-text";
+}
+
+.bio-pic {
+  grid-area: bio-pic;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  background: var(--grey);
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+}
+
+.bio-img {
+  width: 300px;
+  border-radius: 50%;
+  box-shadow: 0 0 400px 40px white;
+}
+
+.bio-text {
+  grid-area: bio-text;
+  display: grid;
+  padding: 50px;
+  grid-template-rows: repeat(4, min-content);
+  grid-template-columns: 1fr;
+  background: var(--white);
+  grid-template-areas:
+    "bio-name"
+    "bio-title"
+    "bio-inner-text"
+    "bio-certs";
+}
+
+.bio-name {
+  grid-area: bio-name;
+  color: var(--green);
+  font-size: 3.5em;
+  text-shadow: 3px 3px 3px var(--opaque);
+  font-family: 'Alfa Slab One', Arial, sans-serif;
+}
+
+.bio-title {
+  grid-area: bio-title;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.bio-inner-text {
+  grid-area: bio-inner-text;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 20px;
+}
+
+.bio-certs {
+  grid-area: bio-certs;
+}
+
+.cert-title {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.bio-certs>ul {
+  list-style-type: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* bios */
+
+.bio1 {
+  grid-area: bio1;
+}
+
+.bio2 {
+  grid-area: bio2;
+}
+
+@media only screen and (max-width:700px) {
+  .inner-bio {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr;
+    grid-template-areas:
+      "bio-pic"
+      "bio-text";
+  }
+
+  .bio-pic {
+    height: 300px;
+  }
+
+}
