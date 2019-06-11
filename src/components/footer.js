@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../images/logoLarge.png'
+import cfj from '../images/crossfit-journal.png'
 import '../styles/footer.css'
 
 const footer = () => {
@@ -14,7 +15,12 @@ const footer = () => {
           <li>Team</li>
           <li>Location</li>
         </ul> */}
-        <img src={logo} alt="Isabella Fitness Logo" className="footer-logo"/>
+        <a href="/">
+          <img src={logo} alt="Isabella Fitness Logo" className="footer-logo"/>
+        </a>
+        <a href="http://journal.crossfit.com/" target="_blank" rel="noopener noreferrer">
+          <img src={cfj} alt="The Crossfit Journal" className="footer-logo"/>
+        </a>
       </div>
       <div className="footer-bottom">
         © Isabella Fitness {new Date().getFullYear()}        
