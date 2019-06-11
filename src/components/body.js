@@ -3,6 +3,7 @@ import Landing from "./landing"
 import Info from "../components/info"
 import Slide from "../components/slide"
 import Bio from "../components/bio"
+import Form from "./form"
 import GoogleMap from "../components/GoogleMap"
 
 
@@ -32,6 +33,7 @@ class Body extends Component {
         <Info/>
         <Slide/>
         <Bio/>
+        <Form/>
         <GoogleMap/>
       </div>
     );

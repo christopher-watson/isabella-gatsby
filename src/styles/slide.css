@@ -53,7 +53,7 @@
   grid-area: ss;
   display: grid;
   height: 100%;
-  width: 100vw;
+  width: 100%;
   grid-template-rows: min-content;
   grid-template-columns: minmax(10px, .10fr) 1fr minmax(10px, .10fr);
   grid-template-areas: 
@@ -132,7 +132,7 @@
 .underline-text {
   grid-area: left-top;
   border-bottom: 2px solid var(--white);
-  font-size: 1.8em;
+  font-size: 1.5em;
   margin-bottom: 10px;
 }
 
@@ -163,7 +163,7 @@
   grid-area: ss;
   display: grid;
   height: 100%;
-  width: 100vw;
+  width: 100%;
   grid-template-rows: min-content;
   grid-template-columns: minmax(10px, .10fr) 1fr minmax(10px, .10fr);
   grid-template-areas: 
@@ -288,7 +288,7 @@
   grid-area: ss;
   display: grid;
   height: 100%;
-  width: 100vw;
+  width: 100%;
   /* grid-template-rows: min-content; */
   grid-template-columns: minmax(10px, .10fr) 1fr minmax(10px, .10fr);
   grid-template-areas: 

@@ -11,7 +11,7 @@ const ThankYou = () => (
       <h1>Thank you!</h1>
       <p>Hope to see you soon!</p>
       <Link to="/">
-        <i class="fas fa-home"></i>
+        <i className="fas fa-home"></i>
       </Link>
     </div>
   </Layout>

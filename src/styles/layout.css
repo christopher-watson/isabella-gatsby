@@ -122,10 +122,30 @@
   font-family: 'Great Vibes', sans-serif;
 }
 
+
+/* --------------- form --------------- */
+.form-button{
+  background-color: var(--green);
+  margin: 0 5px;
+  padding: 5px 25px;
+  border-radius: 25px;
+  color: var(--black);
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid var(--black);
+}
+
+.form-button:hover {
+  cursor: pointer;
+  background-color: #81C341aa;
+  border: 1px solid #81C341;
+}
+
+
 /* --------------- thankYou --------------- */
 .thank-you-div {
   display: flex;
-  height: 82vh;
+  height: 78vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -156,4 +176,5 @@
   font-size: 3rem;
   padding-top: 10px;
 }
+
 

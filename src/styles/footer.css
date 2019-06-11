@@ -16,8 +16,10 @@
 .footer-top {
   grid-area: footer-top;
   display: grid;
+  grid-template-columns: repeat(2, 250px);
+  grid-gap: 80px;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
 
 .footer-top ul {
@@ -35,12 +37,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 10px 0;
+  padding: 10px 0 20px 0;
   font-family: 'Alfa Slab One', sans-serif;
   font-size: 1.5rem;
 }
 
 .footer-logo {
-  width: 250px;
+  width: 100%;
 }
 
