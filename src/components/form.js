@@ -72,7 +72,7 @@ const Form = () => {
           <h2 style={styles.headerText}>Contact Us!</h2>
         </div>
         <div className="form" style={styles.form}>
-          <form name="contact" method="POST" data-netlify="true" action='thankYou' style={styles.form}>
+          <form name="IsabellaFit-ContactForm" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action='thankYou' style={styles.form}>
             <div className="form-top" style={styles.formTop}>
               <input style={styles.input} placeholder='Name' type="text" name="name" />
               <input style={styles.input} placeholder='Email' type="email" name="email" />
