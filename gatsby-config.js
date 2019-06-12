@@ -1,6 +1,3 @@
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
 
 module.exports = {
   siteMetadata: {
@@ -32,12 +29,7 @@ module.exports = {
       },
     },
 
-    // {
-    //   resolve: `gatsby-source-patronus`,
-    //   options: {
-    //     apiKey: process.env.API_KEY,
-    //   },
-    // },
+
 
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
