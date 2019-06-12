@@ -36,17 +36,6 @@
   border-radius: 25px;
 }
 
-[state=hidden] {
-  opacity: 0;
-  transition: opacity 1.2s;
-  -webkit-transition: opacity 1.2s;
-}
-
-[state=active] {
-  opacity: 1;
-  transition: opacity 1.2s;
-  -webkit-transition: opacity 1.2s;
-}
 
 /* slide one */
 .slide1 {
@@ -59,11 +48,17 @@
   grid-template-areas: 
     " . content1 . ";
   padding-bottom: 50px;
+
+  /* transform: scaleY(0);    
+  transform-origin: top;
+  transition: transform 0.26s ease; */
+
 }
 
 .slide1-container {
   grid-area: content1;
   display: grid;
+  grid-row-gap: 50px;
   grid-template-rows: repeat(2, min-content);
   width: 100%;
   height: 100%;
@@ -73,7 +68,7 @@
   margin-top: 2%;
 }
 
-.top-row{ 
+.top-row { 
   grid-area: top-row;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -169,6 +164,7 @@
   grid-template-areas: 
     " . content2 . ";
   padding-bottom: 50px;
+  justify-content: center;
 }
 
 .slide2-container {
@@ -187,9 +183,10 @@
   grid-area: weekday;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: min-content;
+  grid-template-rows: repeat(2, min-content);
   grid-template-areas:
-    "mon tue wed thurs fri";
+    "mon tue wed thurs fri"
+    ". saturday . sunday .";
   justify-items: center;
 }
 
@@ -211,6 +208,14 @@
 
 .friday {
   grid-area: fri;
+}
+
+.saturday {
+  grid-area: saturday;
+}
+
+.sunday {
+  grid-area: sunday;
 }
 
 .schedule-box {
@@ -263,7 +268,7 @@
   background-color: blue;
 }
 
-.weekend-box {
+/* .weekend-box {
   grid-area: weekend;
   display: grid;
   width: 50%;
@@ -273,7 +278,7 @@
   justify-content: center;
   justify-self: center;
   margin-top: 40px;
-}
+} */
 
 .saturday-highlight {
   background-color: burlywood;
@@ -307,7 +312,7 @@
   font-size: 3em;
 }
 
-@media only screen and (max-width: 1200px) {  
+@media only screen and (max-width: 1050px) {  
   .slide1 {
     align-content: center;
   }
@@ -315,15 +320,25 @@
   .weekday-box {
     grid-area: weekday;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, min-content);
     grid-template-areas:
-      ". mon tue wed ."
-      " . thurs . fri .";
+      "mon tue wed"
+      "thurs fri weekend";
   }
+
+  .saturday {
+    grid-area: weekend;
+  }
+  
+  .sunday {
+    grid-area: weekend;
+    margin-top: 150px;
+  }
+
 }
 
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 630px) {
   .sliders {
     font-size: .8em;
   }
@@ -391,18 +406,18 @@
       "tue"
       "wed"
       "thurs"
-      "fri";
+      "fri"
+      "saturday"
+      "sunday";
   }
   
-  .weekend-box {
-    grid-area: weekend;
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, min-content);
-    grid-template-areas:
-      "sat"
-      "sun";
+  .saturday {
+    grid-area: saturday;
+  }
+  
+  .sunday {
+    grid-area: sunday;
+    margin-top: 0;
   }
 }
 
@@ -410,4 +425,20 @@
   .sliders {
     font-size: .5em;
   }
+}
+
+[state=hidden] {
+  opacity: 0;
+  transition: opacity 1.2s;
+  -webkit-transition: opacity 1.2s;
+  /* height: 5px; */
+  display: none;
+}
+
+[state=active] {
+  opacity: 1;
+  transition: opacity 1.2s;
+  -webkit-transition: opacity 1.2s;
+  height: min-content;
+  /* transition: height 2s; */
 }
