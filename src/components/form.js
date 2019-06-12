@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 const styles = {
   formDiv: {
@@ -15,7 +15,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     width: '60vw',
-    minWidth: 500,
+    minWidth: 350,
     height: '100%',
     background: 'var(--white)',
     boxShadow: '1px 1px 50px 10px var(--dark)',
@@ -35,6 +35,11 @@ const styles = {
     display: 'flex',
     flexDirection: 'row',
     padding: '0 20px'
+  },
+  formTopMobile: {
+    display: 'flex',
+    flexDirection: 'column',
+    padding: '20 0'
   },
   input: {
     height: 40,
@@ -64,32 +69,51 @@ const styles = {
   },
 }
 
-const Form = () => {
-  return (
-    <div style={styles.formDiv}>
-      <div className="form-container" style={styles.formCont}>
-        <div className="form-heading" style={styles.header}>
-          <h2 style={styles.headerText}>Contact Us!</h2>
-        </div>
-        <div className="form" style={styles.form}>
-          <form name="IsabellaFit-ContactForm" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action='thankYou' style={styles.form}>
-            <input type="hidden" name="form-name" value="contact" />
-            <div className="form-top" style={styles.formTop}>
-              <input type="hidden" name="bot-field" />
-              <input style={styles.input} placeholder='Name' type="text" name="name" />
-              <input style={styles.input} placeholder='Email' type="email" name="email" />
-            </div>
-            <div className="form-bottom" style={styles.formBottom}>
-              <textarea placeholder='Message' name="message" style={styles.textArea}></textarea>
-            </div>
-            <div className="button-div" style={styles.buttonDiv}>
-              <button className='form-button' style={styles.button} type="submit">Send</button>
-            </div>
-          </form>
+class Form extends Component {
+  state = {
+    mobile: false,
+  }
+
+  componentDidMount() {
+    this.handleResize()
+    window.addEventListener('resize', this.handleResize)
+  }
+
+  handleResize = () => {
+    if(window.innerWidth < 960) {
+      this.setState({ mobile: true })
+    }
+    else {
+      this.setState ({ mobile: false })
+    }
+  }
+  render() {
+    return (
+      <div style={styles.formDiv}>
+        <div className="form-container" style={styles.formCont}>
+          <div className="form-heading" style={styles.header}>
+            <h2 style={styles.headerText}>Contact Us!</h2>
+          </div>
+          <div className="form" style={styles.form}>
+            <form name="IsabellaFit-ContactForm" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action='thankYou'>
+              <input type="hidden" name="form-name" value="contact" />
+              <div className="form-top" style={this.state.mobile ? styles.formTopMobile : styles.formTop}>
+                <input type="hidden" name="bot-field" />
+                <input style={styles.input} placeholder='Name' type="text" name="name" />
+                <input style={styles.input} placeholder='Email' type="email" name="email" />
+              </div>
+              <div className="form-bottom" style={styles.formBottom}>
+                <textarea placeholder='Message' name="message" style={styles.textArea}></textarea>
+              </div>
+              <div className="button-div" style={styles.buttonDiv}>
+                <button className='form-button' style={styles.button} type="submit">Send</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  }
 };
 
 export default Form;
