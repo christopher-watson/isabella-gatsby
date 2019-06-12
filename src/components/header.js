@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import PropTypes from "prop-types"
 import logo from "../images/logoLarge.png"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import colors from "../styles/colors"
 
 const styles = {
@@ -54,19 +54,26 @@ class Header extends Component {
     }
   }
 
+  handleSmoothScroll = () => {
+    document.querySelector('.landing-div').scrollIntoView({ 
+      behavior: 'smooth' 
+    });
+  }
+
   render() {
     return (
-      <header className="header" style={this.state.logoHide ? styles.hideHeader : styles.displayHeader}>
+      <header className="header" style={ this.state.logoHide ? styles.hideHeader : styles.displayHeader }>
         <div className="logo-div" style={ this.state.logoHide ? styles.hiddenLogo : styles.displayLogo }>
-          {this.state.logoHide ? (
-            <img src={logo} id="logo" alt="Isabella"/>
+          {/* {this.state.logoHide ? (
+            <img src={logo} id="logo" alt="Isabella" style={{cursor: 'default'}}/>
           ) : (
-            <Link className="logo-a" to="/">
-              <img src={logo} id="logo" alt="Isabella"/>
-            </Link>
-          )}
+            // <Link className="logo-a" to="/" >
+              <img src={logo} id="logo" alt="Isabella" style={{cursor: 'pointer'}}onClick={this.handleSmoothScroll}/>
+              // </Link>
+              )} */}
+          <img src={logo} id="logo" alt="Isabella" style={this.state.logoHide ? {cursor: 'default'} : {cursor: 'pointer'} } onClick={this.handleSmoothScroll}/>
         </div>
-        <div className="icon-div" style={this.state.logoHide ? styles.hideNavIcons : styles.showNavIcons}>
+        <div className="icon-div" style={ this.state.logoHide ? styles.hideNavIcons : styles.showNavIcons }>
           <a
             className="nav-link"
             href="https://www.facebook.com/IsabellaFitness/"

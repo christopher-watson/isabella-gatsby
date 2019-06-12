@@ -120,7 +120,6 @@ class Landing extends Component {
   handleArrowPulse = () => {
     setInterval(() => {
       this.setState({ pulse: !this.state.pulse })
-      console.log(this.state.pulse)
     }, 750);
   }
 
@@ -138,10 +137,10 @@ class Landing extends Component {
             <div id="fitness" style={styles.fitness}>Fitness</div>
           </div>
           <div className="jumbo-buttons" style={styles.jumboButtons}>
-          <a className="button left-button" href='/' target="_blank" rel="noopener noreferrer">
+          <a className="button left-button" href='#'>
             <span>Button</span>
           </a>
-          <a className="button right-button" href='/' target="_blank" rel="noopener noreferrer">
+          <a className="button right-button" href='#'>
             <span>Button</span>
           </a>
           </div>
