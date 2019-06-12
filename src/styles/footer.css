@@ -37,7 +37,6 @@
   max-width: 250px;
 }
 
-
 .footer-bottom {
   grid-area: footer-bottom;
   display: flex;
