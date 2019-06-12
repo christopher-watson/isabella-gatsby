@@ -17,19 +17,26 @@
   grid-area: footer-top;
   display: grid;
   grid-template-columns: repeat(2, 250px);
-  grid-gap: 80px;
+  width: 100%;
+  grid-column-gap: 80px;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
-.footer-top ul {
+/* .footer-top ul {
   display: inline-flex;
   list-style: none;
 }
 
 .footer-top ul li {
   margin: 0 20px;
+} */
+
+.footer-top img {
+  max-width: 250px;
 }
+
 
 .footer-bottom {
   grid-area: footer-bottom;
@@ -41,6 +48,14 @@
   font-family: 'Alfa Slab One', sans-serif;
   font-size: 1.5rem;
 }
+
+@media only screen and (max-width: 960px){
+  .footer-top {
+    grid-template-columns: 250px;
+    grid-row-gap: 10px;
+    grid-column-gap: 0;
+  }
+} 
 
 .footer-logo {
   width: 100%;

@@ -137,12 +137,12 @@ class Landing extends Component {
             <div id="fitness" style={styles.fitness}>Fitness</div>
           </div>
           <div className="jumbo-buttons" style={styles.jumboButtons}>
-          <a className="button left-button" href='#'>
-            <span>Button</span>
-          </a>
-          <a className="button right-button" href='#'>
-            <span>Button</span>
-          </a>
+          {/* <a className="button left-button" href='#'> */}
+            <span className="button left-button">Button</span>
+          {/* </a> */}
+          {/* <a className="button right-button" href='#'> */}
+            <span className="button right-button">Button</span>
+          {/* </a> */}
           </div>
           <div className="delay" style={this.state.delay ? styles.delayHide : styles.delayShow}>
             <div className="arrow" style={this.state.arrow ? styles.arrowDiv : styles.arrowDivHide} onClick={this.handleArrowClick}>
