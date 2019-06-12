@@ -40,15 +40,14 @@ export default class Slide extends Component {
         slide3: false
       })
     }
-
   }
 
   render() {
     return (
       <div className="slide">
         <div className="sliders">
-          <div className="slider slider1 button" name='slide1' onClick={this.handleSlides}>SLIDE 1</div>
-          <div className="slider slider2 button" name='slide2' onClick={this.handleSlides}>SLIDE 2</div>
+          <div className="slider slider1 button" name='slide1' onClick={this.handleSlides}>PLANS</div>
+          <div className="slider slider2 button" name='slide2' onClick={this.handleSlides}>SCHEDULE</div>
           <div className="slider slider3 button" name='slide3' onClick={this.handleSlides}>SLIDE 3</div>
         </div>
 
@@ -321,8 +320,6 @@ export default class Slide extends Component {
                     </ul>
                   </div>
               </div>
-            </div>
-            <div className="weekend-box">
               <div className="schedule-box saturday">
                 <div className="highlight saturday-highlight">
                     Saturday
