@@ -1,5 +1,3 @@
-
-
 /* global stuff */
 .slide {
   grid-area: slide;
@@ -267,18 +265,6 @@
 .friday-highlight {
   background-color: blue;
 }
-
-/* .weekend-box {
-  grid-area: weekend;
-  display: grid;
-  width: 50%;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas:
-    "sat sun";
-  justify-content: center;
-  justify-self: center;
-  margin-top: 40px;
-} */
 
 .saturday-highlight {
   background-color: burlywood;

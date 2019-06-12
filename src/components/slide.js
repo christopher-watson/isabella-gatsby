@@ -6,13 +6,7 @@ export default class Slide extends Component {
     slide1: true,
     slide2: false,
     slide3: false,
-    mid: false,
   }
-
-  // componentDidMount() {
-  //   this.handleResize()
-  //   window.addEventListener('resize', this.handleResize)
-  // }
 
   handleSlides = (event) => {
     // console.log(event.target.attributes.name.value);
@@ -48,22 +42,12 @@ export default class Slide extends Component {
     }
   }
 
-  // handleResize = () => {
-  //   console.log(this.state.mid)
-  //   if(window.innerWidth > 800 && window.innerWidth < 1051) {
-  //     this.setState({ mid: true })
-  //   }
-  //   else {
-  //     this.setState ({ mid: false })
-  //   }
-  // }
-
   render() {
     return (
       <div className="slide">
         <div className="sliders">
-          <div className="slider slider1 button" name='slide1' onClick={this.handleSlides}>SLIDE 1</div>
-          <div className="slider slider2 button" name='slide2' onClick={this.handleSlides}>SLIDE 2</div>
+          <div className="slider slider1 button" name='slide1' onClick={this.handleSlides}>PLANS</div>
+          <div className="slider slider2 button" name='slide2' onClick={this.handleSlides}>SCHEDULE</div>
           <div className="slider slider3 button" name='slide3' onClick={this.handleSlides}>SLIDE 3</div>
         </div>
 
@@ -336,49 +320,6 @@ export default class Slide extends Component {
                     </ul>
                   </div>
               </div>
-              {/* <div className="weekend-box" style={this.state.mid ? {display: 'flex'} : {display: 'none'}}> */}
-              {/* <div className="weekend-box" > */}
-              <div className="schedule-box saturday">
-              <div className="highlight saturday-highlight">
-              Saturday
-              </div>
-              <div className="schedule-time">
-              <ul>
-              <li>5:00 am</li>
-              <li>6:00 am</li>
-              <li>7:00 am</li>
-              </ul>
-              </div>
-              <div className="schedule-type">
-              <ul>
-              <li>Crossfit</li>
-              <li>Crossfit</li>
-              <li>Crossfit</li>
-              </ul>
-              </div>
-              </div>
-              <div className="schedule-box sunday">
-              <div className="highlight sunday-highlight">
-              Sunday
-              </div>
-              <div className="schedule-time">
-              <ul>
-              <li>5:00 am</li>
-              <li>6:00 am</li>
-              <li>7:00 am</li>
-              </ul>
-              </div>
-              <div className="schedule-type">
-              <ul>
-              <li>Crossfit</li>
-              <li>Crossfit</li>
-              <li>Crossfit</li>
-              </ul>
-              </div>
-              </div>
-              {/* </div> */}
-            </div>
-            {/* <div className="weekend-box" style={this.state.mid ? {display: 'none'} : {display: 'flex'}}>
               <div className="schedule-box saturday">
                 <div className="highlight saturday-highlight">
                     Saturday
@@ -417,7 +358,7 @@ export default class Slide extends Component {
                       </ul>
                   </div>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
 
