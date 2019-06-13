@@ -71,7 +71,7 @@ class Header extends Component {
               <img src={logo} id="logo" alt="Isabella" style={{cursor: 'pointer'}}onClick={this.handleSmoothScroll}/>
               // </Link>
               )} */}
-          <img src={logo} id="logo" alt="Isabella" style={this.state.logoHide ? {cursor: 'default'} : {cursor: 'pointer'} } onClick={this.handleSmoothScroll}/>
+          <img src={logo} id="logo" alt="Isabella" style={ this.state.logoHide ? {cursor: 'default'} : {cursor: 'pointer'} } onClick={this.handleSmoothScroll}/>
         </div>
         <div className="icon-div" style={ this.state.logoHide ? styles.hideNavIcons : styles.showNavIcons }>
           <a
