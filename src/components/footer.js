@@ -9,6 +9,7 @@ class Footer extends Component {
   componentWillMount(){
     this.addStuff();
   }
+
   handleArrowClick = () => {
     document.querySelector('.landing-div').scrollIntoView({ 
       behavior: 'smooth' 
@@ -22,7 +23,6 @@ class Footer extends Component {
     myScript.setAttribute('type', 'application/ld+json')
     myScript.appendChild(
       `
-      <script type="application/ld+json">
         {
           "@context": "schema.org",
           "@type": "LocalBusiness",
