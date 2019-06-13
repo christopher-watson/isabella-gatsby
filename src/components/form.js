@@ -24,12 +24,26 @@ const styles = {
     justifyContent: 'center',
     borderRadius: 5,
   },
+  header: {
+    dispay: 'grid',
+    width: '100%',
+    textAlign: 'center',
+  },
   headerText: {
     fontSize: '3rem',
     fontFamily: 'Alfa Slab One, sans-serif',
-    color: 'var(--dark)',
+    color: 'var(--black)',
     letterSpacing: 1.5,
-    textShadow: '3px 3px 3px var(--green)'
+    textShadow: '3px 3px 3px var(--green)',
+    marginBottom: 0,
+  },
+  headerPhone: {
+    fontSize: '1.5rem',
+    fontFamily: 'Alfa Slab One, sans-serif',
+    color: 'var(--green)',
+    letterSpacing: 1.5,
+    textShadow: '1px 1px 1px var(--black)',
+    marginBottom: 0,
   },
   formTop: {
     display: 'flex',
@@ -67,6 +81,19 @@ const styles = {
     justifyContent: 'flex-end',
     padding: '10px 25px 0 0',
   },
+  formSocial: {
+    display: 'flex',
+    width: '100%',
+    justifyContent: 'center',
+    padding: '10px 0',
+    fontSize: '2rem',
+  },
+  formLink: {
+    color: 'var(--white)',
+    textShadow: '2px 2px 15px var(--green)',
+    padding: '0 15px'
+  },
+
 }
 
 class Form extends Component {
@@ -89,10 +116,28 @@ class Form extends Component {
   }
   render() {
     return (
-      <div style={styles.formDiv}>
+      <div className="form" style={styles.formDiv}>
         <div className="form-container" style={styles.formCont}>
           <div className="form-heading" style={styles.header}>
             <h2 style={styles.headerText}>Contact Us!</h2>
+            <a style={styles.headerPhone} href="tel:17325323337" onclick="ga('send', 'event', 'Phone Call Tracking', 'Click to Call', '732-532-3337', 0)">(732) 532-3337</a>
+            <div className="form-social" style={styles.formSocial}>
+              <a className="form-link" href="https://www.facebook.com/IsabellaFitness/" target="_blank" rel="noopener noreferrer" style={styles.formLink}>
+                <span title="Facebook">
+                  <i className="fab fa-facebook-square" alt="facebook" />
+                </span>
+              </a>
+              <a className="form-link" href="https://twitter.com/IsabellaFitness" target="_blank" rel="noopener noreferrer" style={styles.formLink}>
+                <span title="Twitter">
+                  <i className="fab fa-twitter" alt="twitter" />
+                </span>
+              </a>
+              <a className="form-link" href="https://www.instagram.com/isabella_fitness_/" target="_blank" rel="noopener noreferrer" style={styles.formLink}>
+                <span title="Instagram">
+                  <i className="fab fa-instagram" alt="instagram" />
+                </span>
+              </a>
+            </div>
           </div>
           <div className="form" style={styles.form}>
             <form name="IsabellaFit-ContactForm" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action='thankYou'>

@@ -138,14 +138,14 @@
     "left-inner-left left-inner-right";
 }
 
-.bottom-box>.slide-text-left {
+.bottom-box .slide-text-left {
   grid-area: left-inner-left;
   margin-right: 5px;
   justify-items: right;
   text-align: right;
 }
 
-.bottom-box>.slide-text-right {
+.bottom-box .slide-text-right {
   grid-area: left-inner-right;
   margin-left: 5px;
   color: var(--green);
@@ -229,12 +229,10 @@
 .schedule-time {
   grid-area: time;
   text-align: right;
-  margin-right: 5px;
 }
 
 .schedule-type {
   grid-area: event;
-  margin-left: 5px;
 }
 
 .highlight {
@@ -297,7 +295,7 @@
   font-size: 3em;
 }
 
-@media only screen and (max-width: 1050px) {  
+@media only screen and (max-width: 1111px) {  
   .slide1 {
     align-content: center;
   }
