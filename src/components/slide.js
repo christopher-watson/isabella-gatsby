@@ -46,9 +46,9 @@ export default class Slide extends Component {
     return (
       <div className="slide">
         <div className="sliders">
-          <div className="slider slider1 button" name='slide1' onClick={this.handleSlides}>PLANS</div>
-          <div className="slider slider2 button" name='slide2' onClick={this.handleSlides}>SCHEDULE</div>
-          <div className="slider slider3 button" name='slide3' onClick={this.handleSlides}>SLIDE 3</div>
+          <div className="slider slider1 button" name='slide1' style={this.state.slide1 ? {boxShadow: '0 0 15px var(--white)', color: 'var(--white)'} : {boxShadow: 'none'}} onClick={this.handleSlides}>PLANS</div>
+          <div className="slider slider2 button" name='slide2' style={this.state.slide2 ? {boxShadow: '0 0 15px var(--white)', color: 'var(--white)'} : {boxShadow: 'none'}} onClick={this.handleSlides}>SCHEDULE</div>
+          <div className="slider slider3 button" name='slide3' style={this.state.slide3 ? {boxShadow: '0 0 15px var(--white)', color: 'var(--white)'} : {boxShadow: 'none'}} onClick={this.handleSlides}>SLIDE 3</div>
         </div>
 
         {/* SLIDE 1 */}

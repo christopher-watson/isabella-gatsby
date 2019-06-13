@@ -280,7 +280,6 @@
   display: grid;
   height: 100%;
   width: 100%;
-  /* grid-template-rows: min-content; */
   grid-template-columns: minmax(10px, .10fr) 1fr minmax(10px, .10fr);
   grid-template-areas: 
     " . content3 . ";
@@ -415,16 +414,13 @@
 
 [state=hidden] {
   opacity: 0;
-  transition: opacity 1.2s;
-  -webkit-transition: opacity 1.2s;
-  /* height: 5px; */
-  display: none;
+  height: 0;
+  overflow: hidden;
 }
 
 [state=active] {
+  height: auto;
   opacity: 1;
-  transition: opacity 1.2s;
-  -webkit-transition: opacity 1.2s;
-  height: min-content;
-  /* transition: height 2s; */
+  -webkit-transition: opacity .5s ease-in;
+  transition: opacity .5s ease-in;
 }

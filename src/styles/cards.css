@@ -79,7 +79,7 @@
   background: var(--GREENdient);
   align-content: center;
   border-left: 1px solid var(--white);
-  padding: 0 20px;
+  padding: 0 125px 0 20px;
 }
 
 .cardLeft-innerPanel {
@@ -181,7 +181,7 @@
   background: var(--GREENdientALT);
   align-content: center;
   border-right: 1px solid var(--white);
-  padding: 0 20px;
+  padding: 0 20px 0 125px;
   text-align: right;
 }
 
