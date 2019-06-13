@@ -11,6 +11,15 @@ const styles = {
     textAlign: 'center',
     flexDirection: 'column',
   },
+  loading: {
+    opacity: '0',
+  },
+  loaded: {
+    opacity: '1',
+    WebkitTransition: "opacity 1000ms linear",
+    msTransition: "opacity 1000ms linear",
+    transition: "opacity 1000ms linear",
+  },
   jumboText: {
     margin: 10
   },
@@ -82,6 +91,7 @@ class Landing extends Component {
     mobile: false,
     pulse: true,
     delay: true,
+    loaded: false,
   }
 
   componentDidMount() {
@@ -93,6 +103,9 @@ class Landing extends Component {
     setTimeout(() => {
       this.setState({ delay: false })
     }, 3000);
+    setTimeout(() => {
+      this.setState({ loaded: true })
+    }, 500);
   }
 
   handleResize = () => {
@@ -123,8 +136,8 @@ class Landing extends Component {
     }, 750);
   }
 
-  handleArrowClick = () => {
-    document.querySelector('.info-div').scrollIntoView({ 
+  handleArrowClick = (dest) => {
+    document.querySelector(dest).scrollIntoView({ 
       behavior: 'smooth' 
     });
   }
@@ -132,20 +145,18 @@ class Landing extends Component {
   render () {
     return (
         <div className='landing-div' style={styles.landing}>
-          <div className="jumbo-text" style={styles.jumboText}>
-            <div id="isa" style={styles.isa}>Isabella</div>
-            <div id="fitness" style={styles.fitness}>Fitness</div>
-          </div>
-          <div className="jumbo-buttons" style={styles.jumboButtons}>
-          {/* <a className="button left-button" href='#'> */}
-            <span className="button left-button">Button</span>
-          {/* </a> */}
-          {/* <a className="button right-button" href='#'> */}
-            <span className="button right-button">Button</span>
-          {/* </a> */}
+          <div className="landingInner" style={this.state.loaded ? styles.loaded : styles.loading}>
+            <div className="jumbo-text" style={styles.jumboText}>
+              <div id="isa" style={styles.isa}>Isabella</div>
+              <div id="fitness" style={styles.fitness}>Fitness</div>
+            </div>
+            <div className="jumbo-buttons" style={styles.jumboButtons}>
+              <span className="button left-button" onClick={() => this.handleArrowClick('.slide')}>More Info</span>
+              <span className="button right-button" onClick={() => this.handleArrowClick('.form')}>Contact Us</span>
+            </div>
           </div>
           <div className="delay" style={this.state.delay ? styles.delayHide : styles.delayShow}>
-            <div className="arrow" style={this.state.arrow ? styles.arrowDiv : styles.arrowDivHide} onClick={this.handleArrowClick}>
+            <div className="arrow" style={this.state.arrow ? styles.arrowDiv : styles.arrowDivHide} onClick={() => this.handleArrowClick('.info-div')}>
               <i className="fas fa-angle-double-down" style={this.state.pulse ? styles.arrowOn : styles.arrowOff}></i>
             </div>
           </div>

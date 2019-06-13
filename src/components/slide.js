@@ -45,7 +45,7 @@ export default class Slide extends Component {
   render() {
     return (
       <div className="slide">
-        <div className="sliders">
+        <div className="sliders" style={{ marginTop: 40 }}>
           <div className="slider slider1 button" name='slide1' style={this.state.slide1 ? {boxShadow: '0 0 15px var(--white)', color: 'var(--white)'} : {boxShadow: 'none'}} onClick={this.handleSlides}>PLANS</div>
           <div className="slider slider2 button" name='slide2' style={this.state.slide2 ? {boxShadow: '0 0 15px var(--white)', color: 'var(--white)'} : {boxShadow: 'none'}} onClick={this.handleSlides}>SCHEDULE</div>
           <div className="slider slider3 button" name='slide3' style={this.state.slide3 ? {boxShadow: '0 0 15px var(--white)', color: 'var(--white)'} : {boxShadow: 'none'}} onClick={this.handleSlides}>SLIDE 3</div>
@@ -161,30 +161,29 @@ export default class Slide extends Component {
                 </div>
                   <div className="schedule-time">
                     <ul>
-                      <li>5:00 am</li>
-                      <li>6:00 am</li>
-                      <li>7:00 am</li>
-                      <li>8:00 am</li>
-                      <li>9:00 am</li>
-                      <li>10:00 am</li>
-                      <li>11:00 am</li>
-                      <li>12:00 pm</li>
-                      <li>1:00 pm</li>
-                      <li>1:00 pm</li>
+                      <li>5:30 am</li>
+                      <li>9:30 am</li>
+                      <li>3:45 pm</li>
+                      <li>5:00 pm</li>
+                      <li>5:00 pm</li>
+                      <li>6:10 pm</li>
+                      <li>6:15 pm</li>
+                      <br/>
+                      <li>7:15 pm</li>
+                      <li>8:20 pm</li>
                     </ul>
                   </div>
                   <div className="schedule-type">
                     <ul>
                       <li>Crossfit</li>
                       <li>Crossfit</li>
-                      <li>Not Crossfit</li>
                       <li>Crossfit</li>
                       <li>Crossfit</li>
+                      <li>Youth Fitness</li>
                       <li>Crossfit</li>
+                      <li>Ladies Cardio<br/>Express</li>
                       <li>Crossfit</li>
-                      <li>Crossfit</li>
-                      <li>Crossfit</li>
-                      <li>Crossfit</li>
+                      <li>Cardio Express</li>
                     </ul>
                   </div>
               </div>
@@ -194,30 +193,29 @@ export default class Slide extends Component {
                 </div>
                   <div className="schedule-time">
                     <ul>
-                      <li>5:00 am</li>
-                      <li>6:00 am</li>
-                      <li>7:00 am</li>
-                      <li>8:00 am</li>
-                      <li>9:00 am</li>
-                      <li>10:00 am</li>
-                      <li>11:00 am</li>
-                      <li>12:00 pm</li>
-                      <li>1:00 pm</li>
-                      <li>1:00 pm</li>
+                      <li>5:30 am</li>
+                      <li>9:30 am</li>
+                      <li>3:45 pm</li>
+                      <li>5:00 pm</li>
+                      <li>5:00 pm</li>
+                      <li>6:10 pm</li>
+                      <li>6:15 pm</li>
+                      <br/>
+                      <li>7:15 pm</li>
+                      <li>8:20 pm</li>
                     </ul>
                   </div>
                   <div className="schedule-type">
                     <ul>
+                      <li>Cardio Express</li>
                       <li>Crossfit</li>
                       <li>Crossfit</li>
                       <li>Crossfit</li>
+                      <li>Youth Fitness</li>
                       <li>Crossfit</li>
+                      <li>Ladies Cardio<br/>Express</li>
                       <li>Crossfit</li>
-                      <li>Crossfit</li>
-                      <li>Crossfit</li>
-                      <li>Crossfit</li>
-                      <li>Not Crossfit</li>
-                      <li>Crossfit</li>
+                      <li>Cardio Express</li>
                     </ul>
                   </div>
               </div>
@@ -227,16 +225,14 @@ export default class Slide extends Component {
                 </div>
                   <div className="schedule-time">
                     <ul>
-                      <li>5:00 am</li>
-                      <li>6:00 am</li>
-                      <li>7:00 am</li>
-                      <li>8:00 am</li>
-                      <li>9:00 am</li>
-                      <li>10:00 am</li>
-                      <li>11:00 am</li>
-                      <li>12:00 pm</li>
-                      <li>1:00 pm</li>
-                      <li>1:00 pm</li>
+                      <li>5:30 am</li>
+                      <li>9:30 am</li>
+                      <li>3:45 pm</li>
+                      <li>5:00 pm</li>
+                      <li>5:00 pm</li>
+                      <li>6:10 pm</li>
+                      <li>7:15 pm</li>
+                      <li>8:20 pm</li>
                     </ul>
                   </div>
                   <div className="schedule-type">
@@ -244,13 +240,11 @@ export default class Slide extends Component {
                       <li>Crossfit</li>
                       <li>Crossfit</li>
                       <li>Crossfit</li>
-                      <li>Not Crossfit</li>
+                      <li>Crossfit</li>
+                      <li>Youth Fitness</li>
                       <li>Crossfit</li>
                       <li>Crossfit</li>
-                      <li>Crossfit</li>
-                      <li>Crossfit</li>
-                      <li>Crossfit</li>
-                      <li>Crossfit</li>
+                      <li>Cardio Express</li>
                     </ul>
                   </div>
               </div>
@@ -260,30 +254,28 @@ export default class Slide extends Component {
                 </div>
                   <div className="schedule-time">
                     <ul>
-                      <li>5:00 am</li>
-                      <li>6:00 am</li>
-                      <li>7:00 am</li>
-                      <li>8:00 am</li>
-                      <li>9:00 am</li>
-                      <li>10:00 am</li>
-                      <li>11:00 am</li>
-                      <li>12:00 pm</li>
-                      <li>1:00 pm</li>
-                      <li>1:00 pm</li>
+                      <li>5:30 am</li>
+                      <li>9:30 am</li>
+                      <li>3:45 pm</li>
+                      <li>5:00 pm</li>
+                      <li>5:00 pm</li>
+                      <li>6:10 pm</li>
+                      <li>6:15 pm</li>
+                      <li>7:15 pm</li>
+                      <li>8:20 pm</li>
                     </ul>
                   </div>
                   <div className="schedule-type">
                     <ul>
+                      <li>Cardio Express</li>
                       <li>Crossfit</li>
                       <li>Crossfit</li>
                       <li>Crossfit</li>
+                      <li>Youth Fitness</li>
                       <li>Crossfit</li>
-                      <li>Not Crossfit</li>
+                      <li>Ladies Cardio<br/>Express</li>
                       <li>Crossfit</li>
-                      <li>Crossfit</li>
-                      <li>Crossfit</li>
-                      <li>Crossfit</li>
-                      <li>Crossfit</li>
+                      <li>Cardio Express</li>
                     </ul>
                   </div>
               </div>
@@ -293,16 +285,12 @@ export default class Slide extends Component {
                 </div>
                   <div className="schedule-time">
                     <ul>
-                      <li>5:00 am</li>
-                      <li>6:00 am</li>
-                      <li>7:00 am</li>
-                      <li>8:00 am</li>
-                      <li>9:00 am</li>
-                      <li>10:00 am</li>
-                      <li>11:00 am</li>
-                      <li>12:00 pm</li>
-                      <li>1:00 pm</li>
-                      <li>1:00 pm</li>
+                      <li>5:30 am</li>
+                      <li>9:30 am</li>
+                      <li>3:45 pm</li>
+                      <li>5:00 pm</li>
+                      <li>5:00 pm</li>
+                      <li>6:10 pm</li>
                     </ul>
                   </div>
                   <div className="schedule-type">
@@ -311,11 +299,7 @@ export default class Slide extends Component {
                       <li>Crossfit</li>
                       <li>Crossfit</li>
                       <li>Crossfit</li>
-                      <li>Crossfit</li>
-                      <li>Crossfit</li>
-                      <li>Not Crossfit</li>
-                      <li>Crossfit</li>
-                      <li>Crossfit</li>
+                      <li>Open Gym</li>
                       <li>Crossfit</li>
                     </ul>
                   </div>
@@ -326,16 +310,16 @@ export default class Slide extends Component {
                   </div>
                     <div className="schedule-time">
                       <ul>
-                        <li>5:00 am</li>
-                        <li>6:00 am</li>
-                        <li>7:00 am</li>
+                        <li>8:30 am</li>
+                        <li>9:30 am</li>
+                        <li>10:30 am</li>
                       </ul>
                     </div>
                     <div className="schedule-type">
                       <ul>
+                        <li>Cardio Express</li>
                         <li>Crossfit</li>
-                        <li>Crossfit</li>
-                        <li>Crossfit</li>
+                        <li>Open Gym</li>
                       </ul>
                   </div>
               </div>
@@ -345,16 +329,14 @@ export default class Slide extends Component {
                   </div>
                     <div className="schedule-time">
                       <ul>
-                        <li>5:00 am</li>
-                        <li>6:00 am</li>
-                        <li>7:00 am</li>
+                        <li>9:30 am</li>
+                        <li>10:30 am</li>
                       </ul>
                     </div>
                     <div className="schedule-type">
                       <ul>
-                        <li>Crossfit</li>
-                        <li>Crossfit</li>
-                        <li>Crossfit</li>
+                        <li>Foundations</li>
+                        <li>Open Gym</li>
                       </ul>
                   </div>
               </div>

@@ -141,6 +141,13 @@
   border: 1px solid #81C341;
 }
 
+.form-link span i:hover {
+  color: var(--black);
+}
+
+.form-heading a:hover{
+  color: var(--black) !important;
+}
 
 /* --------------- thankYou --------------- */
 .thank-you-div {
