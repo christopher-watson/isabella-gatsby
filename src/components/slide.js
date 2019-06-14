@@ -175,14 +175,14 @@ export default class Slide extends Component {
                   </div>
                   <div className="schedule-type">
                     <ul>
-                      <li>Crossfit</li>
-                      <li>Crossfit</li>
-                      <li>Crossfit</li>
-                      <li>Crossfit</li>
+                      <li>CrossFit</li>
+                      <li>CrossFit</li>
+                      <li>CrossFit</li>
+                      <li>CrossFit</li>
                       <li>Youth Fitness</li>
-                      <li>Crossfit</li>
+                      <li>CrossFit</li>
                       <li>Ladies Cardio<br/>Express</li>
-                      <li>Crossfit</li>
+                      <li>CrossFit</li>
                       <li>Cardio Express</li>
                     </ul>
                   </div>
@@ -208,13 +208,13 @@ export default class Slide extends Component {
                   <div className="schedule-type">
                     <ul>
                       <li>Cardio Express</li>
-                      <li>Crossfit</li>
-                      <li>Crossfit</li>
-                      <li>Crossfit</li>
+                      <li>CrossFit</li>
+                      <li>CrossFit</li>
+                      <li>CrossFit</li>
                       <li>Youth Fitness</li>
-                      <li>Crossfit</li>
+                      <li>CrossFit</li>
                       <li>Ladies Cardio<br/>Express</li>
-                      <li>Crossfit</li>
+                      <li>CrossFit</li>
                       <li>Cardio Express</li>
                     </ul>
                   </div>
@@ -237,13 +237,13 @@ export default class Slide extends Component {
                   </div>
                   <div className="schedule-type">
                     <ul>
-                      <li>Crossfit</li>
-                      <li>Crossfit</li>
-                      <li>Crossfit</li>
-                      <li>Crossfit</li>
+                      <li>CrossFit</li>
+                      <li>CrossFit</li>
+                      <li>CrossFit</li>
+                      <li>CrossFit</li>
                       <li>Youth Fitness</li>
-                      <li>Crossfit</li>
-                      <li>Crossfit</li>
+                      <li>CrossFit</li>
+                      <li>CrossFit</li>
                       <li>Cardio Express</li>
                     </ul>
                   </div>
@@ -261,6 +261,7 @@ export default class Slide extends Component {
                       <li>5:00 pm</li>
                       <li>6:10 pm</li>
                       <li>6:15 pm</li>
+                      <br/>
                       <li>7:15 pm</li>
                       <li>8:20 pm</li>
                     </ul>
@@ -268,13 +269,13 @@ export default class Slide extends Component {
                   <div className="schedule-type">
                     <ul>
                       <li>Cardio Express</li>
-                      <li>Crossfit</li>
-                      <li>Crossfit</li>
-                      <li>Crossfit</li>
+                      <li>CrossFit</li>
+                      <li>CrossFit</li>
+                      <li>CrossFit</li>
                       <li>Youth Fitness</li>
-                      <li>Crossfit</li>
+                      <li>CrossFit</li>
                       <li>Ladies Cardio<br/>Express</li>
-                      <li>Crossfit</li>
+                      <li>CrossFit</li>
                       <li>Cardio Express</li>
                     </ul>
                   </div>
@@ -295,12 +296,12 @@ export default class Slide extends Component {
                   </div>
                   <div className="schedule-type">
                     <ul>
-                      <li>Crossfit</li>
-                      <li>Crossfit</li>
-                      <li>Crossfit</li>
-                      <li>Crossfit</li>
+                      <li>CrossFit</li>
+                      <li>CrossFit</li>
+                      <li>CrossFit</li>
+                      <li>CrossFit</li>
                       <li>Open Gym</li>
-                      <li>Crossfit</li>
+                      <li>CrossFit</li>
                     </ul>
                   </div>
               </div>
@@ -318,7 +319,7 @@ export default class Slide extends Component {
                     <div className="schedule-type">
                       <ul>
                         <li>Cardio Express</li>
-                        <li>Crossfit</li>
+                        <li>CrossFit</li>
                         <li>Open Gym</li>
                       </ul>
                   </div>

@@ -80,7 +80,7 @@ class Header extends Component {
             target="_blank"
             rel="noopener noreferrer">
             <span title="Facebook">
-              <i className="fab fa-facebook-square" alt="facebook" />
+              <i className="fab fa-facebook-square" alt="Facebook" />
             </span>
           </a>
           <a
@@ -89,7 +89,7 @@ class Header extends Component {
             target="_blank"
             rel="noopener noreferrer">
             <span title="Twitter">
-              <i className="fab fa-twitter" alt="twitter" />
+              <i className="fab fa-twitter" alt="Twitter" />
             </span>
           </a>
           <a
@@ -98,7 +98,16 @@ class Header extends Component {
             target="_blank"
             rel="noopener noreferrer">
             <span title="Instagram">
-              <i className="fab fa-instagram" alt="instagram" />
+              <i className="fab fa-instagram" alt="Instagram" />
+            </span>
+          </a>
+          <a
+            className="nav-link"
+            href="https://www.youtube.com/user/Bennyboi37"
+            target="_blank"
+            rel="noopener noreferrer">
+            <span title="YouTube">
+              <i className="fab fa-youtube" alt="Youtube" />
             </span>
           </a>
         </div>

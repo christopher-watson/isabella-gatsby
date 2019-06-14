@@ -38,11 +38,17 @@ const styles = {
     marginBottom: 0,
   },
   headerPhone: {
-    fontSize: '1.5rem',
-    fontFamily: 'Alfa Slab One, sans-serif',
     color: 'var(--green)',
     letterSpacing: 1.5,
-    textShadow: '1px 1px 1px var(--black)',
+    padding: '5px 0',
+    fontWeight: 'bold',
+    marginBottom: 0,
+  },
+  headerEmail: {
+    color: 'var(--green)',
+    letterSpacing: 1.5,
+    padding: '5px 0',
+    fontWeight: 'bold',
     marginBottom: 0,
   },
   formTop: {
@@ -59,7 +65,11 @@ const styles = {
     height: 40,
     borderRadius: 5,
     padding: '0 5px',
-    margin: '0 10px 20px 10px'
+    margin: '0 10px 20px 10px',
+    borderTop: '2px solid #9A9A9A',
+    borderLeft: '2px solid #9A9A9A',
+    borderBottom: '2px solid #EEEEEE',
+    borderRight: '2px solid #EEEEEE',
   },
   formBottom: {
     padding: '0 28px',
@@ -93,6 +103,18 @@ const styles = {
     textShadow: '2px 2px 15px var(--green)',
     padding: '0 15px'
   },
+  phoneEmail: {
+    display: 'flex',
+    flexDirection: 'row',
+    width: '100%',
+    justifyContent: 'center',
+    textAlign: 'center',
+    alignItems: 'center',
+  },
+  phoneEmailMobile: {
+    display: 'flex',
+    flexDirection: 'column',
+  },
 
 }
 
@@ -120,7 +142,11 @@ class Form extends Component {
         <div className="form-container" style={styles.formCont}>
           <div className="form-heading" style={styles.header}>
             <h2 style={styles.headerText}>Contact Us!</h2>
-            <a style={styles.headerPhone} href="tel:17325323337" onclick="ga('send', 'event', 'Phone Call Tracking', 'Click to Call', '732-532-3337', 0)">(732) 532-3337</a>
+            <div className="phoneEmail" style={this.state.mobile ? styles.phoneEmailMobile : styles.phoneEmail }>
+              <a style={styles.headerPhone} href="tel:17325323337" onclick="ga('send', 'event', 'Phone Call Tracking', 'Click to Call', '732-532-3337', 0)">(732) 532-3337</a>
+              <span style={this.state.mobile ? {display: 'none'} : {color: 'var(--green)', padding: '0 10px' }}> | </span>
+              <a style={styles.headerEmail} href='mailto:contact@isabellafitness.com?subject=Sign Me Up!'>contact@isabellafitness.com</a>
+            </div>
             <div className="form-social" style={styles.formSocial}>
               <a className="form-link" href="https://www.facebook.com/IsabellaFitness/" target="_blank" rel="noopener noreferrer" style={styles.formLink}>
                 <span title="Facebook">
@@ -135,6 +161,11 @@ class Form extends Component {
               <a className="form-link" href="https://www.instagram.com/isabella_fitness_/" target="_blank" rel="noopener noreferrer" style={styles.formLink}>
                 <span title="Instagram">
                   <i className="fab fa-instagram" alt="instagram" />
+                </span>
+              </a>
+              <a className="form-link" href="https://www.youtube.com/user/Bennyboi37" target="_blank" rel="noopener noreferrer" style={styles.formLink}>
+                <span title="Youtube">
+                  <i className="fab fa-youtube" alt="Youtube" />
                 </span>
               </a>
             </div>
