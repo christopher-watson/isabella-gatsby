@@ -106,6 +106,8 @@
   color: var(--black);
   text-decoration: none;
   font-weight: bold;
+  -webkit-transition: background-color .4s ease-in-out;
+  transition: background-color .4s ease-in-out;
 }
 
 .button:hover {

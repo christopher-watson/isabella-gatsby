@@ -97,6 +97,7 @@ const styles = {
     justifyContent: 'center',
     padding: '10px 0',
     fontSize: '2rem',
+    marginBottom: 5,
   },
   formLink: {
     color: 'var(--white)',
@@ -110,6 +111,7 @@ const styles = {
     justifyContent: 'center',
     textAlign: 'center',
     alignItems: 'center',
+    marginTop: 5,
   },
   phoneEmailMobile: {
     display: 'flex',
