@@ -7,7 +7,7 @@ import '../styles/footer.css'
 class Footer extends Component {
 
   componentWillMount(){
-    this.addStuff();
+    // this.addStuff();
   }
 
   handleArrowClick = () => {
