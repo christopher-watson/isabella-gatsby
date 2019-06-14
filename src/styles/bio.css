@@ -16,6 +16,7 @@
   grid-template-rows: 1fr;
   grid-template-areas:
     "bio-pic bio-text";
+  min-height: 440px;
 }
 
 .bio-pic {
@@ -69,6 +70,7 @@
   grid-area: bio-inner-text;
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin-bottom: 20px;
+  font-style: italic;
 }
 
 .bio-certs {
@@ -81,7 +83,7 @@
   margin-bottom: 10px;
 }
 
-.bio-certs>ul {
+.bio-certs ul {
   list-style-type: none;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -109,6 +111,10 @@
 
   .bio-pic {
     height: 300px;
+  }
+
+  .bio-text {
+    text-align: center;
   }
 
 }

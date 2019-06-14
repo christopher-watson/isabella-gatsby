@@ -95,11 +95,16 @@ class Footer extends Component {
           </ul> */}
           <img src={logo} alt="Isabella Fitness Logo" className="footer-logo" onClick={this.handleArrowClick} style={{cursor: 'pointer'}}/>
           <a href="http://journal.crossfit.com/" target="_blank" rel="noopener noreferrer" >
-            <img src={cfj} alt="The Crossfit Journal" className="footer-logo"/>
+            <img src={cfj} alt="The CrossFit Journal" className="footer-logo"/>
           </a>
         </div>
         <div className="footer-bottom">
-          © Isabella Fitness {new Date().getFullYear()}        
+          <div className="fbotLeft">
+            © Isabella Fitness {new Date().getFullYear()}        
+          </div>
+          <div className="fbotRight">
+            Built by <a href="http://christopherwatson.co" target="_blank" rel="noopener noreferrer" >@yowats0n</a>
+          </div>
         </div>
       </div>
 
