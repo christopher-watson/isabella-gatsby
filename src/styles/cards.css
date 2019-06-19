@@ -153,6 +153,10 @@
 
 .cardRight-rightPanel {
   grid-area: cardRight-R;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-end;
   padding: 0 10px;
 }
 
@@ -205,7 +209,8 @@
 }
 
 .cardRight-innerPanel {
-  display: flex;
+  display: flex;  
+  padding-right: 10px;
 }
 
 .cardRight-innerPanel i {
@@ -216,6 +221,7 @@
 .cardRight-innerPanel p {
   margin: 10px;
   align-self: center;
+  text-align: right;
 }
 
 .cardRight-leftPanel-heading {
