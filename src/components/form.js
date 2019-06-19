@@ -145,7 +145,8 @@ class Form extends Component {
           <div className="form-heading" style={styles.header}>
             <h2 style={styles.headerText}>Contact Us!</h2>
             <div className="phoneEmail" style={this.state.mobile ? styles.phoneEmailMobile : styles.phoneEmail }>
-              <a style={styles.headerPhone} href="tel:17325323337" onclick="ga('send', 'event', 'Phone Call Tracking', 'Click to Call', '732-532-3337', 0)">(732) 532-3337</a>
+              {/* <a style={styles.headerPhone} href="tel:17325323337" onClick={ga('send', 'event', 'Phone Call Tracking', 'Click to Call', '732-532-3337', 0)}>(732) 532-3337</a> */}
+              <a style={styles.headerPhone} href="tel:17325323337">(732) 532-3337</a>
               <span style={this.state.mobile ? {display: 'none'} : {color: 'var(--green)', padding: '0 10px' }}> | </span>
               <a style={styles.headerEmail} href='mailto:contact@isabellafitness.com?subject=Sign Me Up!'>contact@isabellafitness.com</a>
             </div>
