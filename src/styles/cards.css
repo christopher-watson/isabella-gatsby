@@ -122,10 +122,16 @@
 
 @media only screen and (max-width: 900px){
   .cardLeft-container {
-    grid-template-columns: .25fr 4fr;
+    grid-template-columns: .25fr 1fr;
+  }
+  .cardLeft-rightPanel {
+    font-size: .9rem;
   }
   .cardLeft-leftPanel p {
     display: none;
+  }
+  .cardLeft-rightPanel-imageContainer {
+    padding: 0 20px 0 20px;
   }
 }
 
@@ -228,9 +234,15 @@
 
 @media only screen and (max-width: 900px){
   .cardRight-container {
-    grid-template-columns: 4fr .25fr;
+    grid-template-columns: 1fr .25fr;
+  }
+  .cardRight-leftPanel {
+    font-size: .9rem;
   }
   .cardRight-rightPanel p {
     display: none;
+  }
+  .cardRight-leftPanel-imageContainer {
+    padding: 0 20px 0 20px;
   }
 }
