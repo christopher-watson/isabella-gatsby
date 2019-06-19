@@ -106,6 +106,9 @@ export default class Slide extends Component {
                 <div className="background-text">1 on 1 Training</div>
               </div>
             </div>
+            <div className="bottom-row">
+              <span><strong>* 2 Month Expiration for 10 Class Passes</strong></span>
+            </div>
             {/* <div className="bottom-row">
               <div className="bottom-box bottom-box-left">
                 <div className="underline-text">

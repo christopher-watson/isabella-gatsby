@@ -4,19 +4,20 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas:
+  /* grid-template-areas:
     "bio1"
     "bio2"
-    "bio3";
+    "bio3"; */
   color: var(--green)
 }
 
 .inner-bio {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  /* grid-template-columns: 1fr; */
   grid-template-areas:
-    "bio-pic bio-text";
+    "bio-pic" 
+    "bio-text";
   min-height: 440px;
 }
 
@@ -44,6 +45,8 @@
   grid-template-rows: repeat(4, min-content);
   grid-template-columns: 1fr;
   background: var(--white);
+  justify-content: center;
+  text-align: center;
   grid-template-areas:
     "bio-name"
     "bio-title"
@@ -100,7 +103,7 @@
   grid-area: bio2;
 }
 
-@media only screen and (max-width:700px) {
+/* @media only screen and (max-width:700px) {
   .inner-bio {
     display: grid;
     grid-template-columns: 1fr;
@@ -118,4 +121,4 @@
     text-align: center;
   }
 
-}
+} */
