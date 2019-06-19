@@ -58,43 +58,55 @@ export default class Slide extends Component {
           <div className="slide1-container">
             <div className="top-row">
               <div className="box box1">
-                <div className="heading-text green-text">Monthly Membership</div>
+                <div className="heading-text green-text">Crossfit</div>
                 <div className="info-text">
                   <ul>
-                    <li>Unlimited Access to All Classes</li>
-                    <li>Automatic Monthly Renewal</li>
-                    <li>Rate Guaranteed for One Year</li>
-                    <li>Cancellation Requires 30 Days Notice</li>
+                    <li>Drop In - $25/class</li>
+                    <li>10 Class Pass - $200*</li>
+                    <li>8 Classes - $137/mo</li>
+                    <li>Unlimited - $162/mo</li>
                   </ul>
                 </div>
-                <div className="background-text">$199</div>
+                <div className="background-text">Flourish!</div>
               </div>
               <div className="box box2">
-                <div className="heading-text green-text">Monthly Membership</div>
+                <div className="heading-text green-text">Youth Fitness</div>
                 <div className="info-text">
                   <ul>
-                    <li>Unlimited Access to All Classes</li>
-                    <li>Automatic Monthly Renewal</li>
-                    <li>Rate Guaranteed for One Year</li>
-                    <li>Cancellation Requires 30 Days Notice</li>
+                    <li>Drop In - $25/class</li>
+                    <li>10 Class Pass - $200*</li>
+                    <li>8 Classes - $195/mo</li>
+                    <li>Unlimited - $110/mo</li>
                   </ul>
                 </div>
-                <div className="background-text">$199</div>
+                <div className="background-text">Ages 6 - 14</div>
               </div>
               <div className="box box3">
-                <div className="heading-text green-text">Monthly Membership</div>
+                <div className="heading-text green-text">Cardio Express</div>
                 <div className="info-text">
                   <ul>
-                    <li>Unlimited Access to All Classes</li>
-                    <li>Automatic Monthly Renewal</li>
-                    <li>Rate Guaranteed for One Year</li>
-                    <li>Cancellation Requires 30 Days Notice</li>
+                  <li>Drop In - $25/class</li>
+                    <li>10 Class Pass - $200*</li>
+                    <li>8 Classes - $127/mo</li>
+                    <li>Unlimited - $147/mo</li>
                   </ul>
                 </div>
-                <div className="background-text">$199</div>
+                <div className="background-text">Sweat!</div>
+              </div>
+              <div className="box box4">
+                <div className="heading-text green-text">Private Coaching</div>
+                <div className="info-text">
+                  <ul>
+                    <li>30 Min Session - $40</li>
+                    <li>45 Min Session - $60</li>
+                    <li>60 Min Session - $70</li>
+                    <li>Contact Us for Group Sessions!</li>
+                  </ul>
+                </div>
+                <div className="background-text">1 on 1 Training</div>
               </div>
             </div>
-            <div className="bottom-row">
+            {/* <div className="bottom-row">
               <div className="bottom-box bottom-box-left">
                 <div className="underline-text">
                   Single Class & Multi-Day
@@ -145,7 +157,7 @@ export default class Slide extends Component {
                   </ul>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 

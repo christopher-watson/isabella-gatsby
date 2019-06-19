@@ -6,7 +6,6 @@ import ben from '../images/ben.png'
 import alex from '../images/alex.png'
 import amanda from '../images/amanda.png'
 import kelsey from '../images/kelsey.png'
-import zach from '../images/zach.png'
 import kevin from '../images/kevin.png'
 
 const Bio = () => {
@@ -45,22 +44,23 @@ const Bio = () => {
         cert3='Cardio Express Coach' 
         cert4='CrossFit Kids Coach' 
         />
-        
+
       <Frame 
-        img={zach} 
-        name='Zach Doring'
+        img={kevin} 
+        name='Jaime Novak'
         title='Coach'
-        innerText='I’m looking to help anyone and everyone realize that a healthy lifestyle is achievable through commitment, a little persistence, and, most importantly, FUN!'
-        cert1='CrossFit Level 1 Trainer' 
+        innerText='TBD'
+        cert1='Cardio Express Coach' 
+        cert2='CrossFit Kids Coach' 
         />
-        
+
       <Frame 
         img={alex} 
         name='Alex Lincho'
         title='Coach'
         innerText='Stemming from Handstand walks to a variation of Clean complexes to rope climbs. The options and progressions are endless.'
         cert1='CrossFit Level 1 Trainer' 
-        cert2='5:05pm Specialist' 
+        cert2='5:00pm Specialist' 
         />
         
       <Frame 
@@ -73,6 +73,14 @@ const Bio = () => {
         cert3='7:15pm Specialist' 
         />
         
+      {/* 
+        
+        Jake Campbell
+        Allyssa Sillari
+              
+      */}
+
+
     </div>
   )
 }

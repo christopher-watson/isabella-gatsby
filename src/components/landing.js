@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import colors from "../styles/colors"
 
+import img from '../images/logoLarge.png'
+
 const styles = {
   landing: {
     display: 'flex',
@@ -21,7 +23,9 @@ const styles = {
     transition: "opacity 1000ms linear",
   },
   jumboText: {
-    margin: 10
+    margin: 10,
+    padding: '10px 30px',
+    maxWidth: 600,
   },
   isa: {
     color: colors.white,
@@ -147,8 +151,9 @@ class Landing extends Component {
         <div className='landing-div' style={styles.landing}>
           <div className="landingInner" style={this.state.loaded ? styles.loaded : styles.loading}>
             <div className="jumbo-text" style={styles.jumboText}>
-              <div id="isa" style={styles.isa}>Isabella</div>
-              <div id="fitness" style={styles.fitness}>Fitness</div>
+              {/* <div id="isa" style={styles.isa}>Isabella</div>
+              <div id="fitness" style={styles.fitness}>Fitness</div> */}
+              <img src={img} alt="Isabella Fitness"/>
             </div>
             <div className="jumbo-buttons" style={styles.jumboButtons}>
               <span className="button left-button" onClick={() => this.handleArrowClick('.slide')}>More Info</span>

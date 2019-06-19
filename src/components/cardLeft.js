@@ -7,15 +7,15 @@ const CardLeft = (props) => {
       
       <div className="cardLeft-leftPanel">
         <div className="cardLeft-innerPanel">
-          <i className="fas fa-weight"></i>
+          <i className={props.iconOne}></i>
           <p className="cardLeft-leftPanel-innerText">{props.textOne}</p>
         </div>
         <div className="cardLeft-innerPanel">
-          <i className="fas fa-weight"></i>
+          <i className={props.iconTwo}></i>
           <p className="cardLeft-leftPanel-innerText">{props.textTwo}</p>
         </div>
         <div className="cardLeft-innerPanel">
-          <i className="fas fa-weight"></i>
+          <i className={props.iconThree}></i>
           <p className="cardLeft-leftPanel-innerText">{props.textThree}</p>
         </div>
       </div>
@@ -25,7 +25,7 @@ const CardLeft = (props) => {
           <div className="cardLeft-rightPanel-heading">
             {props.heading}
           </div>
-          <p className="cardLeft-rightPanel-green-text">{props.greenScript}</p>
+          <div className="cardLeft-rightPanel-green-text">{props.greenScript}</div>
           <div className="cardLeft-rightPanel-innerText">
             {props.paragraph}
           </div>
