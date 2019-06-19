@@ -19,16 +19,16 @@ const CardRight = (props) => {
 
       <div className="cardRight-rightPanel">
         <div className="cardRight-innerPanel">
-          <i className={props.iconOne}></i>
           <p className="cardRight-rightPanel-innerText">{props.textOne}</p>
+          <i className={props.iconOne}></i>
         </div>
         <div className="cardRight-innerPanel">
-          <i className={props.iconTwo}></i>
           <p className="cardRight-rightPanel-innerText">{props.textTwo}</p>
+          <i className={props.iconTwo}></i>
         </div>
         <div className="cardRight-innerPanel">
-          <i className={props.iconThree}></i>
           <p className="cardRight-rightPanel-innerText">{props.textThree}</p>
+          <i className={props.iconThree}></i>
         </div>
       </div>
 

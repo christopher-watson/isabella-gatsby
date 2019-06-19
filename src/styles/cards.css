@@ -89,14 +89,12 @@
 
 .cardLeft-innerPanel {
   display: flex;
-  width: 100%;
-  justify-content: center;
+  padding-left: 10px;
 }
 
 .cardLeft-innerPanel i {
   font-size: 2em;
   margin: 10px;
-  /* width: 80px; */
 }
 
 .cardLeft-innerPanel p {
@@ -127,6 +125,12 @@
   .cardLeft-rightPanel {
     font-size: .9rem;
   }
+  .cardLeft-innerPanel {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-left: 0;
+  }
   .cardLeft-leftPanel p {
     display: none;
   }
@@ -149,6 +153,10 @@
 
 .cardRight-rightPanel {
   grid-area: cardRight-R;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-end;
   padding: 0 10px;
 }
 
@@ -201,9 +209,8 @@
 }
 
 .cardRight-innerPanel {
-  display: flex;
-  width: 100%;
-  justify-content: center;
+  display: flex;  
+  padding-right: 10px;
 }
 
 .cardRight-innerPanel i {
@@ -214,6 +221,7 @@
 .cardRight-innerPanel p {
   margin: 10px;
   align-self: center;
+  text-align: right;
 }
 
 .cardRight-leftPanel-heading {
@@ -244,5 +252,11 @@
   }
   .cardRight-leftPanel-imageContainer {
     padding: 0 20px 0 20px;
+  }
+  .cardRight-innerPanel {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-left: 0;
   }
 }
