@@ -1,5 +1,5 @@
 /* --------------- imports --------------- */
-@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Great+Vibes');
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Great+Vibes|Open+Sans|Raleway');
 @import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css');
 
 
@@ -36,11 +36,12 @@
 
 .green-text{
   margin-bottom: 0;
-  font-family: 'Great Vibes', Arial, Helvetica, serif;
+  font-family: 'Alfa Slab One', Arial, Helvetica, serif;
   font-size: 1.8em;
   letter-spacing: 1.5px;
-  text-shadow: 0 0 20px var(--white);
-  color: var(--green);
+  text-shadow: 0 0 5px var(--dark);
+  /* color: var(--green); */
+  color: var(--white);
 }
 
 .heading-text {

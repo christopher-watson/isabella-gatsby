@@ -58,11 +58,11 @@ export default class Slide extends Component {
           <div className="slide1-container">
             <div className="top-row">
               <div className="box box1">
-                <div className="heading-text green-text">Crossfit</div>
+                <div className="heading-text green-text">Crossfit </div>
                 <div className="info-text">
                   <ul>
                     <li>Drop In - $25/class</li>
-                    <li>10 Class Pass - $200*</li>
+                    <li>10 Class Pass - $200</li>
                     <li>8 Classes - $137/mo</li>
                     <li>Unlimited - $162/mo</li>
                   </ul>
@@ -74,7 +74,7 @@ export default class Slide extends Component {
                 <div className="info-text">
                   <ul>
                     <li>Drop In - $25/class</li>
-                    <li>10 Class Pass - $200*</li>
+                    <li>10 Class Pass - $200</li>
                     <li>8 Classes - $195/mo</li>
                     <li>Unlimited - $110/mo</li>
                   </ul>
@@ -86,7 +86,7 @@ export default class Slide extends Component {
                 <div className="info-text">
                   <ul>
                   <li>Drop In - $25/class</li>
-                    <li>10 Class Pass - $200*</li>
+                    <li>10 Class Pass - $200</li>
                     <li>8 Classes - $127/mo</li>
                     <li>Unlimited - $147/mo</li>
                   </ul>
@@ -107,7 +107,7 @@ export default class Slide extends Component {
               </div>
             </div>
             <div className="bottom-row">
-              <span><strong>* 2 Month Expiration for 10 Class Passes</strong></span>
+              {/* <span><strong>* 2 Month Expiration for 10 Class Passes</strong></span> */}
             </div>
             {/* <div className="bottom-row">
               <div className="bottom-box bottom-box-left">
