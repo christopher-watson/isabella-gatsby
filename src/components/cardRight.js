@@ -10,7 +10,7 @@ const CardRight = (props) => {
           <div className="cardRight-leftPanel-heading">
             {props.heading}
           </div>
-          <p className="cardRight-leftPanel-green-text">{props.greenScript}</p>
+          <div className="cardRight-leftPanel-green-text">{props.greenScript}</div>
           <div className="cardRight-leftPanel-innerText">
             {props.paragraph}
           </div>
@@ -19,15 +19,15 @@ const CardRight = (props) => {
 
       <div className="cardRight-rightPanel">
         <div className="cardRight-innerPanel">
-          <i className="fas fa-weight"></i>
+          <i className={props.iconOne}></i>
           <p className="cardRight-rightPanel-innerText">{props.textOne}</p>
         </div>
         <div className="cardRight-innerPanel">
-          <i className="fas fa-weight"></i>
+          <i className={props.iconTwo}></i>
           <p className="cardRight-rightPanel-innerText">{props.textTwo}</p>
         </div>
         <div className="cardRight-innerPanel">
-          <i className="fas fa-weight"></i>
+          <i className={props.iconThree}></i>
           <p className="cardRight-rightPanel-innerText">{props.textThree}</p>
         </div>
       </div>
