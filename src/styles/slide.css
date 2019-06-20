@@ -32,6 +32,8 @@
   background: var(--green);
   margin: 20px 10px !important;
   border-radius: 25px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
 }
 
 
@@ -282,36 +284,13 @@
   font-size: 1.5em;
   justify-self: center;
   border-radius: 25px;
-  padding: 2.5px 15px;
-  margin-bottom: 5px;
-}
-
-.monday-highlight {
-  background-color: red;
-}
-
-.tuesday-highlight {
-  background-color: orange;
-}
-
-.wednesday-highlight {
-  background-color: yellowgreen;
-}
-
-.thursday-highlight {
-  background-color: indigo;
-}
-
-.friday-highlight {
-  background-color: blue;
-}
-
-.saturday-highlight {
-  background-color: burlywood;
-}
-
-.sunday-highlight {
-  background-color: coral;
+  border: 1px solid var(--white);
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  font-weight: bold;
+  color: var(--green);
+  background: var(--dark);
 }
 
 /* slide three */
