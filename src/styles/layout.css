@@ -147,12 +147,12 @@
   border: 1px solid #81C341;
 }
 
-.form-link span i:hover {
-  color: var(--black);
+.form-link span:hover {
+  color: var(--green);
 }
 
 .form-heading a:hover{
-  color: var(--black) !important;
+  color: var(--green) !important;
 }
 
 /* --------------- thankYou --------------- */

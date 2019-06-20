@@ -17,12 +17,12 @@ const styles = {
     width: '60vw',
     minWidth: 350,
     height: '100%',
-    background: 'var(--white)',
+    background: 'var(--black)',
     boxShadow: '1px 1px 50px 10px var(--dark)',
     padding: 10,
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: 5,
+    borderRadius: 25,
   },
   header: {
     dispay: 'grid',
@@ -32,20 +32,24 @@ const styles = {
   headerText: {
     fontSize: '3rem',
     fontFamily: 'Alfa Slab One, sans-serif',
-    color: 'var(--black)',
+    color: 'var(--white)',
     letterSpacing: 1.5,
-    textShadow: '3px 3px 3px var(--green)',
+    textShadow: '0 0 5px var(--dark)',
     marginBottom: 0,
+    textDecoration: 'underline',
+    textDecorationColor: 'var(--green)'
   },
   headerPhone: {
-    color: 'var(--green)',
+    color: 'var(--white)',
+    fontFamily: 'Open Sans, Arial, sans-serif',
     letterSpacing: 1.5,
     padding: '5px 0',
     fontWeight: 'bold',
     marginBottom: 0,
   },
   headerEmail: {
-    color: 'var(--green)',
+    color: 'var(--white)',
+    fontFamily: 'Open Sans, Arial, sans-serif',
     letterSpacing: 1.5,
     padding: '5px 0',
     fontWeight: 'bold',
@@ -101,7 +105,6 @@ const styles = {
   },
   formLink: {
     color: 'var(--white)',
-    textShadow: '2px 2px 15px var(--green)',
     padding: '0 15px'
   },
   phoneEmail: {
