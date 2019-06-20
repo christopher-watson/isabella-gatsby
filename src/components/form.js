@@ -70,10 +70,10 @@ const styles = {
     borderRadius: 5,
     padding: '0 5px',
     margin: '0 10px 20px 10px',
-    borderTop: '2px solid #9A9A9A',
-    borderLeft: '2px solid #9A9A9A',
-    borderBottom: '2px solid #EEEEEE',
-    borderRight: '2px solid #EEEEEE',
+    borderBottom: '2px solid #9A9A9A',
+    borderRight: '2px solid #9A9A9A',
+    borderTop: '2px solid #EEEEEE',
+    borderLeft: '2px solid #EEEEEE',
   },
   formBottom: {
     padding: '0 28px',
@@ -83,10 +83,10 @@ const styles = {
     height: '100px',
     borderRadius: 5,
     resize: 'none',
-    borderTop: '2px solid #9A9A9A',
-    borderLeft: '2px solid #9A9A9A',
-    borderBottom: '2px solid #EEEEEE',
-    borderRight: '2px solid #EEEEEE',
+    borderBottom: '2px solid #9A9A9A',
+    borderRight: '2px solid #9A9A9A',
+    borderTop: '2px solid #EEEEEE',
+    borderLeft: '2px solid #EEEEEE',
     marginBottom: 10,
   },
   buttonDiv: {
@@ -141,6 +141,7 @@ class Form extends Component {
       this.setState ({ mobile: false })
     }
   }
+  
   render() {
     return (
       <div className="form" style={styles.formDiv}>

@@ -33,6 +33,7 @@
   'contact'
   'map'
   'footer';
+  font-family: 'Open Sans', Arial, sans-serif
 }
 
 .green-text{
@@ -118,14 +119,6 @@
   cursor: pointer;
   background-color: initial;
   color: var(--white);
-}
-
-#isa {
-  font-family: 'Alfa Slab One', sans-serif;
-}
-
-#fitness{
-  font-family: 'Great Vibes', sans-serif;
 }
 
 
