@@ -7,6 +7,16 @@ import Form from "./form"
 import GoogleMap from "../components/GoogleMap"
 
 
+const styles = {
+  arrowHide: {
+    opacity: 0,
+  },
+  arrowShow: {
+    opacity: 1,
+    transition: "opacity 2s",
+  },
+}
+
 class Body extends Component {
   state = { 
     mobile: false,
@@ -14,7 +24,15 @@ class Body extends Component {
 
   componentDidMount() {
     this.handleResize()
+    this.handleWindowScroll()
     window.addEventListener('resize', this.handleResize)
+    window.addEventListener('scroll', this.handleWindowScroll)
+    setTimeout(() => {
+      this.setState({ rttDelay: false })
+    }, 3000);
+    setTimeout(() => {
+      this.setState({ rttLoaded: true })
+    }, 500);
   }
 
   handleResize = () => {
@@ -26,9 +44,33 @@ class Body extends Component {
     }
   }
 
+  handleArrowClick = (dest) => {
+    console.log('clicked')
+    document.querySelector(dest).scrollIntoView({ 
+      behavior: 'smooth' 
+    });
+  }
+
+  handleWindowScroll = () => {
+    if (window.scrollY < 1500) {
+      this.setState({
+        rtt: false,
+      })
+    }
+    if (window.scrollY > 1500) {
+      this.setState({
+        rtt: true,
+      })
+    }
+  }
+
+
   render() {
     return (
       <div>
+        <div className="rtt" onClick={() => this.handleArrowClick('.landing-div')} style={this.state.rtt ? styles.arrowShow : styles.arrowHide}>
+          <i className="fas fa-caret-square-up"></i>
+        </div>
         <Landing/>
         <Info/>
         <Slide/>
