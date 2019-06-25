@@ -7,6 +7,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    // `gatsby-plugin-modal-routing`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

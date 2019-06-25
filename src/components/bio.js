@@ -2,7 +2,7 @@ import React from 'react';
 import Frame from "../components/bioFrame"
 import '../styles/bio.css'
 
-import ben from '../images/ben.png'
+import ben2 from '../images/ben2.png'
 import alex from '../images/alex.png'
 import amanda from '../images/amanda.png'
 import kelsey from '../images/kelsey.png'
@@ -17,7 +17,7 @@ const Bio = () => {
         Meet the Coaches
       </div> */}
       <Frame 
-        img={ben} 
+        img={ben2} 
         name='Ben Isabella'
         title='Owner'
         innerText='In 2009, I received my C.S.C.S from the National Strength and Conditioning Association. As well as being a strength and conditioning specialist, bootcamp instructor, and CrossFit Level 1. 2, and 3 Trainer (CCFT). I am a Physical Education Teacher at Sayreville High School in New Jersey.  I bring a wealth of valuable experience to my training arsenal after years of extensive work with high school athletes and former Collegiate Athletes. I have worked with specialized athletes, weekend warriors, and fitness enthusiasts. I continuously demonstrate my versatility by providing individual and group training in the areas of CrossFit. bootcamp, and circuit training. In 2014, I was fortunate enough to qualify for the 2014 NorthEast Regional where I took 17th overall. My mission has always been to work with individuals who love & live fitness.'

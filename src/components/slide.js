@@ -3,8 +3,8 @@ import '../styles/slide.css';
 
 export default class Slide extends Component {
   state = {
-    slide1: true,
-    slide2: false,
+    slide1: false,
+    slide2: true,
     slide3: false,
   }
 
@@ -35,8 +35,8 @@ export default class Slide extends Component {
         break;
       default:
       this.setState({
-        slide1: true,
-        slide2: false,
+        slide1: false,
+        slide2: true,
         slide3: false
       })
     }
