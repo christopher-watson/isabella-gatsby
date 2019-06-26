@@ -202,6 +202,12 @@ const styles = {
   modalBottom: {
     marginTop: 10,
     fontWeight: 'bold',
+    fontSize: '1.7rem',
+  },
+  modalBottomMobile: {
+    marginTop: 10,
+    fontWeight: 'bold',
+    fontSize: '1.2rem',
   },
   modalButton: {
     fontSize: '2rem',
@@ -211,10 +217,10 @@ const styles = {
     transition: "opacity 500ms linear",
   },
   modalText: {
-    fontSize: '1rem'
+    fontSize: '1.5rem',
   },
   modalTextMobile: {
-    fontSize: '.8rem'
+    fontSize: '1rem',
   },
 
 }
@@ -316,14 +322,14 @@ class Landing extends Component {
             style={this.state.mobile ? styles.modalMobile : styles.modal}>
               <div className="modalDiv" style={styles.modalDiv}>
                 <span style={styles.modalContent}>
-                <div style={this.state.mobile ? styles.modalTitleMobile : styles.modalTitle}>Our Story</div>
+                <div style={this.state.mobile ? styles.modalTitleMobile : styles.modalTitle}>Our Mission</div>
                 <div style={this.state.mobile ? styles.modalTextMobile : styles.modalText}>
-                  My life has changed in so many great ways since leading my first class on July 11, 2011. At the time, there were only a few of us working out together on the high school football field. I initially started leading bootcamps because I wanted to get an intense workout after watching the CrossFit Games on ESPN. I figured I could get a couple of my buddies together to join me on this new interest. Along the way, I realized that working with individuals who shared the same passion for fitness as I did was gratifying. I decided to make Boot Camp the main focus of my life. On May 1, 2013, I opened up my own facility and began running group classes throughout the day. Since then I have developed so many great relationships, friendships, and experiences. I have devoted every available hour of my day to making the best possible experience for the bootcampers at Isabella Fitness. Opening up my own facility was a dream of my mine for many years. I believe that most fitness programs are similar in nature, and will produce similar results. However, it is the people involved that separate one training program from the next. It is the relationships we build that sustain loyalty over time. I look forward to building that bond and relationship with you. At the end of the day, you come to Isabella Fitness to Flourish! 
+                  Our focus is to create inclusive group classes as well as individual training options that create a fulfilling experience for everyone from beginners to seasoned athletes. Our Mission is help you Flourish…aka. Become the best version of yourself.
                 </div>
-                <div style={styles.modalBottom}>- Ben, Owner</div>
+                <div style={this.state.mobile ? styles.modalBottomMobile : styles.modalBottom}>- Ben, Owner</div>
                 </span>
                 <span style={styles.modalButton} onClick={this.handleModalClose}>
-                  <i class="fas fa-times-circle"></i>
+                  <i className="fas fa-times-circle"></i>
                 </span>
               </div>
           </ReactModal>
