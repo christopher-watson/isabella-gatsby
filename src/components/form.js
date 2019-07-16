@@ -184,7 +184,7 @@ class Form extends Component {
                 <input type="hidden" name="bot-field" />
                 <input style={styles.input} placeholder='Name' type="text" name="name" />
                 <input style={styles.input} placeholder='Email' type="email" name="email" />
-                <input style={styles.input} placeholder='Phone' type="tel" name="phone" />
+                <input style={styles.input} placeholder='Phone' type="text" name="phone" />
               </div>
               <div className="form-bottom" style={styles.formBottom}>
                 <textarea placeholder='Message' name="message" style={styles.textArea}></textarea>
