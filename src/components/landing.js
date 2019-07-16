@@ -100,10 +100,11 @@ const styles = {
   },
   modal: {
     overlay: {
-      backgroundColor: 'rgba(10, 10, 10, .6)',
+      backgroundColor: 'rgba(10, 10, 10, 1)',
       WebkitTransition: "background-color 500ms linear",
       msTransition: "background-color 500ms linear",
       transition: "background-color 500ms linear",
+      zIndex: '500',
     },
     content: {
       position: 'absolute',
@@ -124,17 +125,18 @@ const styles = {
   },
   modalMobile: {
     overlay: {
-      backgroundColor: 'rgba(10, 10, 10, .6)',
+      backgroundColor: 'rgba(10, 10, 10, 1)',
       WebkitTransition: "background-color 500ms linear",
       msTransition: "background-color 500ms linear",
       transition: "background-color 500ms linear",
+      zIndex: '500',
     },
     content: {
       position: 'absolute',
-      top: '1vh',
+      top: '10vh',
       left: '10vw',
       right: '10vw',
-      bottom: '1vh',
+      bottom: '10vh',
       border: '5px solid var(--green)',
       borderRadius: '25px',
       WebkitTransition: "background 500ms linear",
@@ -296,6 +298,7 @@ class Landing extends Component {
 
   render () {
     return (
+        // <div className='landing-div' style={styles.landing}>
         <div className='landing-div' style={styles.landing}>
           <div className="landingInner" style={this.state.loaded ? styles.loaded : styles.loading}>
             <div className="jumbo-text" style={styles.jumboText}>

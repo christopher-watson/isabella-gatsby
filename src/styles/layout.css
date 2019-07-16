@@ -181,10 +181,12 @@
 
 .thank-you-div h1{
   font-size: 4.5rem;
-  text-shadow: 0 0 40px var(--green);
-  font-family: 'Alfa Slab One', Arial, sans-serif;
-  color: var(--dark);
-  letter-spacing: 2px;
+  font-family: 'Alfa Slab One', sans-serif;
+  color: var(--white);
+  letter-spacing: 1.5px;
+  text-shadow: 0 0 40px var(--dark);
+  text-decoration: underline;
+  text-decoration-color: var(--green);
 }
 
 .thank-you-div p{
@@ -192,12 +194,19 @@
   font-family: 'Great Vibes', Arial, Helvetica, serif;
   font-size: 1.8em;
   letter-spacing: 1.5px;
-  text-shadow: 0 0 20px var(--white);
-  color: var(--green);
+  /* text-shadow: 0 0 20px var(--green); */
+  color: var(--white);
 }
 
 .thank-you-div a i{
   color: var(--white);
   font-size: 3rem;
   padding-top: 10px;
+}
+
+.thank-you-div a i:hover{
+  color: var(--white);
+  font-size: 3rem;
+  padding-top: 10px;
+  color: var(--green);
 }
