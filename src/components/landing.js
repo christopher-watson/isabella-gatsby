@@ -43,8 +43,8 @@ const styles = {
   jumboButtonsMobile: {
     margin: 10,
     display: 'grid',
-    gridTemplateRows: 'repeat(2, min-content)',
-    gridTemplateColumns: 'repeat(2, max-content)',
+    gridTemplateRows: 'repeat(3, min-content)',
+    gridTemplateColumns: 'max-content',
     width: '100%',
     justifyContent: 'center',
     alignItems: 'center',
@@ -310,7 +310,7 @@ class Landing extends Component {
               <span className="button left-button" onClick={() => this.handleArrowClick('.slide')}>More Info</span>
               <span className="button right-button" onClick={() => this.handleArrowClick('.form')}>Contact Us</span>
               <span className="button left-button" onClick={this.handleModalOpen}>Our Mission</span>
-              <span className="button right-button" onClick={() => this.handleArrowClick('.slide')}>Testimonials</span>
+              {/* <span className="button right-button" onClick={() => this.handleArrowClick('.slide')}>Testimonials</span> */}
             </div>
           </div>
           <div className="delay" style={this.state.delay ? styles.delayHide : styles.delayShow}>

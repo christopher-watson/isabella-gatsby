@@ -178,7 +178,7 @@ class Form extends Component {
             </div>
           </div>
           <div className="form" style={styles.form}>
-            <form name="IsabellaFit-ContactForm" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action='thankYou'>
+            <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action='thankYou'>
               <input type="hidden" name="form-name" value="contact" />
               <div className="form-top" style={this.state.mobile ? styles.formTopMobile : styles.formTop}>
                 <input type="hidden" name="bot-field" />

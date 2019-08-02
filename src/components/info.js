@@ -7,7 +7,6 @@ const styles = {
   info: {
     background: colors.dark,
     borderTop: `1px solid ${colors.white}`,
-    borderBottom: `1px solid ${colors.white}`
   },
   divider: {
     borderTop: `1px solid ${colors.white}`,
