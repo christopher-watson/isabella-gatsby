@@ -9,14 +9,13 @@
   grid-template-columns: 4vw 1fr 4vw;
   grid-template-areas:
     "arrowL display arrowR";
-  /* height: 90vh; */
   align-items: center;
 }
 
 .arrow {
   font-size: 3rem;
   justify-self: center;
-  color: var(--white);
+  color: var(--greenALT);
 }
 
 .arrow :hover{
@@ -27,13 +26,13 @@
 .left-arrow {
   grid-area: arrowL;
   margin-left: 100px;
-  z-index: 1000;
+  z-index: 90;
 }
 
 .right-arrow {
   grid-area: arrowR;
   margin-right: 100px;
-  z-index: 1000;
+  z-index: 90;
 }
 
 .display-bio {
@@ -60,8 +59,19 @@
   border-radius: 25px;
   margin: 50px;
   width: 70vw;
+  height: 800px;
   box-shadow: 0 0 20px var(--dark);
   background: var(--white);
+}
+
+@media only screen and (max-width:1130px) {
+  .bio-div{
+    height: 1200px;
+  }
+
+  .inner-bio {
+    height: 1000px;
+  }
 }
 
 .bio-pic {
@@ -161,14 +171,13 @@
 
 @media only screen and (max-width:900px) {
   .bio-div{
-    background: var(--texture);
-    padding-top: 50px;
     height: 1400px;
   }
 
   .inner-bio {
     margin: 0;
     width: 90vw;
+    height: 1250px;
   }
 
   .bio-text {

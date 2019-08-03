@@ -20,10 +20,10 @@ class Bio extends Component {
 
   componentDidMount() {
     this.displayBio(this.state.index)
-    this.handleScroll()
+    // this.handleScroll()
     // this.bioAutoScroll()
     window.addEventListener('keydown', this.handleKeyPress)
-    window.addEventListener('scroll', this.handleScroll)
+    // window.addEventListener('scroll', this.handleScroll)
   }
 
   leftArrowClick = () => {
