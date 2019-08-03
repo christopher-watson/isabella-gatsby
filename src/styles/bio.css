@@ -1,6 +1,43 @@
 .bio-div{
   background: var(--texture);
   padding-top: 50px;
+  height: 1000px;
+}
+
+.inner-bio-div {
+  display: grid;
+  grid-template-columns: 4vw 1fr 4vw;
+  grid-template-areas:
+    "arrowL display arrowR";
+  height: 90vh;
+  align-items: center;
+}
+
+.arrow {
+  font-size: 3rem;
+  justify-self: center;
+  color: var(--white);
+}
+
+.arrow :hover{
+  opacity: .7;
+  cursor: pointer;
+}
+
+.left-arrow {
+  grid-area: arrowL;
+  margin-left: 100px;
+  z-index: 1000;
+}
+
+.right-arrow {
+  grid-area: arrowR;
+  margin-right: 100px;
+  z-index: 1000;
+}
+
+.display-bio {
+  grid-area: display;
 }
 
 .bio-frame {
@@ -109,7 +146,26 @@
   text-decoration: underline;
 }
 
+[state=bio-hidden] {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+[state=bio-active] {
+  height: auto;
+  opacity: 1;
+  -webkit-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
+}
+
 @media only screen and (max-width:900px) {
+  .bio-div{
+    background: var(--texture);
+    padding-top: 50px;
+    height: 1400px;
+  }
+
   .inner-bio {
     margin: 0;
     width: 90vw;
