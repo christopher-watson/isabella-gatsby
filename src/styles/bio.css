@@ -9,7 +9,7 @@
   grid-template-columns: 4vw 1fr 4vw;
   grid-template-areas:
     "arrowL display arrowR";
-  height: 90vh;
+  /* height: 90vh; */
   align-items: center;
 }
 
