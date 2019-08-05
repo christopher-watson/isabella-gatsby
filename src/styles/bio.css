@@ -4,7 +4,7 @@
   height: 1000px;
 }
 
-.inner-bio-div {
+.bio-carousel-container {
   display: grid;
   grid-template-columns: 4vw 1fr 4vw;
   grid-template-areas:

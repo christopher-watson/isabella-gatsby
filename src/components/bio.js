@@ -19,7 +19,7 @@ class Bio extends Component {
   }
 
   componentDidMount() {
-    this.displayBio(this.state.index)
+    this.displayBio()
     // this.handleScroll()
     // this.bioAutoScroll()
     window.addEventListener('keydown', this.handleKeyPress)
@@ -36,7 +36,7 @@ class Bio extends Component {
       displayBioIndex: index
     });
 
-    this.displayBio(this.state.index)
+    this.displayBio()
   }
 
   rightArrowClick = () => {
@@ -49,7 +49,7 @@ class Bio extends Component {
       displayBioIndex: index
     });
 
-    this.displayBio(this.state.index)
+    this.displayBio()
   }
 
   handleKeyPress = (e) => {
@@ -99,7 +99,7 @@ class Bio extends Component {
         {/* <div className="bioHeaderText">
           Meet the Coaches
         </div> */}
-        <div className="inner-bio-div">
+        <div className="bio-carousel-container">
           <div className='left-arrow arrow' onClick={() => this.leftArrowClick()}><i className="fas fa-angle-double-left"></i></div>
           <div className="bios-scroll">
             <div className="display-bio" id='bio0'>

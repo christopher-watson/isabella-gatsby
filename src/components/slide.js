@@ -7,6 +7,12 @@ export default class Slide extends Component {
     slide1: false,
     slide2: true,
     slide3: false,
+    testimonials: [ 'Mike', 'Vivian', 'Angela', 'Kyle', 'Jess' ],
+    displayTestIndex: 0,
+  }
+
+  componentDidMount() {
+    this.displayTestimonials()
   }
 
   handleSlides = (event) => {
@@ -40,6 +46,43 @@ export default class Slide extends Component {
         slide2: true,
         slide3: false
       })
+    }
+  }
+
+  leftArrowClick = () => {
+    const lastIndex = this.state.testimonials.length - 1;
+    const currentImageIndex  = this.state.displayTestIndex;
+    const shouldResetIndex = currentImageIndex === 0;
+    const index =  shouldResetIndex ? lastIndex : currentImageIndex - 1;
+
+    this.setState({
+      displayTestIndex: index
+    });
+
+    this.displayTestimonials()
+  }
+
+  rightArrowClick = () => {
+    const lastIndex = this.state.testimonials.length - 1;
+    const currentImageIndex  = this.state.displayTestIndex;
+    const shouldResetIndex = currentImageIndex === lastIndex;
+    const index =  shouldResetIndex ? 0 : currentImageIndex + 1;
+
+    this.setState({
+      displayTestIndex: index
+    });
+
+    this.displayTestimonials()
+  }
+
+  displayTestimonials() {
+    for(var i=0; i<this.state.testimonials.length; i++){
+      if(this.state.displayTestIndex === i){
+        document.getElementById(`test${i}`).setAttribute('state', 'test-active');
+      }
+      else {
+        document.getElementById(`test${i}`).setAttribute('state', 'test-hidden');
+      }
     }
   }
 
@@ -311,87 +354,93 @@ export default class Slide extends Component {
           className="slide3" 
           state={this.state.slide3 ? 'active' : 'hidden'}>
             <div className="slide3-container">
-            {/* TESTIMONIALS */}
-            {/* Mike, Vivian, Angela, Kyle, Jess */}
-            <div className="testimonial test-vid-left test-1">
-              <div className="test-video">
-                <Video
-                  videoSrcURL="https://www.youtube.com/embed/ZRNxiET95fA"
-                  videoTitle="72 Year Old CrossFit Athlete Mike Isabella"
-                />
-              </div>
-              <div className="test-text">
-                <div className="test-text-name">
-                  Mike Isabella
-                </div>
-                <div className="test-text-p">
-                  Over three years ago, I started my exercise regiment going to retro fitness a few times a week; there I met Adonis and Mo. Our friendship developed there and after a time it was recommended to me by Mo to participate in a boot camp class that was being held at the Sayreville high school and was conducted by Ben. From the very start of CrossFit training, I had to struggle in order to achieve proper form, positioning and sustain stamina to get through the session. The commitment to myself is unstoppable – to become as strong as I was at Boot Camp as a Marine back in 1963. I know that I have the innate drive to persevere towards triumph, but without the patience, knowledge, and dedication of the trainers at CrossFit Sayreville, along with the verbal support of fellow CrossFit members, I honestly don’t think I would have reached this level of conditioning. I have reached the 500-class mark, I am now 70 years old, lost over 50 pounds, and aside from osteoarthritis in my knees, I feel physically healthy and stronger than I’ve ever felt in my youth. I thank everyone at CrossFit Sayreville for where I am and how I feel today.
-                </div>
-              </div>
-            </div>
+              <div className="test-carousel-container">
+                <div className='test-arrow-L arrow' onClick={() => this.leftArrowClick()}><i className="fas fa-angle-double-left"></i></div>
+                <div className='test-arrow-R arrow' onClick={() => this.rightArrowClick()}><i className="fas fa-angle-double-right"></i></div>
+                {/* TESTIMONIALS */}
+                {/* Mike, Vivian, Angela, Kyle, Jess */}
+                <div className="testimonial-container">
+                  <div className="testimonial test-vid-left" id="test0">
+                    <div className="test-video">
+                      <Video
+                        videoSrcURL="https://www.youtube.com/embed/ZRNxiET95fA"
+                        videoTitle="72 Year Old CrossFit Athlete Mike Isabella"
+                      />
+                    </div>
+                    <div className="test-text">
+                      <div className="test-text-name">
+                        Mike Isabella
+                      </div>
+                      <div className="test-text-p">
+                        Over three years ago, I started my exercise regiment going to retro fitness a few times a week; there I met Adonis and Mo. Our friendship developed there and after a time it was recommended to me by Mo to participate in a boot camp class that was being held at the Sayreville high school and was conducted by Ben. From the very start of CrossFit training, I had to struggle in order to achieve proper form, positioning and sustain stamina to get through the session. The commitment to myself is unstoppable – to become as strong as I was at Boot Camp as a Marine back in 1963. I know that I have the innate drive to persevere towards triumph, but without the patience, knowledge, and dedication of the trainers at CrossFit Sayreville, along with the verbal support of fellow CrossFit members, I honestly don’t think I would have reached this level of conditioning. I have reached the 500-class mark, I am now 70 years old, lost over 50 pounds, and aside from osteoarthritis in my knees, I feel physically healthy and stronger than I’ve ever felt in my youth. I thank everyone at CrossFit Sayreville for where I am and how I feel today.
+                      </div>
+                    </div>
+                  </div>
 
-            <div className="testimonial test-vid-right test-2">
-              <div className="test-text">
-                  <div className="test-text-name">
-                    Vivian Martinez
+                  <div className="testimonial test-vid-right" id="test1">
+                    <div className="test-text">
+                        <div className="test-text-name">
+                          Vivian Martinez
+                        </div>
+                        <div className="test-text-p">
+                          Because of Isabella Fitness, my fitness journey was able to evolve into something incredible. I grew up in a culture where women lifting weights was frowned upon. When I joined the fitness family, I quickly learned how empowering it is to lift with other women. The community is nothing short of supportive, and the willingness of coaches to help us achieve goals we thought were outside of our reach keep me coming back. I can squat more than my weight, I can do pull-ups, and, more than anything, I have more mental toughness than I ever knew I could have. Isabella Fitness is my safe haven and my home.
+                        </div>
+                      </div>
+                    <div className="test-video">
+                      <Video
+                        videoSrcURL="https://www.youtube.com/embed/j5Afi9RTltE"
+                        videoTitle="Community Spotlight: Vivian Martinez"
+                      />
+                    </div>
                   </div>
-                  <div className="test-text-p">
-                    Because of Isabella Fitness, my fitness journey was able to evolve into something incredible. I grew up in a culture where women lifting weights was frowned upon. When I joined the fitness family, I quickly learned how empowering it is to lift with other women. The community is nothing short of supportive, and the willingness of coaches to help us achieve goals we thought were outside of our reach keep me coming back. I can squat more than my weight, I can do pull-ups, and, more than anything, I have more mental toughness than I ever knew I could have. Isabella Fitness is my safe haven and my home.
-                  </div>
-                </div>
-              <div className="test-video">
-                <Video
-                  videoSrcURL="https://www.youtube.com/embed/j5Afi9RTltE"
-                  videoTitle="Community Spotlight: Vivian Martinez"
-                />
-              </div>
-            </div>
 
-            <div className="testimonial test-no-vid test-3">
-              <div className="test-text">
-                  <div className="test-text-name">
-                    Angela Plumacker
+                  <div className="testimonial test-no-vid" id="test2">
+                    <div className="test-text">
+                        <div className="test-text-name">
+                          Angela Plumacker
+                        </div>
+                        <div className="test-text-p">
+                          I was hesitant to join at first because I was worried that I would not be challenged everyday without the feeling of the big gym. However, I found myself becoming stronger and more fit as time progressed. I enjoy coming to class everyday and I finally put going to the gym on my radar and calendar everyday. In other gyms I have gone to, I never had the same sense of urgency or desire to get to class as I do now! The coaches take the time to make sure you are exercising properly and pushing yourself to your own limits. They even take their own time to help you before and after class times. I am no longer a face or a number in a big gym, I am called by name! I like the variety of class times, competitive pricing, great location, AMAZING coaches, and friendly and supportive people working out right alongside of you. I would recommend Isabella Fitness to anyone that wants a great workout, fair pricing, a variety of class times and to anyone who is afraid of the “CrossFit” classes. I never thought that I would join or be able to or even want to lift heavy weights, but I enjoy going to the gym everyday!
+                        </div>
+                      </div>
                   </div>
-                  <div className="test-text-p">
-                    I was hesitant to join at first because I was worried that I would not be challenged everyday without the feeling of the big gym. However, I found myself becoming stronger and more fit as time progressed. I enjoy coming to class everyday and I finally put going to the gym on my radar and calendar everyday. In other gyms I have gone to, I never had the same sense of urgency or desire to get to class as I do now! The coaches take the time to make sure you are exercising properly and pushing yourself to your own limits. They even take their own time to help you before and after class times. I am no longer a face or a number in a big gym, I am called by name! I like the variety of class times, competitive pricing, great location, AMAZING coaches, and friendly and supportive people working out right alongside of you. I would recommend Isabella Fitness to anyone that wants a great workout, fair pricing, a variety of class times and to anyone who is afraid of the “CrossFit” classes. I never thought that I would join or be able to or even want to lift heavy weights, but I enjoy going to the gym everyday!
-                  </div>
-                </div>
-            </div>
 
-            <div className="testimonial test-vid-left test-4">
-              <div className="test-video">
-                <Video
-                  videoSrcURL="https://www.youtube.com/embed/iNQwkCRtwKk"
-                  videoTitle="Community Spotlight: Kyle McSpedon"
-                />
-              </div>
-              <div className="test-text">
-                <div className="test-text-name">
-                  Kyle McSpedon
-                </div>
-                <div className="test-text-p">
-                  I started doing CrossFit when my Mom introduced me to it in the summer of 2012. It was the summer after my freshmen year of college and I put on a freshmen 50, not freshmen 15. I was fat and needed change. I remember the day she told me about CrossFit; she heard it from a co-worker and knew I would love it. She was right! I started working out at an affiliate in New Brunswick. By the end of the year, I was at CrossFit Sayreville. I played lacrosse in college and doing CrossFit was the perfect way for me to stay in shape. I love going to the gym, lifting heavy and going as hard as I can during my workouts. It helps me forget about the little things that may be bothering me during the day. I don’t have a set class time that I go to which I actually enjoy. It has a lot to do with my crazy schedule but it works out because I get to work out with so many different people. My brother, Ryan, joined the box when he graduated college. This has been great for us as being able to compete against him (and beat him) is one of my favorite things about going to the gym. I feel extremely lucky to be able to workout with my friends and family every day.
-                </div>
-              </div>
-            </div>
-
-            <div className="testimonial test-vid-right test-5">
-              <div className="test-text">
-                  <div className="test-text-name">
-                    Jess Pogoda
+                  <div className="testimonial test-vid-left" id="test3">
+                    <div className="test-video">
+                      <Video
+                        videoSrcURL="https://www.youtube.com/embed/iNQwkCRtwKk"
+                        videoTitle="Community Spotlight: Kyle McSpedon"
+                      />
+                    </div>
+                    <div className="test-text">
+                      <div className="test-text-name">
+                        Kyle McSpedon
+                      </div>
+                      <div className="test-text-p">
+                        I started doing CrossFit when my Mom introduced me to it in the summer of 2012. It was the summer after my freshmen year of college and I put on a freshmen 50, not freshmen 15. I was fat and needed change. I remember the day she told me about CrossFit; she heard it from a co-worker and knew I would love it. She was right! I started working out at an affiliate in New Brunswick. By the end of the year, I was at CrossFit Sayreville. I played lacrosse in college and doing CrossFit was the perfect way for me to stay in shape. I love going to the gym, lifting heavy and going as hard as I can during my workouts. It helps me forget about the little things that may be bothering me during the day. I don’t have a set class time that I go to which I actually enjoy. It has a lot to do with my crazy schedule but it works out because I get to work out with so many different people. My brother, Ryan, joined the box when he graduated college. This has been great for us as being able to compete against him (and beat him) is one of my favorite things about going to the gym. I feel extremely lucky to be able to workout with my friends and family every day.
+                      </div>
+                    </div>
                   </div>
-                  <div className="test-text-p">
-                    Prior to joining CrossFit Sayreville in May 2012, I used to workout on my own. I ran a lot, went to the gym to use the elliptical machines, and occasionally tossed around the 5-pound dumbbells. I hated going to the gym, I mostly just ran, and ran, and ran! Although I loved to run, I wanted something else, so I started doing the Insanity videos after work hoping my coworkers would join me. That only lasted for so long. Finally, Peter brought me over to CrossFit Sayreville where he was already working out with a group of people. I didn’t even know what CrossFit was. I didn’t care, I just wanted to workout with other people and change up my old boring routine. Well, it definitely changed! I never touched a barbell before I started CrossFit. I was clueless! I didn’t think I would even be able to jump onto a 20-inch box, put weight on the bar, and lift it over my head, or especially climb a rope to the ceiling and coming back down without breaking a body part. But somehow I did all those things. I have come a long way and still have a long way to go, but it is fun for me. Coming to the box is something I look forward to, especially after being at work all day. It is a chance to get in a good workout while being surrounded by awesome people who push you to do better each day while joking around and having fun.
+
+                  <div className="testimonial test-vid-right" id="test4">
+                    <div className="test-text">
+                        <div className="test-text-name">
+                          Jess Pogoda
+                        </div>
+                        <div className="test-text-p">
+                          Prior to joining CrossFit Sayreville in May 2012, I used to workout on my own. I ran a lot, went to the gym to use the elliptical machines, and occasionally tossed around the 5-pound dumbbells. I hated going to the gym, I mostly just ran, and ran, and ran! Although I loved to run, I wanted something else, so I started doing the Insanity videos after work hoping my coworkers would join me. That only lasted for so long. Finally, Peter brought me over to CrossFit Sayreville where he was already working out with a group of people. I didn’t even know what CrossFit was. I didn’t care, I just wanted to workout with other people and change up my old boring routine. Well, it definitely changed! I never touched a barbell before I started CrossFit. I was clueless! I didn’t think I would even be able to jump onto a 20-inch box, put weight on the bar, and lift it over my head, or especially climb a rope to the ceiling and coming back down without breaking a body part. But somehow I did all those things. I have come a long way and still have a long way to go, but it is fun for me. Coming to the box is something I look forward to, especially after being at work all day. It is a chance to get in a good workout while being surrounded by awesome people who push you to do better each day while joking around and having fun.
+                        </div>
+                      </div>
+                    <div className="test-video">
+                      <Video
+                        videoSrcURL="https://www.youtube.com/embed/_zvLCzMPKKo"
+                        videoTitle="Community Spotlight: Jess Pogoda"
+                      />
+                    </div>
                   </div>
                 </div>
-              <div className="test-video">
-                <Video
-                  videoSrcURL="https://www.youtube.com/embed/_zvLCzMPKKo"
-                  videoTitle="Community Spotlight: Jess Pogoda"
-                />
-              </div>
-            </div>
 
+              </div>
             </div>
         </div>
       </div>

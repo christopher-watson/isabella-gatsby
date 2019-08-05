@@ -315,6 +315,28 @@
   font-size: 1rem;
 }
 
+.test-carousel-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, min-content);
+  grid-template-areas:
+    "arrows"
+    "display";
+  align-items: center;
+}
+
+.test-arrow-L {
+  grid-area: arrows;
+  z-index: 90;
+  margin-right: 100px;
+}
+
+.test-arrow-R {
+  grid-area: arrows;
+  z-index: 90;
+  margin-left: 100px;
+}
+
 .testimonial {
   margin: 10px 0;
   border: 1px solid white;
@@ -363,7 +385,7 @@
 
   .test-vid-left .test-text {
     grid-area: text;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
 
   .test-vid-left .test-video {
@@ -514,6 +536,21 @@
   opacity: 1;
   -webkit-transition: opacity .5s ease-in;
   transition: opacity .5s ease-in;
+}
+
+[state=test-hidden] {
+  opacity: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+[state=test-active] {
+  height: auto;
+  opacity: 1;
+  -webkit-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
 }
 
 
