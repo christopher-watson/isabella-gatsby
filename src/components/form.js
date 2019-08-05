@@ -120,17 +120,22 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
   },
-
 }
 
 class Form extends Component {
   state = {
     mobile: false,
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+    validField: false,
   }
 
   componentDidMount() {
     this.handleResize()
     window.addEventListener('resize', this.handleResize)
+    console.log(`validField: ${this.state.validField}`)
   }
 
   handleResize = () => {
@@ -140,6 +145,29 @@ class Form extends Component {
     else {
       this.setState ({ mobile: false })
     }
+  }
+
+  handleInputChange = event => {
+    const { name, value } = event.target;
+    this.setState({
+      [name]: value
+    })
+    console.log(event.target.value)
+  }
+
+  validateForm = () => {
+    console.log('validating...')
+    if(this.state.name.length > 0 && this.state.email.length > 0 && this.state.phone.length > 0) {
+      this.setState({
+        validField: true
+      })
+    }
+    else {
+      this.setState({
+        validField: false
+      })
+    }
+    console.log(this.state.validField)
   }
   
   render() {
@@ -182,15 +210,20 @@ class Form extends Component {
               <input type="hidden" name="form-name" value="contact" />
               <div className="form-top" style={this.state.mobile ? styles.formTopMobile : styles.formTop}>
                 <input type="hidden" name="bot-field" />
-                <input style={styles.input} placeholder='Name' type="text" name="name" />
-                <input style={styles.input} placeholder='Email' type="email" name="email" />
-                <input style={styles.input} placeholder='Phone' type="text" name="phone" />
+                <input style={styles.input} placeholder='Name' type="text" name="name" value={this.state.name} onChange={this.handleInputChange} onBlur={this.validateForm}/>
+                <input style={styles.input} placeholder='Email' type="email" name="email" value={this.state.email} onChange={this.handleInputChange} onBlur={this.validateForm}/>
+                <input style={styles.input} placeholder='Phone' type="text" name="phone" value={this.state.phone} onChange={this.handleInputChange} onBlur={this.validateForm}/>
               </div>
               <div className="form-bottom" style={styles.formBottom}>
-                <textarea placeholder='Message' name="message" style={styles.textArea}></textarea>
+                <textarea placeholder='Message' name="message" style={styles.textArea} value={this.state.message} onChange={this.handleInputChange}></textarea>
               </div>
               <div className="button-div" style={styles.buttonDiv}>
-                <button className='form-button' style={styles.button} type="submit">Send</button>
+                {
+                  this.state.validField ?
+                  <button className='form-button' type="submit">Send</button>
+                  :
+                  <button className='invalid-form-button' type="submit" >Send</button>
+                }
               </div>
             </form>
           </div>
