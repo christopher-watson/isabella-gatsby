@@ -135,7 +135,7 @@ class Form extends Component {
   componentDidMount() {
     this.handleResize()
     window.addEventListener('resize', this.handleResize)
-    console.log(`validField: ${this.state.validField}`)
+    // console.log(`validField: ${this.state.validField}`)
   }
 
   handleResize = () => {
@@ -156,7 +156,7 @@ class Form extends Component {
   }
 
   validateForm = () => {
-    console.log('validating...')
+    // console.log('validating...')
     if(this.state.name.length > 0 && this.state.email.length > 0 && this.state.phone.length > 0) {
       this.setState({
         validField: true
@@ -167,7 +167,7 @@ class Form extends Component {
         validField: false
       })
     }
-    console.log(this.state.validField)
+    // console.log(this.state.validField)
   }
   
   render() {
@@ -222,7 +222,7 @@ class Form extends Component {
                   this.state.validField ?
                   <button className='form-button' type="submit">Send</button>
                   :
-                  <button className='invalid-form-button' type="submit" >Send</button>
+                  <button className='invalid-form-button' type="submit" disabled >Send</button>
                 }
               </div>
             </form>
