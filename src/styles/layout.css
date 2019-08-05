@@ -159,6 +159,17 @@
   border: 1px solid #81C341;
 }
 
+.invalid-form-button{
+  background-color: var(--grey);
+  margin: 0 5px;
+  padding: 5px 25px;
+  border-radius: 25px;
+  color: var(--black);
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid var(--black);
+}
+
 .form-link span:hover {
   color: var(--green);
 }
