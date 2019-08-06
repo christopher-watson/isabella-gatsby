@@ -240,6 +240,10 @@ const styles = {
     fontWeight: 'bold',
     marginBottom: 0,
   },
+  green: {
+    color: 'var(--green)',
+    fontWeight: 'bold',
+  }
 
 }
 
@@ -373,7 +377,7 @@ class Landing extends Component {
                 <span style={styles.modalContent}>
                 <div style={this.state.mobile ? styles.modalTitleMobile : styles.modalTitle}>Get Started</div>
                 <div style={this.state.mobile ? styles.modalTextMobile : styles.modalText}>
-                Regardless of your past athletic experience or current fitness level, everyone who first comes to Isabella Fitness is provided with the opportunity to learn about basic techniques, movements, terminology, and pre-workout warm-ups before participating in our Group Classes. It all begins with scheduling a Free Fitness Assessment. During the session, will first discuss your goals, exercise history, injury history, and, simply, learn more about you! Afterwards, we will provide you with a workout with one of our experienced trainers. You will leave the session with an individual plan for moving forward in will include a prescribed number of 1-on-1 personal training sessions; just you and the coach with the flexibility to schedule at your convenience. This is the perfect time to ask questions, get comfortable and meet our community before transitioning into our group classes. To schedule a session, please contact us.
+                Regardless of your past athletic experience or current fitness level, everyone who first comes to Isabella Fitness is provided with the opportunity to learn about basic techniques, movements, terminology, and pre-workout warm-ups before participating in our Group Classes. <span style={styles.green}>It all begins with scheduling a Free Fitness Assessment.</span> During the session, will first discuss your goals, exercise history, injury history, and, simply, learn more about you! Afterwards, we will provide you with a workout with one of our experienced trainers. You will leave the session with an individual plan for moving forward in will include a prescribed number of 1-on-1 personal training sessions; just you and the coach with the flexibility to schedule at your convenience. This is the perfect time to ask questions, get comfortable and meet our community before transitioning into our group classes. To schedule a session, please contact us.
                 </div>
                 <div style={this.state.mobile ? styles.modalBottomMobile : styles.modalBottom}>
                   Call or Text: <a style={styles.headerPhone} href="tel:17325323337">(732) 532-3337</a>
