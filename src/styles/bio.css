@@ -1,14 +1,16 @@
 .bio-div{
   background: var(--texture);
-  padding-top: 50px;
+  padding-top: 15px;
   height: 1000px;
 }
 
 .bio-carousel-container {
   display: grid;
-  grid-template-columns: 4vw 1fr 4vw;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, min-content);
   grid-template-areas:
-    "arrowL display arrowR";
+    "arrows"
+    "display";
   align-items: center;
 }
 
@@ -24,14 +26,14 @@
 }
 
 .left-arrow {
-  grid-area: arrowL;
-  margin-left: 100px;
+  grid-area: arrows;
+  margin-right: 250px;
   z-index: 90;
 }
 
 .right-arrow {
-  grid-area: arrowR;
-  margin-right: 100px;
+  grid-area: arrows;
+  margin-left: 250px;
   z-index: 90;
 }
 

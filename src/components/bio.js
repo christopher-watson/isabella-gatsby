@@ -22,7 +22,7 @@ class Bio extends Component {
     this.displayBio()
     // this.handleScroll()
     // this.bioAutoScroll()
-    window.addEventListener('keydown', this.handleKeyPress)
+    // window.addEventListener('keydown', this.handleKeyPress)
     // window.addEventListener('scroll', this.handleScroll)
   }
 
@@ -35,7 +35,7 @@ class Bio extends Component {
     this.setState({
       displayBioIndex: index
     });
-
+    
     this.displayBio()
   }
 
@@ -48,7 +48,7 @@ class Bio extends Component {
     this.setState({
       displayBioIndex: index
     });
-
+    
     this.displayBio()
   }
 
@@ -74,24 +74,24 @@ class Bio extends Component {
     }
   }
 
-  handleScroll = () => {
-    if (window.scrollY === 3000) {
-      this.setState({
-        displayBioIndex: 0,
-      })
-    }
-    if (window.scrollY === 4600) {
-      this.setState({
-        displayBioIndex: 0,
-      })
-    }
-  }
+  // handleScroll = () => {
+  //   if (window.scrollY === 3000) {
+  //     this.setState({
+  //       displayBioIndex: 0,
+  //     })
+  //   }
+  //   if (window.scrollY === 4600) {
+  //     this.setState({
+  //       displayBioIndex: 0,
+  //     })
+  //   }
+  // }
 
-  bioAutoScroll = () => {
-    setInterval(() => {
-      this.rightArrowClick()
-    }, 5000);
-  }
+  // bioAutoScroll = () => {
+  //   setInterval(() => {
+  //     this.rightArrowClick()
+  //   }, 5000);
+  // }
 
   render () {
     return (
@@ -101,6 +101,7 @@ class Bio extends Component {
         </div> */}
         <div className="bio-carousel-container">
           <div className='left-arrow arrow' onClick={() => this.leftArrowClick()}><i className="fas fa-angle-double-left"></i></div>
+          <div className='right-arrow arrow' onClick={() => this.rightArrowClick()}><i className="fas fa-angle-double-right"></i></div>
           <div className="bios-scroll">
             <div className="display-bio" id='bio0'>
             <Frame 
@@ -185,7 +186,7 @@ class Bio extends Component {
                 />
             </div>
           </div>
-          <div className='right-arrow arrow' onClick={() => this.rightArrowClick()}><i className="fas fa-angle-double-right"></i></div>
+          
         </div>
 
   
