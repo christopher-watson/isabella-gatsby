@@ -224,6 +224,22 @@ const styles = {
   modalTextMobile: {
     fontSize: '1rem',
   },
+  headerPhone: {
+    color: 'var(--green)',
+    fontFamily: 'Open Sans, Arial, sans-serif',
+    letterSpacing: 1.5,
+    padding: '5px 0',
+    fontWeight: 'bold',
+    marginBottom: 0,
+  },
+  headerEmail: {
+    color: 'var(--green)',
+    fontFamily: 'Open Sans, Arial, sans-serif',
+    letterSpacing: 1.5,
+    padding: '5px 0',
+    fontWeight: 'bold',
+    marginBottom: 0,
+  },
 
 }
 
@@ -235,7 +251,8 @@ class Landing extends Component {
     pulse: true,
     delay: true,
     loaded: false,
-    isModalOpen: false,
+    isModal1Open: false,
+    isModal2Open: false,
   }
 
   componentDidMount() {
@@ -286,14 +303,24 @@ class Landing extends Component {
     });
   }
 
-  handleModalOpen = event => {
+  handleModal1Open = event => {
     // console.log('handleModalOpen: ', event);
-    this.setState({ isModalOpen: true })
+    this.setState({ isModal1Open: true })
   }
 
-  handleModalClose = event => {
+  handleModal1Close = event => {
     // console.log('handleModalOpen: ', event);
-    this.setState({ isModalOpen: false })
+    this.setState({ isModal1Open: false })
+  }
+
+  handleModal2Open = event => {
+    // console.log('handleModalOpen: ', event);
+    this.setState({ isModal2Open: true })
+  }
+
+  handleModal2Close = event => {
+    // console.log('handleModalOpen: ', event);
+    this.setState({ isModal2Open: false })
   }
 
   render () {
@@ -309,7 +336,8 @@ class Landing extends Component {
             <div className="jumbo-buttons" style={this.state.mobile ? styles.jumboButtonsMobile : styles.jumboButtons}>
               <span className="button left-button" onClick={() => this.handleArrowClick('.slide')}>More Info</span>
               <span className="button right-button" onClick={() => this.handleArrowClick('.form')}>Contact Us</span>
-              <span className="button left-button" onClick={this.handleModalOpen}>Our Mission</span>
+              <span className="button left-button" onClick={this.handleModal1Open}>Our Mission</span>
+              <span className="button left-button" onClick={this.handleModal2Open}>Get Started</span>
               {/* <span className="button right-button" onClick={() => this.handleArrowClick('.slide')}>Testimonials</span> */}
             </div>
           </div>
@@ -320,8 +348,8 @@ class Landing extends Component {
           </div>
 
           <ReactModal
-            isOpen={this.state.isModalOpen}
-            onRequestClose={this.handleModalClose}
+            isOpen={this.state.isModal1Open}
+            onRequestClose={this.handleModal1Close}
             style={this.state.mobile ? styles.modalMobile : styles.modal}>
               <div className="modalDiv" style={styles.modalDiv}>
                 <span style={styles.modalContent}>
@@ -331,7 +359,29 @@ class Landing extends Component {
                 </div>
                 <div style={this.state.mobile ? styles.modalBottomMobile : styles.modalBottom}>- Ben, Owner</div>
                 </span>
-                <span style={styles.modalButton} onClick={this.handleModalClose}>
+                <span style={styles.modalButton} onClick={this.handleModal1Close}>
+                  <i className="fas fa-times-circle"></i>
+                </span>
+              </div>
+          </ReactModal>
+
+          <ReactModal
+            isOpen={this.state.isModal2Open}
+            onRequestClose={this.handleModal2Close}
+            style={this.state.mobile ? styles.modalMobile : styles.modal}>
+              <div className="modalDiv" style={styles.modalDiv}>
+                <span style={styles.modalContent}>
+                <div style={this.state.mobile ? styles.modalTitleMobile : styles.modalTitle}>Get Started</div>
+                <div style={this.state.mobile ? styles.modalTextMobile : styles.modalText}>
+                Regardless of your past athletic experience or current fitness level, everyone who first comes to Isabella Fitness is provided with the opportunity to learn about basic techniques, movements, terminology, and pre-workout warm-ups before participating in our Group Classes. It all begins with scheduling a Free Fitness Assessment. During the session, will first discuss your goals, exercise history, injury history, and, simply, learn more about you! Afterwards, we will provide you with a workout with one of our experienced trainers. You will leave the session with an individual plan for moving forward in will include a prescribed number of 1-on-1 personal training sessions; just you and the coach with the flexibility to schedule at your convenience. This is the perfect time to ask questions, get comfortable and meet our community before transitioning into our group classes. To schedule a session, please contact us.
+                </div>
+                <div style={this.state.mobile ? styles.modalBottomMobile : styles.modalBottom}>
+                  Call or Text: <a style={styles.headerPhone} href="tel:17325323337">(732) 532-3337</a>
+                  <br/>
+                  Email: <a style={styles.headerEmail} href='mailto:contact@isabellafitness.com?subject=Sign Me Up!'>contact@isabellafitness.com</a>
+                </div>
+                </span>
+                <span style={styles.modalButton} onClick={this.handleModal2Close}>
                   <i className="fas fa-times-circle"></i>
                 </span>
               </div>
