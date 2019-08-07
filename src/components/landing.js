@@ -211,6 +211,11 @@ const styles = {
     fontWeight: 'bold',
     fontSize: '1.2rem',
   },
+  modalBottomMobile2: {
+    marginTop: 10,
+    fontWeight: 'bold',
+    fontSize: '.9rem',
+  },
   modalButton: {
     fontSize: '2rem',
     color: '#FA2535',
@@ -223,6 +228,9 @@ const styles = {
   },
   modalTextMobile: {
     fontSize: '1rem',
+  },
+  modalTextMobile2: {
+    fontSize: '.7rem',
   },
   headerPhone: {
     color: 'var(--green)',
@@ -376,10 +384,10 @@ class Landing extends Component {
               <div className="modalDiv" style={styles.modalDiv}>
                 <span style={styles.modalContent}>
                 <div style={this.state.mobile ? styles.modalTitleMobile : styles.modalTitle}>Get Started</div>
-                <div style={this.state.mobile ? styles.modalTextMobile : styles.modalText}>
+                <div style={this.state.mobile ? styles.modalTextMobile2 : styles.modalText}>
                 Regardless of your past athletic experience or current fitness level, everyone who first comes to Isabella Fitness is provided with the opportunity to learn about basic techniques, movements, terminology, and pre-workout warm-ups before participating in our Group Classes. <span style={styles.green}>It all begins with scheduling a Free Fitness Assessment.</span> During the session, will first discuss your goals, exercise history, injury history, and, simply, learn more about you! Afterwards, we will provide you with a workout with one of our experienced trainers. You will leave the session with an individual plan for moving forward in will include a prescribed number of 1-on-1 personal training sessions; just you and the coach with the flexibility to schedule at your convenience. This is the perfect time to ask questions, get comfortable and meet our community before transitioning into our group classes. To schedule a session, please contact us.
                 </div>
-                <div style={this.state.mobile ? styles.modalBottomMobile : styles.modalBottom}>
+                <div style={this.state.mobile ? styles.modalBottomMobile2 : styles.modalBottom}>
                   Call or Text: <a style={styles.headerPhone} href="tel:17325323337">(732) 532-3337</a>
                   <br/>
                   Email: <a style={styles.headerEmail} href='mailto:contact@isabellafitness.com?subject=Sign Me Up!'>contact@isabellafitness.com</a>
