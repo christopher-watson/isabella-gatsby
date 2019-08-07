@@ -16,7 +16,7 @@
 .footer-top {
   grid-area: footer-top;
   display: grid;
-  grid-template-columns: repeat(2, 250px);
+  grid-template-columns: 250px 250px min-content;
   width: 100%;
   grid-column-gap: 80px;
   justify-content: center;
@@ -44,6 +44,14 @@
   align-items: center;
   flex-direction: row;
   padding: 20px 0;
+}
+
+#WOD {
+  font-family: 'Alfa Slab One', sans-serif;
+  font-size: 3em;
+  color: var(--white);
+  text-decoration-line: underline;
+  text-decoration-color: var(--green);
 }
 
 .fbotRight {
