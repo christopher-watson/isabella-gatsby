@@ -97,6 +97,9 @@ class Footer extends Component {
           <a href="http://journal.crossfit.com/" target="_blank" rel="noopener noreferrer" >
             <img src={cfj} alt="The CrossFit Journal" className="footer-logo"/>
           </a>
+          <a href="http://wod.isabellafitness.com/" target="_blank" rel="noopener noreferrer" >
+            <span id="WOD">WODs</span>
+          </a>
         </div>
         <div className="footer-bottom">
           <div className="fbotLeft">
