@@ -132,11 +132,7 @@ class Bio extends Component {
                 img={kevin} 
                 name='Kevin Varno'
                 title='Coach'
-                innerText='My athletic background consists mainly of high school track and field. I found my passion for fitness while rehabbing a hip injury I suffered while high jumping. Intrigued by the lifestyle of helping others improve their health and performance, I surrounded myself with an assortment of fitness methodologies. I originally set out to become a physical therapist, but quickly realized I would much prefer working with a wider variety of individuals; not just those coming back from injury. After the discovery of obstacle racing and CrossFit, I knew I would follow my passion and make a living in the fitness industry. In 2011, I first discovered Isabella Fitness and, shortly after, became a personal trainer. I have been working as a personal trainer since early 2012 and as a crossfit coach since the spring of 2013. My passion for fitness, and thirst for knowledge and experience continues to grow the more I educate myself. I believe that a consistent diet and exercise regimen is the biggest necessity to a happy and healthy lifestyle. I am passionate about helping everyone I can on their journey to find the perfect plan for their needs!'
-                cert1='CrossFit Level 1 & 2 Trainer' 
-                cert2='Personal Trainer' 
-                cert3='Cardio Express Coach' 
-                cert4='CrossFit Kids Coach' 
+                innerText='I love this Job'
                 />
             </div>
     
