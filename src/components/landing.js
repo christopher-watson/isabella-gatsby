@@ -370,6 +370,12 @@ class Landing extends Component {
                   Our focus is to create inclusive group classes as well as individual training options that create a fulfilling experience for everyone from beginners to seasoned athletes. Our Mission is help you Flourish…aka. Become the best version of yourself.
                 </div>
                 <div style={this.state.mobile ? styles.modalBottomMobile : styles.modalBottom}>- Ben, Owner</div>
+ <span style={styles.modalContent}>
+                <div style={this.state.mobile ? styles.modalTitleMobile : styles.modalTitle}>Our Mission</div>
+                <div style={this.state.mobile ? styles.modalTextMobile : styles.modalText}>
+                  Our focus is to create inclusive group classes as well as individual training options that create a fulfilling experience for everyone from beginners to seasoned athletes. Our Mission is help you Flourish…aka. Become the best version of yourself.
+                </div>
+                <div style={this.state.mobile ? styles.modalBottomMobile : styles.modalBottom}>- Ben, Owner</div>
                 </span>
                 <span style={styles.modalButton} onClick={this.handleModal1Close}>
                   <i className="fas fa-times-circle"></i>
