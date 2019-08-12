@@ -225,8 +225,16 @@ class Form extends Component {
                   <button className='invalid-form-button' type="submit" disabled >Send</button>
                 }
               </div>
-          innerText='My life has changed in so many great ways since leading my first class on July 11, 2011. At the time, there were only a few of us working out together on the high school football field. Before I knew it, on May 1, 2013, I opened up my own facility and began running group classes throughout the day. Since then I have developed so many great relationships, friendships, and experiences. Opening up my own facility was a dream of my mine for many years. It is the relationships we build that sustain loyalty over time. I look forward to building that bond and relationship with you. At the end of the day, you come to Isabella Fitness to Flourish!'
-      cert1='CrossFit Level 1, 2, and 3 Trainer'
+      <div className="form" style={styles.formDiv}>
+        <div className="form-container" style={styles.formCont}>
+          <div className="form-heading" style={styles.header}>
+            <h2 style={styles.headerText}>Contact Us!</h2>
+            <div className="phoneEmail" style={this.state.mobile ? styles.phoneEmailMobile : styles.phoneEmail }>
+              {/* <a style={styles.headerPhone} href="tel:17325323337" onClick={ga('send', 'event', 'Phone Call Tracking', 'Click to Call', '732-532-3337', 0)}>(732) 532-3337</a> */}
+              <a style={styles.headerPhone} href="tel:17325323337">(732) 532-3337</a>
+              <span style={this.state.mobile ? {display: 'none'} : {color: 'var(--green)', padding: '0 10px' }}> | </span>
+              <a style={styles.headerEmail} href='mailto:contact@isabellafitness.com?subject=Sign Me Up!'>contact@isabellafitness.com</a>
+            </div>
             </form>
           </div>
         </div>
