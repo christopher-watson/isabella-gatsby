@@ -19,12 +19,12 @@ const BioFrame = (props) => {
             {props.innerText}
           </div>
           <div className="bio-certs">
-//             <div className="cert-title">Certifications</div>
+    {/* <div className="cert-title">Certifications</div>
               <div>{props.cert1}</div>
               <div>{props.cert2}</div>
               <div>{props.cert3}</div>
-//               <div>{props.cert4}</div>
-//               <div>{props.cert5}</div>
+              <div>{props.cert4}</div>
+              <div>{props.cert5}</div> */}
           </div>
         </div>
       </div>
