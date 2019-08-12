@@ -225,11 +225,6 @@ class Form extends Component {
                   <button className='invalid-form-button' type="submit" disabled >Send</button>
                 }
               </div>
-    Why Isabella Fitness
-Isabella Fitness is dedicated to providing a fitness experience that will bring a genuine benefit to your life. Our facility is ever evolving, refined, and individual. Our mission is to help you FLOURISH through assessing your individual movement patterns, teaching you how to move with purpose, adapting to your goals as they change, and providing you with instruction and education during class. Our goal is to build a facility in which you are inspired to work hard, feel safe when you are here, and leave feeling fulfilled. Our community fosters a system of accountability for continued improvement. Imagine yourself in a place where everyone knows your name and cares about your success!
-
-What differentiates us?
-We are going to equip you with the skills to live a better life. We are going to provide you with a model of sustainable, durable, and repeatable level of fitness. We are going to offer you an authentic community where coaches and athletes care about your success.
             </form>
           </div>
         </div>
