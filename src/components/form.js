@@ -225,6 +225,7 @@ class Form extends Component {
                   <button className='invalid-form-button' type="submit" disabled >Send</button>
                 }
               </div>
+render() {
  return (
       <div className="form" style={styles.formDiv}>
         <div className="form-container" style={styles.formCont}>
