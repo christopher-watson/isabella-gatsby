@@ -180,13 +180,13 @@ class Bio extends Component {
                 cert3='Personal Trainer' 
                 cert4='Accountability Coach' 
                 />
-            </div>
+            </div> */}
           </div>
           
         </div>
 
   
-      </div> */}
+      </div> 
     )
 
   }
