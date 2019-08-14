@@ -67,7 +67,7 @@ class Body extends Component {
 
   render() {
     return (
-      <div>
+      <div className="body-div">
         <div className="rtt" onClick={() => this.handleArrowClick('.landing-div')} style={this.state.rtt ? styles.arrowShow : styles.arrowHide}>
           <i className="fas fa-caret-square-up"></i>
         </div>

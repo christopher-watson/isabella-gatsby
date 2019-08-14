@@ -29,6 +29,12 @@ module.exports = {
         icon: `src/images/logoSmall.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: 'gatsby-plugin-drift',
+      options: {
+        appId: 'is28brf37seh',
+      },
+    },
 
 
 
