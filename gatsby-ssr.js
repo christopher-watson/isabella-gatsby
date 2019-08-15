@@ -6,8 +6,8 @@
 
 // You can delete this file if you're not using it
 import React from "react";
-export function onRenderBody({ setPostBodyComponents }) {
-  setPostBodyComponents([
+export function onRenderBody({ setHeadComponents }) {
+  setHeadComponents([
     <script type="application/ld+json">
       {`
         "@context": "schema.org",
