@@ -57,8 +57,8 @@
 
 .rtt {
   position: fixed;
-  bottom: 23px;
-  right: 100px;
+  bottom: -5px;
+  right: 80px;
   font-size: 3.7rem;
   cursor: pointer;
   /* color: var(--grey); */
