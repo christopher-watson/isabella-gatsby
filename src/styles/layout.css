@@ -62,7 +62,7 @@
   font-size: 3.7rem;
   cursor: pointer;
   /* color: var(--grey); */
-  z-index: 1;
+  z-index: 3;
 }
 
 .rtt i {
