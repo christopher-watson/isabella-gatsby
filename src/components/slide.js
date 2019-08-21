@@ -110,6 +110,7 @@ export default class Slide extends Component {
                     <li>Unlimited - $162/mo</li>
                     <li>2x/wk - $137/mo</li>
                     <li>*Pricing is month to month</li>
+                    <li>Drop-ins Contact us</li>
                   </ul>
                 </div>
                 <div className="background-text">Best Value!</div>
