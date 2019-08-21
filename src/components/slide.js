@@ -102,37 +102,40 @@ export default class Slide extends Component {
           <div className="slide1-container">
             <div className="top-row">
               <div className="box box1">
-                <div className="heading-text green-text">Crossfit </div>
+                <div className="heading-text green-text">CrossFit </div>
                 <div className="info-text">
                   <ul>
-                    <li>Drop In - $25/class</li>
-                    <li>10 Class Pass - $200</li>
-                    <li>8 Classes - $137/mo</li>
+      {/* <li>Drop In - $25/class</li>
+                    <li>10 Class Pass - $200</li> */}
                     <li>Unlimited - $162/mo</li>
+                    <li>2x/wk - $137/mo</li>
+                    <li>*Pricing is month to month</li>
                   </ul>
                 </div>
-                <div className="background-text">Flourish!</div>
+                <div className="background-text">Best Value!</div>
               </div>
               <div className="box box2">
                 <div className="heading-text green-text">Youth Fitness</div>
                 <div className="info-text">
                   <ul>
-                    <li>Drop In - $25/class</li>
-                    <li>10 Class Pass - $200</li>
-                    <li>8 Classes - $195/mo</li>
+             {/* <li>Drop In - $25/class</li>
+                    <li>10 Class Pass - $200</li> */}
                     <li>Unlimited - $110/mo</li>
+                    <li>2x/wk - $95/mo</li>
+                    <li>*Pricing is month to month</li>
                   </ul>
                 </div>
-                <div className="background-text">Ages 6 - 14</div>
+                <div className="background-text">Ages 6 - 13</div>
               </div>
               <div className="box box3">
                 <div className="heading-text green-text">Cardio Express</div>
                 <div className="info-text">
                   <ul>
-                  <li>Drop In - $25/class</li>
-                    <li>10 Class Pass - $200</li>
-                    <li>8 Classes - $127/mo</li>
+                   {/* <li>Drop In - $25/class</li>
+                    <li>10 Class Pass - $200</li> */}
                     <li>Unlimited - $147/mo</li>
+                    <li>8 Classes - $127/mo</li>
+                    <li>*Pricing is month to month</li>
                   </ul>
                 </div>
                 <div className="background-text">Sweat!</div>
@@ -147,7 +150,7 @@ export default class Slide extends Component {
                     <li>Contact Us for Group Sessions!</li>
                   </ul>
                 </div>
-                <div className="background-text">1 on 1 Training</div>
+                <div className="background-text">Crush Your Goals</div>
               </div>
             </div>
           </div>
