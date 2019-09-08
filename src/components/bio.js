@@ -108,7 +108,7 @@ class Bio extends Component {
               img={ben2} 
               name='Ben Isabella'
               title='Owner, Level 1, 2, & 3 Trainer'
-              innerText='My life has changed in so many great ways since leading my first class on July 11, 2011. At the time, there were only a few of us working out together on the high school football field. Before I knew it, on May 1, 2013, I opened up my own facility and began running group classes throughout the day. Since then I have developed so many great relationships, friendships, and experiences. Opening up my own facility was a dream of my mine for many years. It is the relationships we build that sustain loyalty over time. I look forward to building that bond and relationship with you. At the end of the day, you come to Isabella Fitness to Flourish!'
+              innerText='My life has changed in so many great ways since leading my first class on July 11, 2011. At the time, there were only a few of us working out together on the high school football field. Before I knew it, on May 1, 2013, I opened up my own facility and began running group classes throughout the day. Over the years, I have developed so many great relationships, friendships, and experiences. Opening up my own facility was a dream of my mine for many years. It is the relationships we build that sustain loyalty over time. I look forward to building that bond and relationship with you. At the end of the day, you come to Isabella Fitness to Flourish!'
       cert1='CrossFit Level 1, 2, and 3 Trainer' 
               cert2='CCFT' 
               cert3='C.S.C.S.' 
@@ -122,7 +122,7 @@ class Bio extends Component {
                 img={kelsey} 
                 name='Kelsey Jamedar'
                 title='Level 1 Trainer'
-                innerText='With dreams of being a teacher of some sort, I never knew that could mean being a CrossFit Coach. Educating, motivating, and encouraging athletes to be the very best they can be at our box has fulfilled that teaching dream of mine. It is something I look forward to every day. My goal is always to make my athletes feel comfortable, safe, and excited to take on the WOD and push them to limits they didn’t know they could reach themselves.'
+                innerText='With dreams of being a teacher, I never knew that could mean being a Trainer. Educating, motivating, and encouraging athletes to be the very best they can has fulfilled that teaching dream of mine. It is something I look forward to every day. My goal is always to make everyone feel comfortable, safe, and excited to take on the workouts, and push them to limits they didn’t know they could reach themselves.'
        cert1='CrossFit Level 1 Trainer' 
                 />
             </div>
@@ -132,7 +132,7 @@ class Bio extends Component {
                 img={kevin} 
                 name='Kevin Varno'
                 title='Level 1 & 2 Trainer'
-                innerText='In 2011, I first discovered Isabella Fitness and, shortly after, became a personal trainer. I have been working as a personal trainer since early 2012 and as a crossfit coach since the spring of 2013. My passion for fitness, and thirst for knowledge and experience continues to grow the more I educate myself. I believe that a consistent diet and exercise regimen is the biggest necessity to a happy and healthy lifestyle. I am passionate about helping everyone I can on their journey to find the perfect plan for their needs!'
+                innerText='In 2011, I first discovered Isabella Fitness and, shortly after, I became a personal trainer. I have been working as a personal trainer since early 2012. My passion for fitness and thirst for knowledge continues to grow the more I educate myself. I believe that a consistent diet and exercise regimen is the biggest necessity to a happy and healthy lifestyle. I am passionate about helping everyone I can on their journey to find the perfect plan for their needs!'
                 />
             </div>
     
@@ -141,7 +141,7 @@ class Bio extends Component {
                 img={jaime} 
                 name='Jaime Novak'
                 title='Trainer'
-                innerText='I am also a certified teacher so you could say teaching/helping others is in my blood. After a few years, I made the decision to try something new and challenging and found myself walking through the doors of Isabella Fitness. I couldn’t be happier. My goal here is to help provide a safe, comfortable, and motivating environment. I want to help athletes make personal progress, no matter how big or small, and help them achieve their goals. I look forward to an athlete’s excitement when they do something they once thought they couldn’t. It’s incredibly rewarding.'
+                innerText='I am also a certified teacher so you could say teaching/helping others is in my blood. After years of working out, I made the decision to try something new and challenging; this let me to Isabella Fitness. I couldn’t be happier with that decision. My goal here is to help provide a safe, comfortable, and motivating environment. I want to help athletes make personal progress, no matter how big or small, and help them achieve their goals. I look forward to an athlete’s excitement when they do something they once thought they couldn’t. It’s incredibly rewarding.'
         cert1='CrossFit Level 1 Trainer' 
                 />
             </div> 
@@ -151,7 +151,7 @@ class Bio extends Component {
                 img={alex} 
                 name='Alex Lincho'
                 title='Level 1 Trainer'
-                innerText='Working out has to be enjoyable and challenging in order to insure success. I started Crossfit around Dec2013/January2014 once my workouts started to get stale at the global gym with the routine BodyBuilding approach/split. Don’t get me wrong, I still enjoy a good “bodybuilding” workout and incorporate it in my fitness consistently, but I wanted a new way to challenge myself and the beauty of fitness…there’s always room for improvement whether you a beginner or a “seasoned vet”.'
+                innerText='Working out has to be enjoyable and challenging in order to ensure success. My bodybuilding workouts started getting stale at the commercial gym so I decided to start CrossFit in January 2014. Don’t get me wrong, I still enjoy a good “bodybuilding” workout and incorporate it in my fitness routine consistently, but I wanted a new way to challenge myself. The beauty of fitness is that there’s always room for improvement whether you a beginner or a “seasoned vet”.'
           cert1='CrossFit Level 1 Trainer' 
                 cert2='5:00pm Specialist' 
                 />
@@ -162,7 +162,7 @@ class Bio extends Component {
                 img={amanda} 
                 name='Amanda Costello'
                 title='Level 1  & 2 Trainer'
-                innerText='A year after joining Isabella Fitness, I decided I wanted to become a Trainer. I wanted to teach other people about fitness, about staying active, and showing them they are capable of anything! One of my strengths as a trainer is my relate-ability to the everyday man or woman. I got into training to show people there is no certain category you have to fit into to be able to succeed in fitness. All my life, I have never been one to limit or define myself, but, instead, to constantly try new things and challenge myself daily. I want to motivate others in the way Fitness has motivated me.'
+                innerText='A year after joining Isabella Fitness, I decided I wanted to become a Trainer. I wanted to teach other people about fitness, about staying active, and showing them they are capable of anything! One of my strengths as a trainer is my "relate-ability" to the everyday person. I started coaching to show people there is no certain category you have to fit into to be able to succeed in fitness. All my life, I have never been one to limit or define myself, but, instead, to constantly try new things and challenge myself daily. I want to motivate others in the way Fitness has motivated me.'
              cert1='CrossFit Level 1 Trainer' 
                 cert2='Foundations Coach' 
                 cert3='7:15pm Specialist' 
@@ -174,7 +174,7 @@ class Bio extends Component {
                 img={allyssa} 
                 name='Allyssa Sillari'
                 title='Level 1 Trainer'
-                innerText='I started doing Crossfit at Isabella Fitness in December 2017. It only took a few months of being at the box for me to realize that I not only wanted to excel at the goals I set for myself, but that I wanted to help other athletes do so as well! Not only did I want to coach athletes in CrossFit, but in a positive body image. This is something I believe Isabella Fitness is great at implementing in the facility and is something I hope to continue and add to as a coach. My passions are Crossfit, Body Positivity, and working with senior athletes!'
+                innerText='I started doing Crossfit at Isabella Fitness in December 2017. It only took a few months of being at Isabella Fitness for me to realize that I not only wanted to excel at the goals I set for myself, but that I wanted to help other people do so as well! Not only did I want to coach athletes in CrossFit, but I wanted to help people create a positive body image. I believe Isabella Fitness is great at implementing. My passions are CrossFit, Body Positivity, and working with senior athletes!'
         cert1='CrossFit Level 1 Trainer' 
                 cert2='Foundations Coach' 
                 cert3='Personal Trainer' 
