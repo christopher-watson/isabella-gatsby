@@ -1,7 +1,7 @@
 .bio-div{
   background: var(--texture);
   padding-top: 15px;
-  height: 1000px;
+  height: 900px;
 }
 
 .bio-carousel-container {
@@ -67,9 +67,9 @@
 }
 
 @media only screen and (max-width:1130px) {
-  .bio-div{
-    height: 1200px;
-  }
+  /* .bio-div{
+    height: 850px;
+  } */
 
   /* .inner-bio {
     height: 1000px;
@@ -173,9 +173,9 @@
 }
 
 @media only screen and (max-width:900px) {
-  .bio-div{
-    height: 1400px;
-  }
+  /* .bio-div{
+    height: 850px;
+  } */
 
   .inner-bio {
     margin: 0;
