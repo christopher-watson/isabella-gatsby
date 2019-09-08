@@ -54,9 +54,9 @@
   text-decoration-color: var(--green);
 }
 
-.fbotRight {
-  /* padding-left: 40px; */
-}
+/* .fbotRight {
+  padding-left: 40px;
+} */
 
 .fbotRight a {
   color: var(--white);

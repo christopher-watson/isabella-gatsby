@@ -85,6 +85,7 @@
 
 
 /* --------------- header --------------- */
+
 .header {
   grid-area: header;
   display: grid;
