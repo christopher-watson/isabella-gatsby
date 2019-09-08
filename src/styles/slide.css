@@ -523,7 +523,7 @@
 @media only screen and (max-width: 400px) {
   .sliders {
     font-size: .5em;
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 }
 
