@@ -61,7 +61,7 @@
   border-radius: 25px;
   margin: 50px;
   width: 70vw;
-  height: 800px;
+  /* height: 700px; */
   box-shadow: 0 0 20px var(--dark);
   background: var(--white);
 }
@@ -71,9 +71,10 @@
     height: 1200px;
   }
 
-  .inner-bio {
+  /* .inner-bio {
     height: 1000px;
-  }
+  } */
+  
 }
 
 .bio-pic {
@@ -179,7 +180,7 @@
   .inner-bio {
     margin: 0;
     width: 90vw;
-    height: 1250px;
+    /* height: 1250px; */
   }
 
   .bio-text {
