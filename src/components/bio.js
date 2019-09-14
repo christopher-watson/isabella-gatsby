@@ -20,36 +20,69 @@ class Bio extends Component {
 
   componentDidMount() {
     this.displayBio()
+    // console.log(`compDidMount - ${this.state.displayBioIndex}`)
     // this.handleScroll()
     // this.bioAutoScroll()
     // window.addEventListener('keydown', this.handleKeyPress)
     // window.addEventListener('scroll', this.handleScroll)
   }
 
-  leftArrowClick = () => {
+  updateIndexLeft = () => {
     const lastIndex = this.state.bios.length - 1;
     const currentImageIndex  = this.state.displayBioIndex;
     const shouldResetIndex = currentImageIndex === 0;
     const index =  shouldResetIndex ? lastIndex : currentImageIndex - 1;
 
-    this.setState({
-      displayBioIndex: index
-    });
-    
-    this.displayBio()
+    return index
   }
 
-  rightArrowClick = () => {
+  leftArrowClick = () => {
+    // console.log(`leftArrowClicked - ${this.state.displayBioIndex}`)
+    // const lastIndex = this.state.bios.length - 1;
+    // const currentImageIndex  = this.state.displayBioIndex;
+    // const shouldResetIndex = currentImageIndex === 0;
+    // const index =  shouldResetIndex ? lastIndex : currentImageIndex - 1;
+    // console.log(`leftArrowClicked Index - ${index}`)
+
+    this.setState({
+      displayBioIndex: this.updateIndexLeft()
+    });
+    setTimeout(() => {
+      this.displayBio()
+    }, 100);
+  }
+
+  updateIndexRight = () => {
     const lastIndex = this.state.bios.length - 1;
     const currentImageIndex  = this.state.displayBioIndex;
     const shouldResetIndex = currentImageIndex === lastIndex;
     const index =  shouldResetIndex ? 0 : currentImageIndex + 1;
+    // console.log(`updateIndexRight index: ${index}`)
+    return index
+  }
+
+  rightArrowClick = () => {
+    // console.log(`rightArrowClicked - ${this.state.displayBioIndex}`)
+    // const lastIndex = this.state.bios.length - 1;
+    // const currentImageIndex  = this.state.displayBioIndex;
+    // const shouldResetIndex = currentImageIndex === lastIndex;
+    // const index =  shouldResetIndex ? 0 : currentImageIndex + 1;
+    // console.log(`rightArrowClicked Index - ${index}`)
+   
+    // this.setState({
+    //   displayBioIndex: index
+    // });
+    // this.displayBio()
+   
+    // console.log(`rightArrowClicked - ${this.state.displayBioIndex}`)
 
     this.setState({
-      displayBioIndex: index
+      displayBioIndex: this.updateIndexRight()
     });
-    
-    this.displayBio()
+    setTimeout(() => {
+      this.displayBio()
+    }, 100);
+
   }
 
   handleKeyPress = (e) => {
@@ -62,8 +95,10 @@ class Bio extends Component {
   }
 
   displayBio() {
+    // console.log(`displayBio - ${this.state.displayBioIndex}`)
     for(var i=0; i<this.state.bios.length; i++){
       if(this.state.displayBioIndex === i){
+        // console.log(`forLoop i - ${i}`)
         // document.getElementById(`bio${i}`).style.display = 'initial';
         document.getElementById(`bio${i}`).setAttribute('state', 'bio-active');
       }
