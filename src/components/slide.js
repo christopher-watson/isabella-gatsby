@@ -49,30 +49,40 @@ export default class Slide extends Component {
     }
   }
 
-  leftArrowClick = () => {
+  updateTestIndexLeft = () => {
     const lastIndex = this.state.testimonials.length - 1;
     const currentImageIndex  = this.state.displayTestIndex;
     const shouldResetIndex = currentImageIndex === 0;
     const index =  shouldResetIndex ? lastIndex : currentImageIndex - 1;
 
-    this.setState({
-      displayTestIndex: index
-    });
-
-    this.displayTestimonials()
+    return index
   }
 
-  rightArrowClick = () => {
+  leftArrowClick = () => {
+    this.setState({
+      displayTestIndex: this.updateTestIndexLeft()
+    });
+    setTimeout(() => {
+      this.displayTestimonials()
+    }, 100);
+  }
+
+  updateTestIndexRight = () => {
     const lastIndex = this.state.testimonials.length - 1;
     const currentImageIndex  = this.state.displayTestIndex;
     const shouldResetIndex = currentImageIndex === lastIndex;
     const index =  shouldResetIndex ? 0 : currentImageIndex + 1;
 
-    this.setState({
-      displayTestIndex: index
-    });
+    return index
+  }
 
-    this.displayTestimonials()
+  rightArrowClick = () => {
+    this.setState({
+      displayTestIndex: this.updateTestIndexRight()
+    });
+    setTimeout(() => {
+      this.displayTestimonials()
+    }, 100);
   }
 
   displayTestimonials() {
