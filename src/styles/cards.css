@@ -63,13 +63,13 @@
 }
 
 .cardLeft-container:nth-child(5) .cardLeft-rightPanel::after {
-  background: url('https://images.pexels.com/photos/685534/pexels-photo-685534.jpeg')
+  background: url('https://isabellafitness.com/wp-content/uploads/2019/09/IMG_1663.jpg')
     center center / cover
     no-repeat;
 }
 
 .cardRight-container:nth-child(7) .cardRight-leftPanel::after {
-  background: url('https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg')
+  background: url('https://isabellafitness.com/wp-content/uploads/2019/09/nelson.jpg')
     center center / cover
     no-repeat;
 }
