@@ -41,7 +41,7 @@
   background: 
     var(--black)
     /* default image -- change below */
-    url('../images/isabella.jpg')
+    url('../images/kids2.jpg')
     center center / cover 
     no-repeat;
   background-blend-mode: luminosity;
