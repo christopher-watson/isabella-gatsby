@@ -41,7 +41,7 @@
   background: 
     var(--black)
     /* default image -- change below */
-    url('../images/kids2.jpg')
+    url('../images/isabella.jpg')
     center center / cover 
     no-repeat;
   background-blend-mode: luminosity;
@@ -57,7 +57,7 @@
 }
 
 .cardRight-container:nth-child(3) .cardRight-leftPanel::after {
-  background: url('https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg')
+  background: url('https://www.pexels.com/photo/2943615/')
     center center / cover
     no-repeat;
 }
