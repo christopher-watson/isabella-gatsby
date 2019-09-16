@@ -120,6 +120,14 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
   },
+  address: {
+    color: 'var(--white)',
+    fontFamily: 'Open Sans, Arial, sans-serif',
+    letterSpacing: .5,
+    marginTop: '5px',
+    fontWeight: 'bold',
+    marginBottom: 0,
+  },
 }
 
 class Form extends Component {
@@ -181,6 +189,9 @@ class Form extends Component {
               <a style={styles.headerPhone} href="tel:17325323337">(732) 532-3337</a>
               <span style={this.state.mobile ? {display: 'none'} : {color: 'var(--green)', padding: '0 10px' }}> | </span>
               <a style={styles.headerEmail} href='mailto:contact@isabellafitness.com?subject=Sign Me Up!'>contact@isabellafitness.com</a>
+            </div>
+            <div style={styles.address}>
+              <span>242 Main St #B-D Sayreville NJ, 08872</span>
             </div>
             <div className="form-social" style={styles.formSocial}>
               <a className="form-link" href="https://www.facebook.com/IsabellaFitness/" target="_blank" rel="noopener noreferrer" style={styles.formLink}>
