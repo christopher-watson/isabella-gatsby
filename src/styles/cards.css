@@ -51,26 +51,25 @@
 
 /* CHANGE IMAGES HERE */
 .cardLeft-container:nth-child(1) .cardLeft-rightPanel::after {
-  background: url('https://isabellafitness.com/wp-content/uploads/2019/09/65968778_10111232866422529_2960322555413528576_o.jpg')
+  background: url('../images/outside.jpg')
     center center / cover
     no-repeat;
 }
 
 .cardRight-container:nth-child(3) .cardRight-leftPanel::after {
-  /* background: url('https://isabellafitness.com/wp-content/uploads/2019/09/kids2.jpg') */
   background: url('../images/kids2.jpg')
     center center / cover
     no-repeat;
 }
 
 .cardLeft-container:nth-child(5) .cardLeft-rightPanel::after {
-  background: url('https://isabellafitness.com/wp-content/uploads/2019/09/IMG_1663.jpg')
+  background: url('../images/ladies.jpg')
     center center / cover
     no-repeat;
 }
 
 .cardRight-container:nth-child(7) .cardRight-leftPanel::after {
-  background: url('https://isabellafitness.com/wp-content/uploads/2019/09/nelson.jpg')
+  background: url('../images/nelson.jpg')
     center center / cover
     no-repeat;
 }
