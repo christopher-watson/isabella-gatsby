@@ -57,7 +57,8 @@
 }
 
 .cardRight-container:nth-child(3) .cardRight-leftPanel::after {
-  background: url('https://isabellafitness.com/wp-content/uploads/2019/09/kids2.jpg')
+  /* background: url('https://isabellafitness.com/wp-content/uploads/2019/09/kids2.jpg') */
+  background: url('../images/kids2.jpg')
     center center / cover
     no-repeat;
 }
