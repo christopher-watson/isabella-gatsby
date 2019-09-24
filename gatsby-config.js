@@ -67,6 +67,12 @@ module.exports = {
         // cookieDomain: "example.com",
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-netlify`,
+    //   options: {
+
+    //   },
+    // },
 
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
