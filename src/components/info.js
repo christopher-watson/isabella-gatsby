@@ -58,9 +58,9 @@ class Info extends Component {
           textTwo='Enhanced Sports Performance!'
           iconThree='fas fa-school'
           textThree='Positive Academic Impact!'
-          heading='Youth Fitness'
+          heading='Youth Fitness (ages 6-13)'
           // greenScript='Standard Meal Plan'
-          paragraph="Youth Fitness is a method for teaching Fitness to children ages 6-13. Based on the principle of Mechanics, Consistency and then Intensity, Youth Fitness emphasizes good movement throughout childhood and adolescence. Consistently good mechanics translates to physical literacy, enhanced sports performance and fewer sports injuries for kids. Not only that, a vast body of research indicates that exercise is beneficial to cognitive function, which means consistent adherence to the program can have a positive impact on children’s academic achievement. See Pricing below"
+          paragraph="We want kids to have fun. We want kids to belong to a supportive group of other kids that encourage and support them. Our classes are structured so that any kid can be successful. We provide proper instruction in all the exercises that we perform in class. On a daily bases the kids are exposed to bodyweight exercises, cardio exercises, running, kettlebell and dumbbell exercises, medicine ball exercises, and games that involve teamwork and strategy. See Pricing below"
           />
 
         <div className="divider" style={styles.divider}></div>
@@ -75,7 +75,7 @@ class Info extends Component {
           textThree='Attention & Instruction!'
           heading='Cardio Express'
           // greenScript='Standard Meal Plan'
-          paragraph="This is where those who are committed to a healthy lifestyle, gather to workout, sweat, burn fat, build muscle, blow off steam, and be your BEST Self. This class will get you moving and get you out. This is the perfect introduction to fitness with the use of dumbbells, kettlebells, stability balls, and your own bodyweight. Most importantly, you come to Isabella Fitness to get away from the outside world. Let us be the instrumental part of your day where you get to focus on doing what is right for You! See Pricing below"
+          paragraph="This is where those who are committed to a healthy lifestyle, gather to workout, sweat, burn fat, build muscle, blow off steam, and be your BEST Self. This class will get you moving and get you out. This is the perfect introduction to fitness with the use of dumbbells, kettlebells, stability balls, and your own bodyweight. Let us be the instrumental part of your day where you get to focus on doing what is right for You! See Pricing below"
           />
 
         <div className="divider" style={styles.divider}></div>
