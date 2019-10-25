@@ -58,9 +58,9 @@ class Info extends Component {
           textTwo='Enhanced Sports Performance!'
           iconThree='fas fa-school'
           textThree='Positive Academic Impact!'
-          heading='Youth Fitness (ages 6-13)'
+          heading='Youth Fitness (Ages 6-13)'
           // greenScript='Standard Meal Plan'
-          paragraph="We want kids to have fun. We want kids to belong to a supportive group of other kids that encourage and support them. Our classes are structured so that any kid can be successful. We provide proper instruction in all the exercises that we perform in class. On a daily bases the kids are exposed to bodyweight exercises, cardio exercises, running, kettlebell and dumbbell exercises, medicine ball exercises, and games that involve teamwork and strategy. See Pricing below"
+          paragraph="We want kids to have fun. We want kids to belong to a supportive group of other kids that encourage and support them. Our classes are structured so that any kid can be successful. We provide proper instruction in all the exercises that we perform in class. On a daily bases the kids are exposed to bodyweight exercises, cardio exercises, running, kettlebell and dumbbell exercises, medicine ball exercises, and games that involve teamwork and strategy. ALL KIDS START OUT WITH 2-WEEKS FREE! Text Ben @ 732.532.3337 to get started."
           />
 
         <div className="divider" style={styles.divider}></div>
