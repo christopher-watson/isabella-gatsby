@@ -96,7 +96,6 @@ const styles = {
   delayShow: {
     position: 'absolute',
     bottom: '50px',
-    left: 100,
     WebkitTransition: "opacity 500ms linear",
     msTransition: "opacity 500ms linear",
     transition: "opacity 500ms linear",
