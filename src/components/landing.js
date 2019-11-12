@@ -13,6 +13,47 @@ const styles = {
     textAlign: 'center',
     flexDirection: 'column',
   },
+  landingText: {
+    fontSize: '2rem',
+    fontFamily: 'Open Sans, Arial, sans-serif',
+    color: 'var(--white)',
+    letterSpacing: 1.5,
+    textAlign: 'center',
+    textShadow: `0 0 40px ${colors.green}`
+  },
+  landingTextMobile: {
+    fontSize: '1rem',
+    fontFamily: 'Open Sans, Arial, sans-serif',
+    color: 'var(--white)',
+    letterSpacing: 1.5,
+    textAlign: 'center',
+    textShadow: `0 0 40px ${colors.green}`
+  },
+  landingTextHead: {
+    fontFamily: 'Open Sans, Arial, sans-serif',
+    color: 'var(--white)',
+    letterSpacing: 1.5,
+    textAlign: 'center',
+    fontSize: '3rem',
+    fontFamily: 'Alfa Slab One, sans-serif',
+    textShadow: '0 0 5px var(--dark)',
+    textDecoration: 'underline',
+    textDecorationColor: 'var(--green)',
+    marginBottom: 10,
+
+  },
+  landingTextHeadMobile: {
+    fontFamily: 'Open Sans, Arial, sans-serif',
+    color: 'var(--white)',
+    letterSpacing: 1.5,
+    textAlign: 'center',
+    fontSize: '2rem',
+    fontFamily: 'Alfa Slab One, sans-serif',
+    textShadow: '0 0 5px var(--dark)',
+    textDecoration: 'underline',
+    textDecorationColor: 'var(--green)',
+    marginBottom: 10,
+  },
   loading: {
     opacity: '0',
   },
@@ -22,10 +63,9 @@ const styles = {
     msTransition: "opacity 1000ms linear",
     transition: "opacity 1000ms linear",
   },
-  jumboText: {
-    margin: 10,
-    padding: '10px 30px',
-    maxWidth: 600,
+  jumboImage: {
+    width: '80vw',
+    maxWidth: 500,
   },
   isa: {
     color: colors.white,
@@ -38,10 +78,10 @@ const styles = {
     textShadow: `0 0 20px ${colors.white}`
   },
   jumboButtons: {
-    margin: 10
+    marginTop: 20
   },
   jumboButtonsMobile: {
-    margin: 10,
+    marginTop: 20,
     display: 'grid',
     gridTemplateRows: 'repeat(3, min-content)',
     gridTemplateColumns: 'max-content',
@@ -340,10 +380,17 @@ class Landing extends Component {
         // <div className='landing-div' style={styles.landing}>
         <div className='landing-div' style={styles.landing}>
           <div className="landingInner" style={this.state.loaded ? styles.loaded : styles.loading}>
+            {/* <div className="jumbo-top-text" style={this.state.mobile ? styles.landingTextMobile : styles.landingText}>
+              Our focus is on personalizing your fitness <br/> experience by designing a plan that aligns with your goals.
+            </div> */}
             <div className="jumbo-text" style={styles.jumboText}>
-              {/* <div id="isa" style={styles.isa}>Isabella</div>
-              <div id="fitness" style={styles.fitness}>Fitness</div> */}
-              <img src={img} alt="Isabella Fitness"/>
+              <img src={img} alt="Isabella Fitness" style={styles.jumboImage}/>
+            </div>
+            <div className="jumbo-top-text-header" style={this.state.mobile ? styles.landingTextHeadMobile : styles.landingTextHead}>
+              We Make Fitness Personal
+            </div>
+            <div className="jumbo-top-text" style={this.state.mobile ? styles.landingTextMobile : styles.landingText}>
+              Our focus is on personalizing your fitness <br/> experience by designing a plan that aligns with your goals.
             </div>
             <div className="jumbo-buttons" style={this.state.mobile ? styles.jumboButtonsMobile : styles.jumboButtons}>
               <span className="button left-button" onClick={() => this.handleArrowClick('.slide')}>More Info</span>
