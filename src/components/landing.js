@@ -19,7 +19,8 @@ const styles = {
     color: 'var(--white)',
     letterSpacing: 1.5,
     textAlign: 'center',
-    textShadow: `0 0 40px ${colors.green}`
+    textShadow: `0 0 40px ${colors.green}`,
+    padding: '0 10px',
   },
   landingTextMobile: {
     fontSize: '1rem',
@@ -27,7 +28,8 @@ const styles = {
     color: 'var(--white)',
     letterSpacing: 1.5,
     textAlign: 'center',
-    textShadow: `0 0 40px ${colors.green}`
+    textShadow: `0 0 40px ${colors.green}`,
+    padding: '0 10px',
   },
   landingTextHead: {
     fontFamily: 'Open Sans, Arial, sans-serif',
@@ -390,7 +392,14 @@ class Landing extends Component {
               We Make Fitness Personal
             </div>
             <div className="jumbo-top-text" style={this.state.mobile ? styles.landingTextMobile : styles.landingText}>
-              Our focus is on personalizing your fitness <br/> experience by designing a plan that aligns with your goals.
+              {
+                this.state.mobile 
+                ?  
+                <span>Our focus is on personalizing your fitness experience by designing a plan that aligns with your goals.</span>
+                :
+                <span>Our focus is on personalizing your fitness <br/> experience by designing a plan that aligns with your goals.</span>
+
+              }
             </div>
             <div className="jumbo-buttons" style={this.state.mobile ? styles.jumboButtonsMobile : styles.jumboButtons}>
               <span className="button left-button" onClick={() => this.handleArrowClick('.slide')}>More Info</span>
@@ -400,11 +409,18 @@ class Landing extends Component {
               {/* <span className="button right-button" onClick={() => this.handleArrowClick('.slide')}>Testimonials</span> */}
             </div>
           </div>
-          <div className="delay" style={this.state.delay ? styles.delayHide : styles.delayShow}>
-            <div className="arrow" style={this.state.arrow ? styles.arrowDiv : styles.arrowDivHide} onClick={() => this.handleArrowClick('.info-div')}>
-              <i className="fas fa-angle-double-down" style={this.state.pulse ? styles.arrowOn : styles.arrowOff}></i>
+          {
+            this.state.mobile
+            ?
+            <div></div>
+            :
+            <div className="delay" style={this.state.delay ? styles.delayHide : styles.delayShow}>
+              <div className="arrow" style={this.state.arrow ? styles.arrowDiv : styles.arrowDivHide} onClick={() => this.handleArrowClick('.info-div')}>
+                <i className="fas fa-angle-double-down" style={this.state.pulse ? styles.arrowOn : styles.arrowOff}></i>
+              </div>
             </div>
-          </div>
+          }
+
 
           <ReactModal
             isOpen={this.state.isModal1Open}
