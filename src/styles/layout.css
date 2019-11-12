@@ -151,6 +151,16 @@
 }
 
 
+.landingInner {
+  display: grid;
+  align-items: center;
+  row-gap: 30px;
+}
+
+/* .jumbo-text img {
+  max-width: 550px;
+} */
+
 /* --------------- form --------------- */
 .form-button{
   background-color: var(--green);
