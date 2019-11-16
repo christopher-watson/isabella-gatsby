@@ -224,7 +224,7 @@ class Bio extends Component {
                 img={allie} 
                 name='Allie Couzo'
                 title='Level 1 Trainer'
-                innerText='Email: Contact@isabellafitness.com'
+                innerText='I am a doctor of physical therapy, but being a COACH has brought a fulfilling sense of what I can do for people beyond rehabbing injuries. I am very passionate about movement analysis and being able to identify deficits before a more serious injury can develop. Coaching allows me to help our athletes move safely and prescribe injury prevention exercises as needed to allow them to thrive and perform. Educating people about their own bodies, how they move and what they can do for themselves is the most valuable thing a DPT or Coach can do and that blend of roles is where I want to be. Email: Contact@isabellafitness.com'
                 // cert1='CrossFit Level 1 Trainer' 
                 // cert2='Foundations Coach' 
                 // cert3='Personal Trainer'  
