@@ -216,6 +216,11 @@ class Bio extends Component {
                 cert4='Accountability Coach' 
                 />
             </div> 
+
+
+
+
+
           </div>
           
         </div>
