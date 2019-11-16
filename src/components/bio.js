@@ -243,4 +243,4 @@ class Bio extends Component {
   }
 }
 
-export default Bio;
+export default Bio; 
