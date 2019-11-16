@@ -32,7 +32,7 @@ const styles = {
     padding: '0 10px',
   },
   landingTextHead: {
-    fontFamily: 'Open Sans, Arial, sans-serif',
+    // fontFamily: 'Open Sans, Arial, sans-serif',
     color: 'var(--white)',
     letterSpacing: 1.5,
     textAlign: 'center',
@@ -45,7 +45,7 @@ const styles = {
 
   },
   landingTextHeadMobile: {
-    fontFamily: 'Open Sans, Arial, sans-serif',
+    // fontFamily: 'Open Sans, Arial, sans-serif',
     color: 'var(--white)',
     letterSpacing: 1.5,
     textAlign: 'center',
