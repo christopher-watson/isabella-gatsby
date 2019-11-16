@@ -10,7 +10,7 @@ import kevin from '../images/kevin.png'
 import jaime from '../images/jaime.png'
 import allyssa from '../images/allyssa.jpg'
 // import allie2 from '../images/allie.jpg'
-import allie from '../images/Allie.jpg'
+import allie from '../images/Allie.png'
 
 class Bio extends Component {
 
