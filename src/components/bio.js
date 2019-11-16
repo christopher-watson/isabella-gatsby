@@ -9,12 +9,13 @@ import kelsey from '../images/kelsey.png'
 import kevin from '../images/kevin.png'
 import jaime from '../images/jaime.png'
 import allyssa from '../images/allyssa.jpg'
+import allie  from '../images/allie.jpg'
 
 class Bio extends Component {
 
   state = {
     // IF YOU NEED TO ADD ANOTHER COACH, DONT FORGET TO PUT NAME HERE FOR CAROUSEL
-    bios: ['Ben', 'Alex', 'Amanda', 'Kelsey', 'Kevin', 'Jaime', 'Allyssa'],
+    bios: ['Ben', 'Alex', 'Amanda', 'Kelsey', 'Kevin', 'Jaime', 'Allyssa','Allie'],
     displayBioIndex: 0,
   }
 
@@ -217,7 +218,17 @@ class Bio extends Component {
                 />
             </div> 
 
-
+            <div className="display-bio" id="bio7">
+              <Frame 
+                img={allie} 
+                name='Allie Couzo'
+                title='Level 1 Trainer'
+                innerText='Email: Contact@isabellafitness.com'
+        cert1='CrossFit Level 1 Trainer' 
+                cert2='Foundations Coach' 
+                cert3='Personal Trainer'  
+                />
+            </div> 
 
 
 
