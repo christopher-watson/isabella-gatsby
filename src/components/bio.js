@@ -9,7 +9,7 @@ import kelsey from '../images/kelsey.png'
 import kevin from '../images/kevin.png'
 import jaime from '../images/jaime.png'
 import allyssa from '../images/allyssa.jpg'
-import allie from '../images/allie.jpg'
+import allie from '../images/Allie.jpg'
 
 class Bio extends Component {
 
