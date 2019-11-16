@@ -158,7 +158,8 @@ export default class Slide extends Component {
                     <li>30 Min Session - $40</li>
                     <li>45 Min Session - $60</li>
                     <li>60 Min Session - $70</li>
-                    <li>Contact Us for Group Sessions!</li>
+                    <li>Contact Us for Group Rates!</li>
+                    <li>Contact Us for Sport's Training!</li>
                   </ul>
                 </div>
                 <div className="background-text">Crush Your Goals</div>
