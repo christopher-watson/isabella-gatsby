@@ -145,7 +145,7 @@ export default class Slide extends Component {
                    {/* <li>Drop In - $25/class</li>
                     <li>10 Class Pass - $200</li> */}
                     <li>Unlimited - $149/mo</li>
-                    <li>8 Classes - $129/mo</li>
+                    <li>2x/wk - $129/mo</li>
                     <li>*Pricing is month to month</li>
                   </ul>
                 </div>
