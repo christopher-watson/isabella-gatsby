@@ -309,13 +309,11 @@ export default class Slide extends Component {
                       <li>9:30 am</li>
                       <li>3:45 pm</li>
                       <li>5:00 pm</li>
-                      <li>5:00 pm</li>
                       <li>6:10 pm</li>
                     </ul>
                   </div>
                   <div className="schedule-type">
                     <ul>
-                      <li>CrossFit</li>
                       <li>CrossFit</li>
                       <li>CrossFit</li>
                       <li>CrossFit</li>
