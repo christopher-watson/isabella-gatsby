@@ -192,6 +192,7 @@ class Form extends Component {
             </div>
             <div style={styles.address}>
               <span>242 Main St #B-D Sayreville NJ, 08872</span>
+              <span>242 Main St #B-D Sayreville NJ, 08872</span>
             </div>
             <div className="form-social" style={styles.formSocial}>
               <a className="form-link" href="https://www.facebook.com/IsabellaFitness/" target="_blank" rel="noopener noreferrer" style={styles.formLink}>
