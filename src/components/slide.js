@@ -139,7 +139,7 @@ export default class Slide extends Component {
                 <div className="background-text">Ages 6 - 13</div>
               </div>
               <div className="box box3">
-                <div className="heading-text green-text">Cardio Express</div>
+                <div className="heading-text green-text">IF45 & IF30</div>
                 <div className="info-text">
                   <ul>
                    {/* <li>Drop In - $25/class</li>
@@ -200,9 +200,9 @@ export default class Slide extends Component {
                       <li>CrossFit</li>
                       <li>Youth Fitness</li>
                       <li>CrossFit</li>
-                      <li>Ladies Cardio<br/>Express</li>
+                      <li>Ladies Cardio<br/>IF45</li>
                       <li>CrossFit</li>
-                      <li>Cardio Express</li>
+                      <li>IF45</li>
                     </ul>
                   </div>
               </div>
@@ -232,9 +232,9 @@ export default class Slide extends Component {
                       <li>CrossFit</li>
                       <li>Youth Fitness</li>
                       <li>CrossFit</li>
-                      <li>Ladies Cardio<br/>Express</li>
+                      <li>Ladies Cardio<br/>IF45</li>
                       <li>CrossFit</li>
-                      <li>Cardio Express</li>
+                      <li>IF45</li>
                     </ul>
                   </div>
               </div>
@@ -263,7 +263,7 @@ export default class Slide extends Component {
                       <li>Youth Fitness</li>
                       <li>CrossFit</li>
                       <li>CrossFit</li>
-                      <li>Cardio Express</li>
+                      <li>IF45</li>
                     </ul>
                   </div>
               </div>
@@ -293,9 +293,9 @@ export default class Slide extends Component {
                       <li>CrossFit</li>
                       <li>Youth Fitness</li>
                       <li>CrossFit</li>
-                      <li>Ladies Cardio<br/>Express</li>
+                      <li>Ladies Cardio<br/>IF30</li>
                       <li>CrossFit</li>
-                      <li>Cardio Express</li>
+                      <li>IF45</li>
                     </ul>
                   </div>
               </div>
@@ -335,7 +335,7 @@ export default class Slide extends Component {
                     </div>
                     <div className="schedule-type">
                       <ul>
-                        <li>Cardio Express</li>
+                        <li>IF45</li>
                         <li>CrossFit</li>
                         <li>Open Gym</li>
                       </ul>
@@ -347,13 +347,15 @@ export default class Slide extends Component {
                   </div>
                     <div className="schedule-time">
                       <ul>
-                        <li>9:30 am</li>
+                        <li>9:15 am</li>
+                        <li>10:00 am</li>
                         <li>10:30 am</li>
                       </ul>
                     </div>
                     <div className="schedule-type">
                       <ul>
-                        <li>Foundations</li>
+                        <li>IF30</li>
+                        <li>IF30</li>  
                         <li>Open Gym</li>
                       </ul>
                   </div>
