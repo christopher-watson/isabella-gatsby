@@ -68,14 +68,14 @@ class Info extends Component {
         <CardLeft 
           mobile={this.state.mobile}
           iconOne='fas fa-heart'
-          textOne='Healthy Lifestyle!'
+          textOne='Time Efficient'
           iconTwo='fas fa-dumbbell'
           textTwo='Build Muscle!'
           iconThree='fas fa-running'
           textThree='Attention & Instruction!'
-          heading='Cardio Express'
+          heading='IF45 & IF30'
           // greenScript='Standard Meal Plan'
-          paragraph="This is where those who are committed to a healthy lifestyle, gather to workout, sweat, burn fat, build muscle, blow off steam, and be your BEST Self. This class will get you moving and get you out. This is the perfect introduction to fitness with the use of dumbbells, kettlebells, stability balls, and your own bodyweight. Let us be the instrumental part of your day where you get to focus on doing what is right for You! See Pricing below"
+          paragraph="Get In. Get Sweaty. Get Going. Think 30 to 45 minutes of HIIT, Strength + Conditioning with movements that change daily. Every class starts with an overview of the workout followed by demos of the movements and modifications. All of our group fitness classes can be modified for any fitness level."
           />
 
         <div className="divider" style={styles.divider}></div>
