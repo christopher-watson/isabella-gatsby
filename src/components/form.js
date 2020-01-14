@@ -192,6 +192,7 @@ class Form extends Component {
             </div>
             <div style={styles.address}>
               <span>242 Main St #B-D Sayreville NJ, 08872</span>
+            </div>
               <span>242 Main St #B-D Sayreville NJ, 08872</span>
             </div>
             <div className="form-social" style={styles.formSocial}>
