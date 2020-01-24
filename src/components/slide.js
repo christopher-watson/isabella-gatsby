@@ -199,7 +199,7 @@ export default class Slide extends Component {
                       <li>CrossFit</li>
                       <li>Youth Fitness</li>
                       <li>CrossFit</li>
-                      <li>Ladies IF45</li>
+                      <li>IF45</li>
                       <li>CrossFit</li>
                       <li>IF45</li>
                     </ul>
@@ -230,7 +230,7 @@ export default class Slide extends Component {
                       <li>CrossFit</li>
                       <li>Youth Fitness</li>
                       <li>CrossFit</li>
-                      <li>Ladies IF45</li>
+                      <li>IF45</li>
                       <li>CrossFit</li>
                       <li>IF45</li>
                     </ul>
@@ -292,7 +292,7 @@ export default class Slide extends Component {
                       <li>CrossFit</li>
                       <li>Youth Fitness</li>
                       <li>CrossFit</li>
-                      <li>Ladies IF45</li>
+                      <li>IF45</li>
                       <li>CrossFit</li>
                       <li>IF45</li>
                     </ul>
