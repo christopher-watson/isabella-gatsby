@@ -140,6 +140,19 @@ const styles = {
     msTransition: "color 500ms linear",
     transition: "color 500ms linear",
   },
+  pulseOn: {
+    color: 'var(--white)',
+    WebkitTransition: "all 500ms linear",
+    msTransition: "all 500ms linear",
+    transition: "all 500ms linear",
+    boxShadow: '0 0 15px var(--white)'
+  },
+  pulseOff: {
+    color: 'var(--grey)',
+    WebkitTransition: "all 500ms linear",
+    msTransition: "all 500ms linear",
+    transition: "all 500ms linear",
+  },
   modal: {
     overlay: {
       backgroundColor: 'rgba(10, 10, 10, 1)',
@@ -405,7 +418,7 @@ class Landing extends Component {
               <span className="button left-button" onClick={() => this.handleArrowClick('.slide')}>More Info</span>
               <span className="button right-button" onClick={() => this.handleArrowClick('.form')}>Contact Us</span>
               <span className="button left-button" onClick={this.handleModal1Open}>Our Mission</span>
-              <span className="button left-button" onClick={this.handleModal2Open}>FREE SESSION</span>
+              <span className="button left-button" onClick={this.handleModal2Open} style={this.state.pulse ? styles.pulseOn : styles.pulseOff}>FREE SESSION</span>
               {/* <span className="button right-button" onClick={() => this.handleArrowClick('.slide')}>Testimonials</span> */}
             </div>
           </div>
