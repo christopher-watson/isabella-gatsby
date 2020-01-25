@@ -148,7 +148,7 @@ const styles = {
     boxShadow: '0 0 15px var(--white)'
   },
   pulseOff: {
-    color: 'var(--grey)',
+    color: 'var(--black)',
     WebkitTransition: "all 500ms linear",
     msTransition: "all 500ms linear",
     transition: "all 500ms linear",
