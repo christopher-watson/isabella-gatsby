@@ -183,7 +183,7 @@ class Form extends Component {
       <div className="form" style={styles.formDiv}>
         <div className="form-container" style={styles.formCont}>
           <div className="form-heading" style={styles.header}>
-            <h2 style={styles.headerText}>Contact Us!</h2>
+            <h2 style={styles.headerText}>Claim Your Free Pass!</h2>
             <div className="phoneEmail" style={this.state.mobile ? styles.phoneEmailMobile : styles.phoneEmail }>
               {/* <a style={styles.headerPhone} href="tel:17325323337" onClick={ga('send', 'event', 'Phone Call Tracking', 'Click to Call', '732-532-3337', 0)}>(732) 532-3337</a> */}
               <a style={styles.headerPhone} href="tel:17325323337">(732) 532-3337</a>
