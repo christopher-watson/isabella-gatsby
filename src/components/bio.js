@@ -144,7 +144,7 @@ class Bio extends Component {
             <Frame 
               img={ben2} 
               name='Ben Isabella'
-              title='Owner, Level 1, 2, & 3 Trainer'
+              title='Owner, Level 3 Trainer'
               innerText='My life has changed in so many great ways since leading my first class on July 11, 2011. At the time, there were only a few of us working out together on the high school football field. Before I knew it, on May 1, 2013, I opened up my own facility and began running group classes throughout the day. Over the years, I have developed so many great relationships, friendships, and experiences. Opening up my own facility was a dream of my mine for many years. It is the relationships we build that sustain loyalty over time. I look forward to building that bond and relationship with you. At the end of the day, you come to Isabella Fitness to Flourish! Mobile #: 732 532 3337. Email: Ben@isabellafitness.com. Location: 242 Main St. #B-D, Sayreville, NJ 08872'
               // cert1='CrossFit Level 1, 2, and 3 Trainer' 
               // cert2='CCFT' 
@@ -168,7 +168,7 @@ class Bio extends Component {
               <Frame 
                 img={kevin} 
                 name='Kevin Varno'
-                title='Level 1 & 2 Trainer'
+                title='Level 3 Trainer'
                 innerText='In 2011, I first discovered Isabella Fitness and, shortly after, I became a personal trainer. I have been working as a personal trainer since early 2012. My passion for fitness and thirst for knowledge continues to grow the more I educate myself. I believe that a consistent diet and exercise regimen is the biggest necessity to a happy and healthy lifestyle. I am passionate about helping everyone I can on their journey to find the perfect plan for their needs! Email: Contact@isabellafitness.com'
                 />
             </div>
@@ -198,7 +198,7 @@ class Bio extends Component {
               <Frame 
                 img={amanda} 
                 name='Amanda Costello'
-                title='Level 1  & 2 Trainer'
+                title='Level 2 Trainer'
                 innerText='A year after joining Isabella Fitness, I decided I wanted to become a Trainer. I wanted to teach other people about fitness, about staying active, and showing them they are capable of anything! One of my strengths as a trainer is my "relate-ability" to the everyday person. I started coaching to show people there is no certain category you have to fit into to be able to succeed in fitness. All my life, I have never been one to limit or define myself, but, instead, to constantly try new things and challenge myself daily. I want to motivate others in the way Fitness has motivated me. Email: Contact@isabellafitness.com'
                 // cert1='CrossFit Level 1 Trainer' 
                 // cert2='Foundations Coach' 
