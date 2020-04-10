@@ -402,15 +402,15 @@ class Landing extends Component {
               <img src={img} alt="Isabella Fitness" style={styles.jumboImage}/>
             </div>
             <div className="jumbo-top-text-header" style={this.state.mobile ? styles.landingTextHeadMobile : styles.landingTextHead}>
-              We Make Fitness Personal
+              We have gone VIRTUAL!
             </div>
             <div className="jumbo-top-text" style={this.state.mobile ? styles.landingTextMobile : styles.landingText}>
               {
                 this.state.mobile 
                 ?  
-                <span>Our focus is on personalizing your fitness experience by designing a plan that aligns with your goals.</span>
+                <span>Our focus is on providing a VIRUTAL fitness experience that will keep you motivated and engaged while we are social distancing.</span>
                 :
-                <span>Our focus is on personalizing your fitness <br/> experience by designing a plan that aligns with your goals.</span>
+                <span>Our focus is on providing a VIRUTAL fitness experience that will keep you motivated and engaged while we are social distancing.</span>
 
               }
             </div>
