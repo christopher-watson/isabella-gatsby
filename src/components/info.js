@@ -43,9 +43,9 @@ class Info extends Component {
           textTwo='Moving with Purpose!'
           iconThree='fas fa-warehouse'
           textThree='Leave Feeling Fulfilled!'
-          heading='IF60'
+          heading='IF60 - IF45 - IF30'
           // greenScript='Flourish!'
-          paragraph="The perfect fitness option regardless of whether you're brand new to exercise or a veteran. Full instruction and coaching on how to perform each exercise properly is always reinforced and the workouts are always awesome. Our mission is to help you FLOURISH through assessing your individual movement patterns, teaching you how to move with purpose, adapting to your goals as they change, and providing you with instruction and education during class. Our goal is to build a facility in which you are inspired to work hard, feel safe when you are here, and leave feeling fulfilled. Imagine yourself in a place where everyone knows your name and cares about your success! See Pricing below"
+          paragraph="Think 60, 45, or 30 minutes of a HIIT and Strength + Conditioning workout with movements that change daily. Every class starts with an overview of the workout followed by demos of the movements and modifications. All of our group fitness classes can be modified for any fitness level.The perfect fitness option regardless of whether you're brand new to exercise or a veteran. Our mission is to help you FLOURISH through assessing your individual movement patterns, teaching you how to move with purpose, adapting to your goals as they change, and providing you with instruction and education during class."
           />
         
         <div className="divider" style={styles.divider}></div>
@@ -73,9 +73,9 @@ class Info extends Component {
           textTwo='Build Muscle!'
           iconThree='fas fa-running'
           textThree='Attention & Instruction!'
-          heading='IF45 & IF30'
+          heading='On-Demand Classes'
           // greenScript='Standard Meal Plan'
-          paragraph="Get In. Get Sweaty. Get Going. Think 30 to 45 minutes of HIIT, Strength + Conditioning with movements that change daily. Every class starts with an overview of the workout followed by demos of the movements and modifications. All of our group fitness classes can be modified for any fitness level."
+          paragraph="Get In. Get Sweaty. Get Going. Think 30 to 45 minutes of HIIT, Strength + Conditioning with movements that change daily on your terms!. Every On-Demand class starts with an overview of the workout followed by demos of the movements and modifications. All of our On-Demand fitness classes can be modified for any fitness level."
           />
 
         <div className="divider" style={styles.divider}></div>
