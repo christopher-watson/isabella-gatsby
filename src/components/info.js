@@ -43,7 +43,7 @@ class Info extends Component {
           textTwo='Moving with Purpose!'
           iconThree='fas fa-warehouse'
           textThree='Leave Feeling Fulfilled!'
-          heading='CrossFit'
+          heading='IF60'
           // greenScript='Flourish!'
           paragraph="The perfect fitness option regardless of whether you're brand new to exercise or a veteran. Full instruction and coaching on how to perform each exercise properly is always reinforced and the workouts are always awesome. Our mission is to help you FLOURISH through assessing your individual movement patterns, teaching you how to move with purpose, adapting to your goals as they change, and providing you with instruction and education during class. Our goal is to build a facility in which you are inspired to work hard, feel safe when you are here, and leave feeling fulfilled. Imagine yourself in a place where everyone knows your name and cares about your success! See Pricing below"
           />
