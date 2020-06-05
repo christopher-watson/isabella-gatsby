@@ -402,7 +402,7 @@ class Landing extends Component {
               <img src={img} alt="Isabella Fitness" style={styles.jumboImage}/>
             </div>
             <div className="jumbo-top-text-header" style={this.state.mobile ? styles.landingTextHeadMobile : styles.landingTextHead}>
-              We have gone VIRTUAL!
+              We have gone OUTDOORS!
             </div>
             <div className="jumbo-top-text" style={this.state.mobile ? styles.landingTextMobile : styles.landingText}>
               {
@@ -418,7 +418,7 @@ class Landing extends Component {
               <span className="button left-button" onClick={() => this.handleArrowClick('.slide')}>More Info</span>
               <span className="button right-button" onClick={() => this.handleArrowClick('.form')}>Contact Us</span>
               <span className="button left-button" onClick={this.handleModal1Open}>Our Mission</span>
-              <span className="button left-button" onClick={this.handleModal2Open} style={this.state.pulse ? styles.pulseOn : styles.pulseOff}>FREE VIRTUAL SESSION</span>
+              <span className="button left-button" onClick={this.handleModal2Open} style={this.state.pulse ? styles.pulseOn : styles.pulseOff}>FREE OUTDOOR SESSION</span>
               {/* <span className="button right-button" onClick={() => this.handleArrowClick('.slide')}>Testimonials</span> */}
             </div>
           </div>
