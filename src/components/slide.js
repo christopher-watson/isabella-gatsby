@@ -112,7 +112,7 @@ export default class Slide extends Component {
           <div className="slide1-container">
             <div className="top-row">
               <div className="box box1">
-                <div className="heading-text green-text">CrossFit </div>
+                <div className="heading-text green-text">IF60 </div>
                 <div className="info-text">
                   <ul>
       {/* <li>Drop In - $25/class</li>
@@ -193,14 +193,14 @@ export default class Slide extends Component {
                   </div>
                   <div className="schedule-type">
                     <ul>
-                      <li>CrossFit</li>
-                      <li>CrossFit</li>
-                      <li>CrossFit</li>
-                      <li>CrossFit</li>
+                      <li>IF60</li>
+                      <li>IF60</li>
+                      <li>IF60</li>
+                      <li>IF60</li>
                       <li>Youth Fitness</li>
-                      <li>CrossFit</li>
+                      <li>IF60</li>
                       <li>IF45</li>
-                      <li>CrossFit</li>
+                      <li>IF60</li>
                       <li>IF45</li>
                     </ul>
                   </div>
@@ -225,13 +225,13 @@ export default class Slide extends Component {
                   <div className="schedule-type">
                     <ul>
                       <li>IF45</li>
-                      <li>CrossFit</li>
-                      <li>CrossFit</li>
-                      <li>CrossFit</li>
+                      <li>IF60</li>
+                      <li>IF60</li>
+                      <li>IF60</li>
                       <li>Youth Fitness</li>
-                      <li>CrossFit</li>
+                      <li>IF60</li>
                       <li>IF45</li>
-                      <li>CrossFit</li>
+                      <li>IF60</li>
                       <li>IF45</li>
                     </ul>
                   </div>
@@ -255,14 +255,14 @@ export default class Slide extends Component {
                   </div>
                   <div className="schedule-type">
                     <ul>
-                      <li>CrossFit</li>
-                      <li>CrossFit</li>
-                      <li>CrossFit</li>
-                      <li>CrossFit</li>
+                      <li>IF60</li>
+                      <li>IF60</li>
+                      <li>IF60</li>
+                      <li>IF60</li>
                       <li>Youth Fitness</li>
-                      <li>CrossFit</li>
+                      <li>IF60</li>
                       <li>IF30</li>
-                      <li>CrossFit</li>
+                      <li>IF60</li>
                       <li>IF45</li>
                     </ul>
                   </div>
@@ -287,13 +287,13 @@ export default class Slide extends Component {
                   <div className="schedule-type">
                     <ul>
                       <li>IF45</li>
-                      <li>CrossFit</li>
-                      <li>CrossFit</li>
-                      <li>CrossFit</li>
+                      <li>IF60</li>
+                      <li>IF60</li>
+                      <li>IF60</li>
                       <li>Youth Fitness</li>
-                      <li>CrossFit</li>
+                      <li>IF60</li>
                       <li>IF45</li>
-                      <li>CrossFit</li>
+                      <li>IF60</li>
                       <li>IF45</li>
                     </ul>
                   </div>
@@ -313,11 +313,11 @@ export default class Slide extends Component {
                   </div>
                   <div className="schedule-type">
                     <ul>
-                      <li>CrossFit</li>
-                      <li>CrossFit</li>
-                      <li>CrossFit</li>
+                      <li>IF60</li>
+                      <li>IF60</li>
+                      <li>IF60</li>
                       <li>IF30</li>
-                      <li>CrossFit</li>
+                      <li>IF60</li>
                     </ul>
                   </div>
               </div>
@@ -335,7 +335,7 @@ export default class Slide extends Component {
                     <div className="schedule-type">
                       <ul>
                         <li>IF45</li>
-                        <li>CrossFit</li>
+                        <li>IF60</li>
                         <li>Open Gym</li>
                       </ul>
                   </div>
