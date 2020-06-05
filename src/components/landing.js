@@ -408,9 +408,9 @@ class Landing extends Component {
               {
                 this.state.mobile 
                 ?  
-                <span>Our focus is on providing a VIRUTAL fitness experience that will keep you motivated and engaged while we are social distancing.</span>
+                <span>Our focus is on providing a OUTDOOR fitness experience that will keep you motivated and engaged while we are social distancing.</span>
                 :
-                <span>Our focus is on providing a VIRUTAL fitness experience that will keep you motivated and engaged while we are social distancing.</span>
+                <span>Our focus is on providing a OUTDOOR fitness experience that will keep you motivated and engaged while we are social distancing.</span>
 
               }
             </div>
