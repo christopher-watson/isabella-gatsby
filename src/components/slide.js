@@ -112,7 +112,7 @@ export default class Slide extends Component {
           <div className="slide1-container">
             <div className="top-row">
               <div className="box box1">
-                <div className="heading-text green-text">IF60 </div>
+                <div className="heading-text green-text">IF Group Classes </div>
                 <div className="info-text">
                   <ul>
       {/* <li>Drop In - $25/class</li>
@@ -139,12 +139,12 @@ export default class Slide extends Component {
                 <div className="background-text">Ages 6 - 13</div>
               </div>
               <div className="box box3">
-                <div className="heading-text green-text">IF45 & IF30</div>
+                <div className="heading-text green-text">On-Demand Classes</div>
                 <div className="info-text">
                   <ul>
                    {/* <li>Drop In - $25/class</li>
                     <li>10 Class Pass - $200</li> */}
-                    <li>Unlimited or 2x/wk </li>
+                    <li>Unlimited Classes </li>
                     <li>Contact us for pricing</li>
                     <li>*Pricing is month to month</li>
                   </ul>
