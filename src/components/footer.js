@@ -30,9 +30,9 @@ class Footer extends Component {
             <li>Location</li>
           </ul> */}
           <img src={logo} alt="Isabella Fitness Logo" className="footer-logo" onClick={this.handleArrowClick} style={{cursor: 'pointer'}}/>
-          <a href="http://journal.crossfit.com/" target="_blank" rel="noopener noreferrer" >
+          {/* <a href="http://journal.crossfit.com/" target="_blank" rel="noopener noreferrer" >
             <img src={cfj} alt="The CrossFit Journal" className="footer-logo"/>
-          </a>
+          </a> */}
           <a href="http://ifworkouts.com/" target="_blank" rel="noopener noreferrer" >
             <span id="WOD">WODs</span>
           </a>
