@@ -410,7 +410,7 @@ class Landing extends Component {
                 ?  
                 <span>Our focus is on providing a OUTDOOR fitness experience that will keep you motivated and engaged while we are social distancing. We will fully commit to being a positive difference maker in as many lives as possible. We want to do more than make a statement, we want to create a message. Our message will manifest through our behavior</span>
                 :
-                <span>Our focus is on providing a OUTDOOR fitness experience that will keep you motivated and engaged while we are social distancing.</span>
+                <span>Our focus is on providing a OUTDOOR fitness experience that will keep you motivated and engaged while we are social distancing. We will fully commit to being a positive difference maker in as many lives as possible. We want to do more than make a statement, we want to create a message. Our message will manifest through our behavior.</span>
 
               }
             </div>
