@@ -160,7 +160,7 @@ class Bio extends Component {
                 name='Kelsey Jamedar'
                 title='Level 1 Trainer'
                 innerText='With dreams of being a teacher, I never knew that could mean being a Trainer. Educating, motivating, and encouraging athletes to be the very best they can has fulfilled that teaching dream of mine. It is something I look forward to every day. My goal is always to make everyone feel comfortable, safe, and excited to take on the workouts, and push them to limits they didn’t know they could reach themselves. Email: Contact@isabellafitness.com'
-                // cert1='CrossFit Level 1 Trainer' 
+                // cert1='Level 1 Trainer' 
                 />
             </div>
           
@@ -188,7 +188,7 @@ class Bio extends Component {
                 img={alex} 
                 name='Alex Lincho'
                 title='Level 1 Trainer'
-                innerText='Working out has to be enjoyable and challenging in order to ensure success. My bodybuilding workouts started getting stale at the commercial gym so I decided to start CrossFit in January 2014. Don’t get me wrong, I still enjoy a good “bodybuilding” workout and incorporate it in my fitness routine consistently, but I wanted a new way to challenge myself. The beauty of fitness is that there’s always room for improvement whether you a beginner or a “seasoned vet”. Email: Contact@isabellafitness.com'
+                innerText='Working out has to be enjoyable and challenging in order to ensure success. My bodybuilding workouts started getting stale at the commercial gym so I decided to start Isabella Fitness in January 2014. Don’t get me wrong, I still enjoy a good “bodybuilding” workout and incorporate it in my fitness routine consistently, but I wanted a new way to challenge myself. The beauty of fitness is that there’s always room for improvement whether you a beginner or a “seasoned vet”. Email: Contact@isabellafitness.com'
                 // cert1='CrossFit Level 1 Trainer' 
                 // cert2='5:00pm Specialist' 
                 />
@@ -211,7 +211,7 @@ class Bio extends Component {
                 img={allyssa} 
                 name='Allyssa Sillari'
                 title='Level 1 Trainer'
-                innerText='I started doing Crossfit at Isabella Fitness in December 2017. It only took a few months of being at Isabella Fitness for me to realize that I not only wanted to excel at the goals I set for myself, but that I wanted to help other people do so as well! Not only did I want to coach athletes in CrossFit, but I wanted to help people create a positive body image. I believe Isabella Fitness is great at implementing. My passions are CrossFit, Body Positivity, and working with senior athletes! Email: Contact@isabellafitness.com'
+                innerText='I started at Isabella Fitness in December 2017. It only took a few months of being at Isabella Fitness for me to realize that I not only wanted to excel at the goals I set for myself, but that I wanted to help other people do so as well! Not only did I want to coach athletes, but I wanted to help people create a positive body image. I believe Isabella Fitness is great at implementing. My passions are working out, Body Positivity, and working with senior athletes! Email: Contact@isabellafitness.com'
                 // cert1='CrossFit Level 1 Trainer' 
                 // cert2='Foundations Coach' 
                 // cert3='Personal Trainer' 
