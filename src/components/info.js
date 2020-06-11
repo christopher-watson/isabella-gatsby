@@ -75,7 +75,7 @@ class Info extends Component {
           textThree='Attention & Instruction!'
           heading='On-Demand Classes'
           // greenScript='Standard Meal Plan'
-          paragraph="Get In. Get Sweaty. Get Going. Think 30 to 45 minutes of HIIT, Strength + Conditioning with movements that change daily on your terms!. Every On-Demand class starts with an overview of the workout followed by demos of the movements and modifications. All of our On-Demand fitness classes can be modified for any fitness level."
+          paragraph="On-Demand, On Your Time! Think 30 to 45 minutes of HIIT, Strength + Conditioning with movements that change daily on your terms!. Every On-Demand class starts with an overview of the workout followed by demos of the movements and modifications. All of our On-Demand fitness classes can be modified for any fitness level."
           />
 
         <div className="divider" style={styles.divider}></div>
