@@ -186,7 +186,6 @@ export default class Slide extends Component {
                       <li>5:00 pm</li>
                       <li>5:00 pm</li>
                       <li>6:10 pm</li>
-                      <li>6:15 pm</li>
                       <li>7:15 pm</li>
                       <li>8:20 pm</li>
                     </ul>
@@ -199,7 +198,6 @@ export default class Slide extends Component {
                       <li>IF60</li>
                       <li>Youth Fitness</li>
                       <li>IF60</li>
-                      <li>IF45</li>
                       <li>IF60</li>
                       <li>IF45</li>
                     </ul>
@@ -217,7 +215,6 @@ export default class Slide extends Component {
                       <li>5:00 pm</li>
                       <li>5:00 pm</li>
                       <li>6:10 pm</li>
-                      <li>6:15 pm</li>
                       <li>7:15 pm</li>
                       <li>8:20 pm</li>
                     </ul>
@@ -230,7 +227,6 @@ export default class Slide extends Component {
                       <li>IF60</li>
                       <li>Youth Fitness</li>
                       <li>IF60</li>
-                      <li>IF45</li>
                       <li>IF60</li>
                       <li>IF45</li>
                     </ul>
@@ -248,7 +244,6 @@ export default class Slide extends Component {
                       <li>5:00 pm</li>
                       <li>5:00 pm</li>
                       <li>6:10 pm</li>
-                      <li>6:15 pm</li>
                       <li>7:15 pm</li>
                       <li>8:20 pm</li>
                     </ul>
@@ -261,7 +256,6 @@ export default class Slide extends Component {
                       <li>IF60</li>
                       <li>Youth Fitness</li>
                       <li>IF60</li>
-                      <li>IF30</li>
                       <li>IF60</li>
                       <li>IF45</li>
                     </ul>
@@ -279,7 +273,6 @@ export default class Slide extends Component {
                       <li>5:00 pm</li>
                       <li>5:00 pm</li>
                       <li>6:10 pm</li>
-                      <li>6:15 pm</li>
                       <li>7:15 pm</li>
                       <li>8:20 pm</li>
                     </ul>
@@ -292,7 +285,6 @@ export default class Slide extends Component {
                       <li>IF60</li>
                       <li>Youth Fitness</li>
                       <li>IF60</li>
-                      <li>IF45</li>
                       <li>IF60</li>
                       <li>IF45</li>
                     </ul>
