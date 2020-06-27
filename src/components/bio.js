@@ -19,9 +19,8 @@ class Bio extends Component {
   state = {
     // WHEN YOU ARE READY TO ADD JAKE AND KATE, PLEASE SEE COMMENTS ON LINES 23, 25, 240 & 268
     
-    bios: ['Ben', 'Alex', 'Amanda', 'Kelsey', 'Kevin', 'Jaime', 'Allyssa', 'Allie'], // ERASE THIS ENTIRE LINE WHEN YOU ARE READY TO ADD JAKE AND KATE
 
-    // bios: ['Ben', 'Alex', 'Amanda', 'Kelsey', 'Kevin', 'Jaime', 'Allyssa', 'Allie', 'Jake', 'Kate'], // ONLY DELETE THE TWO "//" FROM THE BEGINNING OF THIS LINE WHEN YOU ARE READY TO ADD JAKE AND KATE
+    bios: ['Ben', 'Alex', 'Amanda', 'Kelsey', 'Kevin', 'Jaime', 'Allyssa', 'Allie', 'Jake', 'Kate'], // ONLY DELETE THE TWO "//" FROM THE BEGINNING OF THIS LINE WHEN YOU ARE READY TO ADD JAKE AND KATE
     displayBioIndex: 0,
   }
 
