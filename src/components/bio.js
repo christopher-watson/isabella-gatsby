@@ -261,6 +261,9 @@ class Bio extends Component {
             </div> 
 
 
+
+
+
            
 
           </div>
