@@ -240,7 +240,7 @@ class Bio extends Component {
                 img={jake} 
                 name='Jake Campbell'
                 title='Strength & Conditioning Coach'
-                innerText='I specialize in Strength and Conditioning for youth athletes. My primary focus is working 1-on-1 or small group with Baseball players. I am a former collegiate Baseball Player as well as a Strength Coach for the Rutgers Newark Baseball Team.'
+                innerText='I specialize in Strength and Conditioning for youth athletes. My primary focus is working 1-on-1 or small group with Baseball players. I am a former collegiate Baseball Player as well as a Strength Coach for the Rutgers Newark Baseball Team. Email: Contact@isabellafitness.com'
                 // cert1='CrossFit Level 1 Trainer' 
                 // cert2='Foundations Coach' 
                 // cert3='Personal Trainer'  
@@ -251,8 +251,8 @@ class Bio extends Component {
               <Frame 
                 img={kate} 
                 name='Kate Santo'
-                title='Level 1 Trainer'
-                innerText='I am excited to join the Isabella Fitness team and support our members through simplifying and redefining how we approach food. I am a certified Integrative Nutrition Health Coach, Nutritional Therapy Practitioner in-training (completion March 2021), and licensed Dentist. My mission is to help you take massive action to support your goals through a focus on real food and mindset shifts that lead to sustainable results.'
+                title='Health Coach'
+                innerText='I am excited to be a part of the Isabella Fitness team and support our members through simplifying and redefining how we approach food. I am a certified Integrative Nutrition Health Coach, Nutritional Therapy Practitioner in-training (completion March 2021), and licensed Dentist. My mission is to help you take massive action to support your goals through a focus on real food and mindset shifts that lead to sustainable results. Email: Contact@isabellafitness.com'
                 // cert1='CrossFit Level 1 Trainer' 
                 // cert2='Foundations Coach' 
                 // cert3='Personal Trainer'  
