@@ -2,21 +2,27 @@ import React, { Component } from 'react';
 import Frame from "../components/bioFrame"
 import '../styles/bio.css'
 
-import ben2 from '../images/ben2.png'
-import alex from '../images/alex.png'
-import amanda from '../images/amanda.png'
-import kelsey from '../images/kelsey.png'
-import kevin from '../images/kevin.png'
-import jaime from '../images/jaime.png'
-import allyssa from '../images/allyssa.jpg'
+import ben2 from '../images/Ben.jpg'
+import alex from '../images/Alex.jpg'
+import amanda from '../images/Amanda.jpg'
+import kelsey from '../images/Kelsey.jpg'
+import kevin from '../images/Kevin.jpg'
+import jaime from '../images/Jamie.jpg'
+import allyssa from '../images/Allyssa.jpg'
 // import allie2 from '../images/allie.jpg'
-import allie from '../images/Allie.png'
+import allie from '../images/Allie.jpg'
+import jake from '../images/Jake.jpg'
+import kate from '../images/Kate.jpg'
+
 
 class Bio extends Component {
 
   state = {
-    // IF YOU NEED TO ADD ANOTHER COACH, DONT FORGET TO PUT NAME HERE FOR CAROUSEL
-    bios: ['Ben', 'Alex', 'Amanda', 'Kelsey', 'Kevin', 'Jaime', 'Allyssa', 'Allie'],
+    // WHEN YOU ARE READY TO ADD JAKE AND KATE, PLEASE SEE COMMENTS ON LINES 23, 25, 240 & 268
+    
+    bios: ['Ben', 'Alex', 'Amanda', 'Kelsey', 'Kevin', 'Jaime', 'Allyssa', 'Allie'], // ERASE THIS ENTIRE LINE WHEN YOU ARE READY TO ADD JAKE AND KATE
+
+    // bios: ['Ben', 'Alex', 'Amanda', 'Kelsey', 'Kevin', 'Jaime', 'Allyssa', 'Allie', 'Jake', 'Kate'], // ONLY DELETE THE TWO "//" FROM THE BEGINNING OF THIS LINE WHEN YOU ARE READY TO ADD JAKE AND KATE
     displayBioIndex: 0,
   }
 
@@ -231,7 +237,35 @@ class Bio extends Component {
                 />
             </div> 
 
+ {/* ERASE THIS ENTIRE LINE WHEN YOU ARE READY TO ADD JAKE AND KATE
 
+            <div className="display-bio" id="bio8">
+              <Frame 
+                img={jake} 
+                name='Jake Campbell'
+                title='Level 1 Trainer'
+                innerText='Cursus consectetur sem iaculis sodales interdum aliquet etiam laoreet lacus natoque integer massa justo luctus elit tortor sociosqu ipsum lectus'
+                // cert1='CrossFit Level 1 Trainer' 
+                // cert2='Foundations Coach' 
+                // cert3='Personal Trainer'  
+                />
+            </div> 
+
+            <div className="display-bio" id="bio9">
+              <Frame 
+                img={kate} 
+                name='Kate lastName'
+                title='Level 1 Trainer'
+                innerText='Himenaeos diam neque imperdiet nullam turpis litora dictum sed sem cursus eleifend semper morbi curabitur maecenas sodales aliquet risus class egestas natoque aenean leo nisl potenti cum varius non pulvinar ut habitasse dolor metus iaculis quis at vehicula lorem montes mus tortor erat rhoncus blandit fames consectetur condimentum platea dapibus'
+                // cert1='CrossFit Level 1 Trainer' 
+                // cert2='Foundations Coach' 
+                // cert3='Personal Trainer'  
+                />
+            </div> 
+
+
+            
+ ERASE THIS ENTIRE LINE WHEN YOU ARE READY TO ADD JAKE AND KATE */}
 
           </div>
           
