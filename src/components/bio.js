@@ -236,14 +236,12 @@ class Bio extends Component {
                 />
             </div> 
 
- {/* ERASE THIS ENTIRE LINE WHEN YOU ARE READY TO ADD JAKE AND KATE
-
             <div className="display-bio" id="bio8">
               <Frame 
                 img={jake} 
                 name='Jake Campbell'
-                title='Level 1 Trainer'
-                innerText='Cursus consectetur sem iaculis sodales interdum aliquet etiam laoreet lacus natoque integer massa justo luctus elit tortor sociosqu ipsum lectus'
+                title='Strength & Conditioning Coach'
+                innerText='I specialize in Strength and Conditioning for youth athletes. My primary focus is working 1-on-1 or small group with Baseball players. I am a former collegiate Baseball Player as well as a Strength Coach for the Rutgers Newark Baseball Team.'
                 // cert1='CrossFit Level 1 Trainer' 
                 // cert2='Foundations Coach' 
                 // cert3='Personal Trainer'  
@@ -253,9 +251,9 @@ class Bio extends Component {
             <div className="display-bio" id="bio9">
               <Frame 
                 img={kate} 
-                name='Kate lastName'
+                name='Kate Santo'
                 title='Level 1 Trainer'
-                innerText='Himenaeos diam neque imperdiet nullam turpis litora dictum sed sem cursus eleifend semper morbi curabitur maecenas sodales aliquet risus class egestas natoque aenean leo nisl potenti cum varius non pulvinar ut habitasse dolor metus iaculis quis at vehicula lorem montes mus tortor erat rhoncus blandit fames consectetur condimentum platea dapibus'
+                innerText='I am excited to join the Isabella Fitness team and support our members through simplifying and redefining how we approach food. I am a certified Integrative Nutrition Health Coach, Nutritional Therapy Practitioner in-training (completion March 2021), and licensed Dentist. My mission is to help you take massive action to support your goals through a focus on real food and mindset shifts that lead to sustainable results.'
                 // cert1='CrossFit Level 1 Trainer' 
                 // cert2='Foundations Coach' 
                 // cert3='Personal Trainer'  
@@ -263,8 +261,7 @@ class Bio extends Component {
             </div> 
 
 
-            
- ERASE THIS ENTIRE LINE WHEN YOU ARE READY TO ADD JAKE AND KATE */}
+           
 
           </div>
           
