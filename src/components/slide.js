@@ -117,8 +117,8 @@ export default class Slide extends Component {
                   <ul>
       {/* <li>Drop In - $25/class</li>
                     <li>10 Class Pass - $200</li> */}
-                    <li>Unlimited or 2x/wk </li>
-                    <li>Text 732.208.8942 for pricing</li>
+                    <li>Unlimited $164/month</li>
+                    <li>2x/wk $139/month</li>
                     <li>*Pricing is month to month</li>
                     <li>Drop-ins Contact us</li>
                   </ul>
@@ -146,7 +146,7 @@ export default class Slide extends Component {
                    {/* <li>Drop In - $25/class</li>
                     <li>10 Class Pass - $200</li> */}
                     <li>Unlimited Classes </li>
-                    <li>Text 732.208.8942 for pricing</li>
+                    <li>29.99/month</li>
                     <li>*Pricing is month to month</li>
                   </ul>
                 </div>
