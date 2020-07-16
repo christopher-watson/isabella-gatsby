@@ -158,15 +158,15 @@ class Bio extends Component {
               />
             </div>
 
-            <div className="display-bio" id="bio1">
-              <Frame 
-                img={kelsey} 
-                name='Kelsey Jamedar'
-                title='Level 1 Trainer'
-                innerText='With dreams of being a teacher, I never knew that could mean being a Trainer. Educating, motivating, and encouraging athletes to be the very best they can has fulfilled that teaching dream of mine. It is something I look forward to every day. My goal is always to make everyone feel comfortable, safe, and excited to take on the workouts, and push them to limits they didn’t know they could reach themselves. Email: Contact@isabellafitness.com'
+          //  <div className="display-bio" id="bio1">
+          //    <Frame 
+          //      img={kelsey} 
+          //      name='Kelsey Jamedar'
+          //      title='Level 1 Trainer'
+          //      innerText='With dreams of being a teacher, I never knew that could mean being a Trainer. Educating, motivating, and encouraging athletes to be the very best they can has fulfilled that teaching dream of mine. It is something I look forward to every day. My goal is always to make everyone feel comfortable, safe, and excited to take on the workouts, and push them to limits they didn’t know they could reach themselves. Email: Contact@isabellafitness.com'
                 // cert1='Level 1 Trainer' 
-                />
-            </div>
+           //     />
+           // </div>
           
             <div className="display-bio" id="bio2">
               <Frame 
