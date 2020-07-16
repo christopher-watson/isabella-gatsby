@@ -188,7 +188,6 @@ export default class Slide extends Component {
                       <li>5:00 pm</li>
                       <li>6:10 pm</li>
                       <li>7:15 pm</li>
-                      <li>8:20 pm</li>
                     </ul>
                   </div>
                   <div className="schedule-type">
@@ -200,7 +199,6 @@ export default class Slide extends Component {
                       <li>Youth (6-12)</li>
                       <li>IF60</li>
                       <li>IF60</li>
-                      <li>IF45</li>
                     </ul>
                   </div>
               </div>
@@ -217,7 +215,6 @@ export default class Slide extends Component {
                       <li>5:00 pm</li>
                       <li>6:10 pm</li>
                       <li>7:15 pm</li>
-                      <li>8:20 pm</li>
                     </ul>
                   </div>
                   <div className="schedule-type">
@@ -229,7 +226,6 @@ export default class Slide extends Component {
                       <li>Youth (6-12)</li>
                       <li>IF60</li>
                       <li>IF60</li>
-                      <li>IF45</li>
                     </ul>
                   </div>
               </div>
@@ -246,7 +242,6 @@ export default class Slide extends Component {
                       <li>5:00 pm</li>
                       <li>6:10 pm</li>
                       <li>7:15 pm</li>
-                      <li>8:20 pm</li>
                     </ul>
                   </div>
                   <div className="schedule-type">
@@ -258,7 +253,6 @@ export default class Slide extends Component {
                       <li>Youth (6-12)</li>
                       <li>IF60</li>
                       <li>IF60</li>
-                      <li>IF45</li>
                     </ul>
                   </div>
               </div>
@@ -275,7 +269,6 @@ export default class Slide extends Component {
                       <li>5:00 pm</li>
                       <li>6:10 pm</li>
                       <li>7:15 pm</li>
-                      <li>8:20 pm</li>
                     </ul>
                   </div>
                   <div className="schedule-type">
@@ -287,7 +280,6 @@ export default class Slide extends Component {
                       <li>Youth (6-12)</li>
                       <li>IF60</li>
                       <li>IF60</li>
-                      <li>IF45</li>
                     </ul>
                   </div>
               </div>
