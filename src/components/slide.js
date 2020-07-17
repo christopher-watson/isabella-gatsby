@@ -133,7 +133,7 @@ export default class Slide extends Component {
                     <li>10 Class Pass - $200</li> */}
                     <li>Unlimited - $110/mo</li>
                     <li>2x/wk - $95/mo</li>
-                     <li>Ages 6 - 12</li>
+                     <li>Ages 8 - 12</li>
                     <li>*Pricing is month to month</li>
                   </ul>
                 </div>
@@ -196,7 +196,7 @@ export default class Slide extends Component {
                       <li>IF60</li>
                       <li>IF60</li>
                       <li>IF60</li>
-                      <li>Youth (6-12)</li>
+                      <li>Youth (8-12)</li>
                       <li>IF60</li>
                       <li>IF60</li>
                     </ul>
@@ -223,7 +223,7 @@ export default class Slide extends Component {
                       <li>IF60</li>
                       <li>IF60</li>
                       <li>IF60</li>
-                      <li>Youth (6-12)</li>
+                      <li>Youth (8-12)</li>
                       <li>IF60</li>
                       <li>IF60</li>
                     </ul>
@@ -239,7 +239,6 @@ export default class Slide extends Component {
                       <li>9:30 am</li>
                       <li>3:45 pm</li>
                       <li>5:00 pm</li>
-                      <li>5:00 pm</li>
                       <li>6:10 pm</li>
                       <li>7:15 pm</li>
                     </ul>
@@ -250,7 +249,6 @@ export default class Slide extends Component {
                       <li>IF60</li>
                       <li>IF60</li>
                       <li>IF60</li>
-                      <li>Youth (6-12)</li>
                       <li>IF60</li>
                       <li>IF60</li>
                     </ul>
@@ -277,7 +275,7 @@ export default class Slide extends Component {
                       <li>IF60</li>
                       <li>IF60</li>
                       <li>IF60</li>
-                      <li>Youth (6-12)</li>
+                      <li>Youth (8-12)</li>
                       <li>IF60</li>
                       <li>IF60</li>
                     </ul>
