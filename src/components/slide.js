@@ -137,7 +137,7 @@ export default class Slide extends Component {
                     <li>*Pricing is month to month</li>
                   </ul>
                 </div>
-                <div className="background-text">Ages 6 - 12</div>
+                <div className="background-text">Have Fun!</div>
               </div>
               <div className="box box3">
                 <div className="heading-text green-text">On-Demand Classes</div>
