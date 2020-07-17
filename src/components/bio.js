@@ -20,8 +20,7 @@ class Bio extends Component {
     // WHEN YOU ARE READY TO ADD JAKE AND KATE, PLEASE SEE COMMENTS ON LINES 23, 25, 240 & 268
     
 
-    // bios: ['Ben', 'Alex', 'Amanda', 'Kelsey', 'Kevin', 'Jaime', 'Allyssa', 'Allie', 'Jake', 'Kate'], // WHEN YOU ARE READY TO PUT EVERYONE BACK LET ME KNOW
-    bios: ['Ben', 'Kevin'],
+    bios: ['Ben', 'Alex', 'Amanda', 'Kelsey', 'Kevin', 'Jaime', 'Allyssa', 'Allie', 'Jake', 'Kate'], // ONLY DELETE THE TWO "//" FROM THE BEGINNING OF THIS LINE WHEN YOU ARE READY TO ADD JAKE AND KATE
     displayBioIndex: 0,
   }
 
@@ -159,7 +158,7 @@ class Bio extends Component {
               />
             </div>
 
-            {/* <div className="display-bio" id="bio1">
+            <div className="display-bio" id="bio1">
               <Frame 
                 img={kelsey} 
                 name='Kelsey Jamedar'
@@ -167,9 +166,9 @@ class Bio extends Component {
                 innerText='With dreams of being a teacher, I never knew that could mean being a Trainer. Educating, motivating, and encouraging athletes to be the very best they can has fulfilled that teaching dream of mine. It is something I look forward to every day. My goal is always to make everyone feel comfortable, safe, and excited to take on the workouts, and push them to limits they didn’t know they could reach themselves. Email: Contact@isabellafitness.com'
                 // cert1='Level 1 Trainer' 
                 />
-            </div> */}
+            </div>
           
-            <div className="display-bio" id="bio1">
+            <div className="display-bio" id="bio2">
               <Frame 
                 img={kevin} 
                 name='Kevin Varno'
@@ -178,7 +177,7 @@ class Bio extends Component {
                 />
             </div>
     
-            {/* <div className="display-bio" id="bio3">
+            <div className="display-bio" id="bio3">
               <Frame 
                 img={jaime} 
                 name='Jaime Novak'
@@ -186,9 +185,9 @@ class Bio extends Component {
                 innerText='I am also a certified teacher so you could say teaching/helping others is in my blood. After years of working out, I made the decision to try something new and challenging; this let me to Isabella Fitness. I couldn’t be happier with that decision. My goal here is to help provide a safe, comfortable, and motivating environment. I want to help athletes make personal progress, no matter how big or small, and help them achieve their goals. I look forward to an athlete’s excitement when they do something they once thought they couldn’t. It’s incredibly rewarding. Email: Contact@isabellafitness.com'
                 // cert1='CrossFit Level 1 Trainer' 
                 />
-            </div>  */}
+            </div> 
     
-            {/* <div className="display-bio" id="bio4">
+            <div className="display-bio" id="bio4">
               <Frame 
                 img={alex} 
                 name='Alex Lincho'
@@ -197,9 +196,9 @@ class Bio extends Component {
                 // cert1='CrossFit Level 1 Trainer' 
                 // cert2='5:00pm Specialist' 
                 />
-            </div>  */}
+            </div> 
 
-            {/* <div className="display-bio" id="bio5">
+            <div className="display-bio" id="bio5">
               <Frame 
                 img={amanda} 
                 name='Amanda Costello'
@@ -209,9 +208,9 @@ class Bio extends Component {
                 // cert2='Foundations Coach' 
                 // cert3='7:15pm Specialist' 
                 />
-            </div>  */}
+            </div> 
 
-            {/* <div className="display-bio" id="bio6">
+            <div className="display-bio" id="bio6">
               <Frame 
                 img={allyssa} 
                 name='Allyssa Sillari'
@@ -222,9 +221,9 @@ class Bio extends Component {
                 // cert3='Personal Trainer' 
                 // cert4='Accountability Coach' 
                 />
-            </div>  */}
+            </div> 
 
-            {/* <div className="display-bio" id="bio7">
+            <div className="display-bio" id="bio7">
               <Frame 
                 img={allie} 
                 name='Allie Couzo'
@@ -234,9 +233,9 @@ class Bio extends Component {
                 // cert2='Foundations Coach' 
                 // cert3='Personal Trainer'  
                 />
-            </div>  */}
+            </div> 
 
-            {/* <div className="display-bio" id="bio8">
+            <div className="display-bio" id="bio8">
               <Frame 
                 img={jake} 
                 name='Jake Campbell'
@@ -246,9 +245,9 @@ class Bio extends Component {
                 // cert2='Foundations Coach' 
                 // cert3='Personal Trainer'  
                 />
-            </div>  */}
+            </div> 
 
-            {/* <div className="display-bio" id="bio9">
+            <div className="display-bio" id="bio9">
               <Frame 
                 img={kate} 
                 name='Kate Santo'
@@ -258,7 +257,7 @@ class Bio extends Component {
                 // cert2='Foundations Coach' 
                 // cert3='Personal Trainer'  
                 />
-            </div>  */}
+            </div> 
 
 
 
