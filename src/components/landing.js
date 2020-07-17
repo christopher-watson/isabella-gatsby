@@ -408,7 +408,7 @@ class Landing extends Component {
               {
                 this.state.mobile 
                 ?  
-                <span>Our focus is on providing an OUTDOOR fitness experience that will keep you motivated and engaged while we are social distancing. We are fully committed to being a positive difference maker in as many lives as possible. </span>
+                <span>Our focus is on providing an OUTDOOR fitness experience that will keep you motivated and engaged while we are social distancing. We are fully committed to being a positive difference maker in as many lives as possible </span>
                 :
                 <span>Our focus is on providing an OUTDOOR fitness experience that will keep you motivated and engaged while we are social distancing. We are fully committed to being a positive difference maker in as many lives as possible. </span>
 
