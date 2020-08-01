@@ -68,14 +68,14 @@ class Info extends Component {
         <CardLeft 
           mobile={this.state.mobile}
           iconOne='fas fa-heart'
-          textOne='Time Efficient'
+          textOne='Lose Weight'
           iconTwo='fas fa-dumbbell'
-          textTwo='Build Muscle!'
+          textTwo='Feel Great'
           iconThree='fas fa-running'
-          textThree='Attention & Instruction!'
-          heading='On-Demand Classes'
+          textThree='Look Amazing!'
+          heading='Fresh Start Program'
           // greenScript='Standard Meal Plan'
-          paragraph="On-Demand, On Your Time! Think 30 to 45 minutes of HIIT, Strength + Conditioning with movements that change daily on your terms!. Every On-Demand class starts with an overview of the workout followed by demos of the movements and modifications. All of our On-Demand fitness classes can be modified for any fitness level."
+          paragraph="Our 8-week Fresh Start NUTRITION Program is the perfect way to reach your wellness goals. The main goal of the program is to help you lose weight and feel great. Losing weight should not be complicated or overwheliming. During our 8-week program, you will be introduced to new strategies weekly."
           />
 
         <div className="divider" style={styles.divider}></div>
