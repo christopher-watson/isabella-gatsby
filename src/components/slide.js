@@ -140,17 +140,17 @@ export default class Slide extends Component {
                 <div className="background-text">Have Fun</div>
               </div>
               <div className="box box3">
-                <div className="heading-text green-text">On-Demand Classes</div>
+                <div className="heading-text green-text">Fresh Start Program</div>
                 <div className="info-text">
                   <ul>
                    {/* <li>Drop In - $25/class</li>
                     <li>10 Class Pass - $200</li> */}
-                    <li>Unlimited Classes </li>
-                    <li>$29.99/month</li>
-                    <li>*Pricing is month to month</li>
+                    <li>8-weeks of Nutrition Coaching </li>
+                    <li>$100 for members</li>
+                    <li>$150 for non members</li>
                   </ul>
                 </div>
-                <div className="background-text">Sweat!</div>
+                <div className="background-text">Feel Great!</div>
               </div>
               <div className="box box4">
                 <div className="heading-text green-text">Private Coaching</div>
