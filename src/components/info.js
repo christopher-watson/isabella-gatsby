@@ -75,7 +75,7 @@ class Info extends Component {
           textThree='Look Amazing!'
           heading='Fresh Start Program'
           // greenScript='Standard Meal Plan'
-          paragraph="Our 8-week Fresh Start NUTRITION Program is the perfect way to reach your wellness goals. The main goal of the program is to help you lose weight and feel great. Losing weight should not be complicated or overwheliming. During our 8-week program, you will be introduced to new strategies weekly."
+          paragraph="Our 8-week Fresh Start NUTRITION Program is the perfect way to reach your wellness goals. The focus of the plan is to implement healthy food choices, and develop structure when it comes to eating. The goal is to improve your overall wellness. This plan will definitely help you become a happier person as well as help you lose weight. During our 8-week program, you will be introduced to new strategies weekly."
           />
 
         <div className="divider" style={styles.divider}></div>
