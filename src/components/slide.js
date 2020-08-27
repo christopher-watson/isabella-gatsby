@@ -145,9 +145,10 @@ export default class Slide extends Component {
                   <ul>
                    {/* <li>Drop In - $25/class</li>
                     <li>10 Class Pass - $200</li> */}
-                    <li>8-weeks of Nutrition Coaching </li>
+                    <li>60-Minute Initial Meeting </li>
                     <li>$100 for members</li>
                     <li>$150 for non members</li>
+                    <li>8-Week Program</li>
                   </ul>
                 </div>
                 <div className="background-text">Feel Great!</div>
