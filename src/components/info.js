@@ -75,7 +75,7 @@ class Info extends Component {
           textThree='Look Amazing!'
           heading='Fresh Start Program'
           // greenScript='Standard Meal Plan'
-          paragraph="Our 8-week Fresh Start NUTRITION Program is the perfect way to reach your wellness goals. The focus of the plan is to implement healthy food choices, and develop structure when it comes to eating. The goal is to improve your overall wellness. This plan will definitely help you become a happier person as well as help you lose weight. During our 8-week program, you will be introduced to new strategies weekly."
+          paragraph="Our 8-week Fresh Start NUTRITION Program is the perfect way to reach your wellness goals. The focus of the plan is to implement healthy food choices, and develop structure when it comes to eating. The goal is to improve your overall wellness. This plan will definitely help you become a happier person as well as help you lose weight. During our 8-week program, you will be introduced to new strategies weekly. The program begins with a 60-minute consultation with our Health Coach. The program is 8-weeks but at your own pace. The program does not include our group classes."
           />
 
         <div className="divider" style={styles.divider}></div>
