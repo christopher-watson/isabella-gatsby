@@ -151,7 +151,7 @@ export default class Slide extends Component {
                     <li>8-Week Program</li>
                   </ul>
                 </div>
-                <div className="background-text">Feel Great!</div>
+                <div className="background-text">NUTRITION</div>
               </div>
               <div className="box box4">
                 <div className="heading-text green-text">Private Coaching</div>
