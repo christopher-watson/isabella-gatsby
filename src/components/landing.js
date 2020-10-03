@@ -401,15 +401,16 @@ class Landing extends Component {
             <div className="jumbo-text" style={styles.jumboText}>
               <img src={img} alt="Isabella Fitness" style={styles.jumboImage}/>
             </div>
-            <div className="jumbo-top-text-header" style={this.state.mobile ? styles.landingTextHeadMobile : styles.landingTextHead}>Feel Accomplished, Strong, and Healthy! </span>
+            <div className="jumbo-top-text-header" style={this.state.mobile ? styles.landingTextHeadMobile : styles.landingTextHead}>
+      Feel Accomplished, Strong, and Healthy!
             </div>
             <div className="jumbo-top-text" style={this.state.mobile ? styles.landingTextMobile : styles.landingText}>
               {
                 this.state.mobile 
                 ?  
-                <span><We are fully committed to being a positive difference maker in as many lives as possible. </span>
+                <span><We are fully committed to being a positive difference maker in as many lives as possible</span>
                 :
-                <span><We are fully committed to being a positive difference maker in as many lives as possible. </span>
+                <span><We are fully committed to being a positive difference maker in as many lives as possible</span>
               }
             </div>
             <div className="jumbo-buttons" style={this.state.mobile ? styles.jumboButtonsMobile : styles.jumboButtons}>
