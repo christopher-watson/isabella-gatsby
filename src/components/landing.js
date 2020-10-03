@@ -411,7 +411,6 @@ class Landing extends Component {
                 <span><We are fully committed to being a positive difference maker in as many lives as possible. </span>
                 :
                 <span><We are fully committed to being a positive difference maker in as many lives as possible. </span>
-
               }
             </div>
             <div className="jumbo-buttons" style={this.state.mobile ? styles.jumboButtonsMobile : styles.jumboButtons}>
