@@ -402,15 +402,15 @@ class Landing extends Component {
               <img src={img} alt="Isabella Fitness" style={styles.jumboImage}/>
             </div>
             <div className="jumbo-top-text-header" style={this.state.mobile ? styles.landingTextHeadMobile : styles.landingTextHead}>
-              We have gone OUTDOORS!
+              Feel Accomplished, Strong, and Healthy!
             </div>
             <div className="jumbo-top-text" style={this.state.mobile ? styles.landingTextMobile : styles.landingText}>
               {
                 this.state.mobile 
                 ?  
-                <span>Our focus is on providing an OUTDOOR fitness experience that will keep you motivated and engaged while we are social distancing. We are fully committed to being a positive difference maker in as many lives as possible </span>
+                <span>We are fully committed to being a positive difference maker in as many lives as possible </span>
                 :
-                <span>Our focus is on providing an OUTDOOR fitness experience that will keep you motivated and engaged while we are social distancing. We are fully committed to being a positive difference maker in as many lives as possible. </span>
+                <We are fully committed to being a positive difference maker in as many lives as possible. </span>
 
               }
             </div>
@@ -418,7 +418,7 @@ class Landing extends Component {
               <span className="button left-button" onClick={() => this.handleArrowClick('.slide')}>More Info</span>
               <span className="button right-button" onClick={() => this.handleArrowClick('.form')}>Contact Us</span>
               <span className="button left-button" onClick={this.handleModal1Open}>Our Mission</span>
-              <span className="button left-button" onClick={this.handleModal2Open} style={this.state.pulse ? styles.pulseOn : styles.pulseOff}>FREE OUTDOOR SESSION</span>
+              <span className="button left-button" onClick={this.handleModal2Open} style={this.state.pulse ? styles.pulseOn : styles.pulseOff}>FREE CONSULTATION</span>
               {/* <span className="button right-button" onClick={() => this.handleArrowClick('.slide')}>Testimonials</span> */}
             </div>
           </div>
