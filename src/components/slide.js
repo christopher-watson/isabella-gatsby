@@ -308,7 +308,7 @@ export default class Slide extends Component {
                       <li>IF60</li>
                       <li>IF60</li>
                       <li>IF60</li>
-                      <li>IF30</li>
+                      <li>IF60</li>
                       <li>IF60</li>
                     </ul>
                   </div>
@@ -321,14 +321,12 @@ export default class Slide extends Component {
                       <ul>
                         <li>8:30 am</li>
                         <li>9:30 am</li>
-                        <li>10:30 am</li>
                       </ul>
                     </div>
                     <div className="schedule-type">
                       <ul>
                         <li>IF45</li>
                         <li>IF60</li>
-                        <li>Open Gym</li>
                       </ul>
                   </div>
               </div>
@@ -340,14 +338,12 @@ export default class Slide extends Component {
                       <ul>
                         <li>9:15 am</li>
                         <li>10:00 am</li>
-                        <li>10:30 am</li>
                       </ul>
                     </div>
                     <div className="schedule-type">
                       <ul>
                         <li>IF30</li>
                         <li>IF30</li>  
-                        <li>Open Gym</li>
                       </ul>
                   </div>
               </div>
