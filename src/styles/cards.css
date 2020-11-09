@@ -69,7 +69,7 @@
 }
 
 .cardRight-container:nth-child(7) .cardRight-leftPanel::after {
-  background: url('../images/nelson.jpg')
+  background: url('../images/outside.jpg')
     center center / cover
     no-repeat;
 }
