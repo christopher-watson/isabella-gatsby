@@ -160,15 +160,17 @@ class Form extends Component {
     this.setState({
       [name]: value
     })
-    console.log(event.target.value)
+    // console.log(event.target.value)
+    this.validateForm()
   }
 
   validateForm = () => {
     // console.log('validating...')
-    if(this.state.name.length > 0 && this.state.email.length > 0 && this.state.phone.length > 0) {
+    if(this.state.name.length > 0 && this.state.email.length > 0 && this.state.phone.length > 0 && this.state.message.length > 0) {
       this.setState({
         validField: true
       })
+      console.log("VALID FORM")
     }
     else {
       this.setState({
@@ -176,6 +178,7 @@ class Form extends Component {
       })
     }
     // console.log(this.state.validField)
+    // console.log(this.state.message.length)
   }
   
   render() {
