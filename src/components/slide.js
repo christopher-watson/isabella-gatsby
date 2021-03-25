@@ -332,7 +332,7 @@ export default class Slide extends Component {
                       <ul>
                         <li>IF45</li>
                         <li>IF45</li>
-                        <li>IF60</li>
+                        <li>IF45</li>
                       </ul>
                   </div>
               </div>
