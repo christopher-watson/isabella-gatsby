@@ -405,7 +405,7 @@ class Landing extends Component {
       Feel Accomplished, Strong, and Healthy!
             </div>
             <div className="jumbo-top-text" style={this.state.mobile ? styles.landingTextMobile : styles.landingText}>
-              <span>We are fully committed to being a positive difference maker in as many lives as possible.</span>
+              <span>We are fully committed to being a positive difference maker in as many lives as possible.
             </div>
               <span>WE SPECIALIZE IN PERSONAL TRAINING AND GROUP CLASSES.</span>
               {/* {
