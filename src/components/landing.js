@@ -406,6 +406,7 @@ class Landing extends Component {
             </div>
             <div className="jumbo-top-text" style={this.state.mobile ? styles.landingTextMobile : styles.landingText}>
               <span>We are fully committed to being a positive difference maker in as many lives as possible.</span>
+            </div>
               <span>WE SPECIALIZE IN PERSONAL TRAINING AND GROUP CLASSES.</span>
               {/* {
                 this.state.mobile 
