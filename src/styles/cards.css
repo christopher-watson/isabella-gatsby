@@ -57,13 +57,13 @@
 }
 
 .cardRight-container:nth-child(3) .cardRight-leftPanel::after {
-  background: url('../images/bigroom.jpg')
+  background: url('../images/kids2.jpg')
     center center / cover
     no-repeat;
 }
 
 .cardLeft-container:nth-child(5) .cardLeft-rightPanel::after {
-  background: url('../images/unitd.jpg')
+  background: url('../images/ladies.jpg')
     center center / cover
     no-repeat;
 }
