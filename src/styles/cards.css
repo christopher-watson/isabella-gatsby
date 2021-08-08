@@ -57,19 +57,19 @@
 }
 
 .cardRight-container:nth-child(3) .cardRight-leftPanel::after {
-  background: url('../images/kids2.jpg')
+  background: url('../images/IMG_3960.jpg')
     center center / cover
     no-repeat;
 }
 
 .cardLeft-container:nth-child(5) .cardLeft-rightPanel::after {
-  background: url('../images/ladies.jpg')
+  background: url('../images/IMG_3961.jpg')
     center center / cover
     no-repeat;
 }
 
 .cardRight-container:nth-child(7) .cardRight-leftPanel::after {
-  background: url('../images/outside.jpg')
+  background: url('../images/IMG_3958.jpg')
     center center / cover
     no-repeat;
 }
