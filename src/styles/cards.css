@@ -57,19 +57,19 @@
 }
 
 .cardRight-container:nth-child(3) .cardRight-leftPanel::after {
-  background: url('../images/IMG_3960.jpg')
+  background: url('../images/bigroom.jpg')
     center center / cover
     no-repeat;
 }
 
 .cardLeft-container:nth-child(5) .cardLeft-rightPanel::after {
-  background: url('../images/IMG_3961.jpg')
+  background: url('../images/unitd.jpg')
     center center / cover
     no-repeat;
 }
 
 .cardRight-container:nth-child(7) .cardRight-leftPanel::after {
-  background: url('../images/IMG_3958.jpg')
+  background: url('../images/flourish.jpg')
     center center / cover
     no-repeat;
 }
