@@ -327,8 +327,8 @@ export default class Slide extends Component {
                     </div>
                     <div className="schedule-type">
                       <ul>
-                        <li>IF60</li>
-                        <li>IF60</li>
+                        <li>IF45</li>
+                        <li>IF45</li>
                       </ul>
                   </div>
               </div>
