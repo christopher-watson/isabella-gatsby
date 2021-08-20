@@ -63,13 +63,13 @@
 }
 
 .cardLeft-container:nth-child(5) .cardLeft-rightPanel::after {
-  background: url('../images/ladies.jpg')
+  background: url('../images/flourishwall.jpeg')
     center center / cover
     no-repeat;
 }
 
 .cardRight-container:nth-child(7) .cardRight-leftPanel::after {
-  background: url('../images/outside.jpg')
+  background: url('../images/mwpwall.jpeg')
     center center / cover
     no-repeat;
 }
